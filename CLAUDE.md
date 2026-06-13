@@ -7,32 +7,38 @@
 ## 1. Brand Tokens (placeholders — replace once design tokens are finalised)
 
 ```
---color-primary:        #TBD      /* DriveBuddies brand primary */
---color-primary-dark:   #TBD
---color-accent:         #TBD
---color-surface:        #FFFFFF
---color-surface-alt:    #F5F5F5
---color-text:           #1A1A1A
---color-text-muted:     #6B6B6B
---color-border:         #E0E0E0
---color-error:          #D32F2F
---color-success:        #388E3C
+/* Sampled from drivebuddies.ch Webflow CSS (M1, 2026-06-13) */
 
---font-sans:   'Inter', system-ui, sans-serif
---font-heading: 'Inter', system-ui, sans-serif
+--color-primary:        #1d68f4   /* Brand blue — primary CTA, links */
+--color-primary-dark:   #155dcf   /* Hover / active state of primary */
+--color-primary-light:  #5a93f7   /* Tinted accent, focus rings */
+--color-accent:         #010101   /* Near-black — dark scheme foreground */
+--color-surface:        #ffffff
+--color-surface-alt:    #f5f5f5
+--color-text:           #010101
+--color-text-muted:     #666666
+--color-border:         #cccccc
+--color-error:          #b42318
+--color-success:        #027a48
+
+--font-sans:    'Inter Variable', system-ui, sans-serif   /* self-hosted @fontsource-variable/inter */
+--font-heading: 'Inter Variable', system-ui, sans-serif
 
 --radius-sm:   4px
 --radius-md:   8px
 --radius-lg:   16px
+--radius-full: 9999px
 
 --space-1: 4px  --space-2: 8px  --space-3: 12px  --space-4: 16px
 --space-6: 24px --space-8: 32px --space-10: 40px --space-12: 48px
 --space-16: 64px --space-20: 80px --space-24: 96px
 
---shadow-sm: 0 1px 3px rgba(0,0,0,.08)
---shadow-md: 0 4px 12px rgba(0,0,0,.10)
---shadow-lg: 0 8px 24px rgba(0,0,0,.12)
+--shadow-sm: 0 1px 3px rgba(1,1,1,.08)
+--shadow-md: 0 4px 12px rgba(1,1,1,.10)
+--shadow-lg: 0 8px 24px rgba(1,1,1,.12)
 ```
+
+Tokens are declared in `src/styles/global.css` and exposed to Tailwind v4 via `@theme`. The Inter Variable font is self-hosted via the `@fontsource-variable/inter` npm package — no CDN dependency.
 
 All components **must** reference these tokens. Never hard-code hex values or pixel spacing outside token declarations.
 
