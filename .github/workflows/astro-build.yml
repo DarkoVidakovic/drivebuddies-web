@@ -1,0 +1,43 @@
+# STAGED — enable in M10 by removing the `if: false` guards
+# Runs `astro check` (TypeScript/type validation) and `astro build` on every PR.
+
+name: Astro Check & Build
+
+on:
+  pull_request:
+    branches: [main]
+  # push:
+  #   branches: [main]   # uncomment when ready for continuous build on main
+
+jobs:
+  build:
+    # if: false   # <- remove this line in M10 to activate
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: npm
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Astro check (TypeScript + type validation)
+        run: npx astro check
+
+      - name: Astro build
+        run: npm run build
+        env:
+          SITE_URL: ${{ vars.SITE_URL || 'https://drivebuddies.ch' }}
+
+      - name: Upload build artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: dist
+          path: dist/
+          retention-days: 1
