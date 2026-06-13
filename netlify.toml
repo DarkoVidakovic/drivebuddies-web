@@ -1,0 +1,19 @@
+[build]
+  command   = "npm run build"
+  publish   = "dist"
+
+[build.environment]
+  NODE_VERSION = "22"
+
+# Deploy previews on every PR — Netlify enables this by default when
+# the repo is connected; this section makes the context explicit.
+[context.deploy-preview]
+  command = "npm run build"
+
+[context.branch-deploy]
+  command = "npm run build"
+
+[[redirects]]
+  from   = "/sitemap.xml"
+  to     = "/sitemap-index.xml"
+  status = 200
