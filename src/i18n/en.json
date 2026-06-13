@@ -1,0 +1,37 @@
+{
+  "nav": {
+    "courses": "Courses",
+    "learnerLicence": "Lernfahrausweis",
+    "licence": "Führerausweis",
+    "twoPhase": "2-Phasen-Ausbildung",
+    "about": "About us",
+    "contact": "Contact",
+    "blog": "Blog",
+    "openMenu": "Open menu",
+    "closeMenu": "Close menu",
+    "switchLang": "Deutsch"
+  },
+  "footer": {
+    "tagline": "Your driving school in Zurich — modern, flexible, personal.",
+    "navigation": "Navigation",
+    "legal": "Legal",
+    "contact": "Contact",
+    "impressum": "Impressum",
+    "datenschutz": "Privacy Policy",
+    "sitemap": "Sitemap",
+    "copyright": "© {year} Drive Buddies Fahrschule. All rights reserved.",
+    "address": "Albisstrasse 1, 8800 Thalwil",
+    "phone": "+41 76 586 13 17",
+    "email": "info@drivebuddies.ch"
+  },
+  "seo": {
+    "titleSuffix": " | DriveBuddies Driving School Zurich",
+    "homeTitle": "DriveBuddies – Driving School in Zurich",
+    "homeDescription": "DriveBuddies is your modern driving school in Zurich. Grundkurs, VKU, Nothelfer and more – personal, flexible, successful.",
+    "404Title": "Page not found",
+    "404Description": "The page you are looking for does not exist. Return to the homepage.",
+    "404Heading": "Page not found",
+    "404Text": "The page you are looking for does not exist or has been moved.",
+    "404Back": "Back to home"
+  }
+}

@@ -1,0 +1,37 @@
+{
+  "nav": {
+    "courses": "Kurse",
+    "learnerLicence": "Lernfahrausweis",
+    "licence": "Führerausweis",
+    "twoPhase": "2-Phasen-Ausbildung",
+    "about": "Über uns",
+    "contact": "Kontakt",
+    "blog": "Blog",
+    "openMenu": "Menü öffnen",
+    "closeMenu": "Menü schliessen",
+    "switchLang": "English"
+  },
+  "footer": {
+    "tagline": "Ihre Fahrschule in Zürich — modern, flexibel, persönlich.",
+    "navigation": "Navigation",
+    "legal": "Rechtliches",
+    "contact": "Kontakt",
+    "impressum": "Impressum",
+    "datenschutz": "Datenschutz",
+    "sitemap": "Sitemap",
+    "copyright": "© {year} Drive Buddies Fahrschule. Alle Rechte vorbehalten.",
+    "address": "Albisstrasse 1, 8800 Thalwil",
+    "phone": "+41 76 586 13 17",
+    "email": "info@drivebuddies.ch"
+  },
+  "seo": {
+    "titleSuffix": " | DriveBuddies Fahrschule Zürich",
+    "homeTitle": "DriveBuddies – Ihre Fahrschule in Zürich",
+    "homeDescription": "DriveBuddies ist Ihre moderne Fahrschule in Zürich. Grundkurs, VKU, Nothelfer und mehr – persönlich, flexibel, erfolgreich.",
+    "404Title": "Seite nicht gefunden",
+    "404Description": "Die gesuchte Seite existiert nicht. Kehren Sie zur Startseite zurück.",
+    "404Heading": "Seite nicht gefunden",
+    "404Text": "Die gesuchte Seite existiert leider nicht oder wurde verschoben.",
+    "404Back": "Zur Startseite"
+  }
+}

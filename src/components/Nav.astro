@@ -1,0 +1,251 @@
+---
+import { useTranslations, getAlternatePath, type Locale } from '../i18n/index.ts';
+
+interface Props {
+  locale: Locale;
+}
+
+const { locale } = Astro.props;
+const t = useTranslations(locale);
+const altPath = getAlternatePath(Astro.url.pathname, locale);
+
+const prefix = locale === 'en' ? '/en' : '';
+
+// Localised slugs per IA table (CLAUDE.md §2)
+const links =
+  locale === 'en'
+    ? [
+        { href: '/en/courses/', label: t.nav.courses },
+        { href: '/en/lernfahrausweis/', label: t.nav.learnerLicence },
+        { href: '/en/fuehrerausweis/', label: t.nav.licence },
+        { href: '/en/2-phasen-ausbildung/', label: t.nav.twoPhase },
+        { href: '/en/about/', label: t.nav.about },
+        { href: '/en/blog/', label: t.nav.blog },
+        { href: '/en/contact/', label: t.nav.contact },
+      ]
+    : [
+        { href: '/kurse/', label: t.nav.courses },
+        { href: '/lernfahrausweis/', label: t.nav.learnerLicence },
+        { href: '/fuehrerausweis/', label: t.nav.licence },
+        { href: '/2-phasen-ausbildung/', label: t.nav.twoPhase },
+        { href: '/ueber-uns/', label: t.nav.about },
+        { href: '/blog/', label: t.nav.blog },
+        { href: '/kontakt/', label: t.nav.contact },
+      ];
+
+const current = Astro.url.pathname;
+---
+
+<header class="nav">
+  <div class="nav__inner">
+    <a href={`${prefix}/`} class="nav__brand" aria-label="DriveBuddies Home">
+      DriveBuddies
+    </a>
+
+    <button
+      class="nav__toggle"
+      type="button"
+      aria-expanded="false"
+      aria-controls="nav-menu"
+      aria-label={t.nav.openMenu}
+      data-nav-toggle
+    >
+      <span class="nav__toggle-bar"></span>
+      <span class="nav__toggle-bar"></span>
+      <span class="nav__toggle-bar"></span>
+    </button>
+
+    <nav class="nav__menu" id="nav-menu" aria-label="Hauptnavigation" data-nav-menu>
+      <ul class="nav__list">
+        {
+          links.map((link) => (
+            <li>
+              <a
+                href={link.href}
+                class="nav__link"
+                aria-current={current === link.href ? 'page' : undefined}
+              >
+                {link.label}
+              </a>
+            </li>
+          ))
+        }
+      </ul>
+      <a href={altPath} class="nav__lang" hreflang={locale === 'de' ? 'en' : 'de'}>
+        {t.nav.switchLang}
+      </a>
+    </nav>
+  </div>
+</header>
+
+<style>
+  .nav {
+    position: sticky;
+    top: 0;
+    z-index: 50;
+    background: var(--color-surface);
+    border-bottom: 1px solid var(--color-border);
+    box-shadow: var(--shadow-sm);
+  }
+
+  .nav__inner {
+    max-width: 1200px;
+    margin-inline: auto;
+    padding: var(--space-4) var(--space-6);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: var(--space-6);
+  }
+
+  .nav__brand {
+    font-family: var(--font-heading);
+    font-weight: 700;
+    font-size: 1.375rem;
+    color: var(--color-primary);
+    text-decoration: none;
+    flex-shrink: 0;
+  }
+
+  .nav__menu {
+    display: flex;
+    align-items: center;
+    gap: var(--space-8);
+  }
+
+  .nav__list {
+    display: flex;
+    align-items: center;
+    gap: var(--space-6);
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  .nav__link {
+    color: var(--color-text);
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 0.9375rem;
+    padding-block: var(--space-1);
+    border-bottom: 2px solid transparent;
+    transition: color 0.15s, border-color 0.15s;
+  }
+
+  .nav__link:hover,
+  .nav__link:focus-visible {
+    color: var(--color-primary);
+  }
+
+  .nav__link[aria-current='page'] {
+    color: var(--color-primary);
+    border-bottom-color: var(--color-primary);
+  }
+
+  .nav__lang {
+    color: var(--color-primary);
+    font-weight: 600;
+    font-size: 0.9375rem;
+    text-decoration: none;
+    padding: var(--space-1) var(--space-3);
+    border: 1px solid var(--color-primary);
+    border-radius: var(--radius-full);
+    transition: background 0.15s, color 0.15s;
+  }
+
+  .nav__lang:hover,
+  .nav__lang:focus-visible {
+    background: var(--color-primary);
+    color: var(--color-surface);
+  }
+
+  .nav__toggle {
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    gap: 5px;
+    width: 44px;
+    height: 44px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: var(--space-2);
+  }
+
+  .nav__toggle-bar {
+    display: block;
+    height: 2px;
+    width: 24px;
+    background: var(--color-text);
+    border-radius: var(--radius-full);
+    transition: transform 0.2s, opacity 0.2s;
+  }
+
+  .nav__toggle[aria-expanded='true'] .nav__toggle-bar:nth-child(1) {
+    transform: translateY(7px) rotate(45deg);
+  }
+  .nav__toggle[aria-expanded='true'] .nav__toggle-bar:nth-child(2) {
+    opacity: 0;
+  }
+  .nav__toggle[aria-expanded='true'] .nav__toggle-bar:nth-child(3) {
+    transform: translateY(-7px) rotate(-45deg);
+  }
+
+  @media (max-width: 880px) {
+    .nav__toggle {
+      display: flex;
+    }
+
+    .nav__menu {
+      position: fixed;
+      inset: 64px 0 0 0;
+      flex-direction: column;
+      align-items: stretch;
+      gap: var(--space-4);
+      background: var(--color-surface);
+      padding: var(--space-6);
+      transform: translateX(100%);
+      transition: transform 0.25s ease;
+      overflow-y: auto;
+    }
+
+    .nav__menu[data-open] {
+      transform: translateX(0);
+    }
+
+    .nav__list {
+      flex-direction: column;
+      align-items: stretch;
+      gap: var(--space-2);
+    }
+
+    .nav__link {
+      display: block;
+      padding: var(--space-3) 0;
+      border-bottom: 1px solid var(--color-border);
+    }
+
+    .nav__lang {
+      text-align: center;
+      margin-top: var(--space-4);
+    }
+  }
+</style>
+
+<script>
+  const toggle = document.querySelector<HTMLButtonElement>('[data-nav-toggle]');
+  const menu = document.querySelector<HTMLElement>('[data-nav-menu]');
+
+  if (toggle && menu) {
+    toggle.addEventListener('click', () => {
+      const open = menu.hasAttribute('data-open');
+      if (open) {
+        menu.removeAttribute('data-open');
+        toggle.setAttribute('aria-expanded', 'false');
+      } else {
+        menu.setAttribute('data-open', '');
+        toggle.setAttribute('aria-expanded', 'true');
+      }
+    });
+  }
+</script>

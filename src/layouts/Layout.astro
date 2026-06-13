@@ -1,25 +1,78 @@
 ---
 import '../styles/global.css';
+import Nav from '../components/Nav.astro';
+import Footer from '../components/Footer.astro';
+import SeoHead from '../components/SeoHead.astro';
+import type { Locale } from '../i18n/index.ts';
 
 interface Props {
   title: string;
-  description?: string;
+  description: string;
+  locale?: Locale;
+  canonical?: string;
+  hreflangDe?: string;
+  hreflangEn?: string;
+  image?: string;
+  noindex?: boolean;
+  jsonLd?: Record<string, unknown> | Record<string, unknown>[];
 }
 
-const { title, description = 'DriveBuddies – Ihre Fahrschule in Zürich' } = Astro.props;
+const {
+  title,
+  description,
+  locale = 'de',
+  canonical,
+  hreflangDe,
+  hreflangEn,
+  image,
+  noindex,
+  jsonLd,
+} = Astro.props;
+
+const site = 'https://drivebuddies.ch';
+const resolvedCanonical = canonical ?? new URL(Astro.url.pathname, site).href;
+const htmlLang = locale === 'en' ? 'en' : 'de-CH';
 ---
 
 <!doctype html>
-<html lang="de-CH">
+<html lang={htmlLang}>
   <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="generator" content={Astro.generator} />
-    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
-    <title>{title}</title>
-    <meta name="description" content={description} />
+    <SeoHead
+      title={title}
+      description={description}
+      canonical={resolvedCanonical}
+      locale={locale}
+      hreflangDe={hreflangDe}
+      hreflangEn={hreflangEn}
+      image={image}
+      noindex={noindex}
+      jsonLd={jsonLd}
+    />
   </head>
   <body>
-    <slot />
+    <a href="#main" class="skip-link">Zum Inhalt springen</a>
+    <Nav locale={locale} />
+    <main id="main">
+      <slot />
+    </main>
+    <Footer locale={locale} />
   </body>
 </html>
+
+<style>
+  .skip-link {
+    position: absolute;
+    left: var(--space-4);
+    top: -100px;
+    z-index: 100;
+    background: var(--color-primary);
+    color: var(--color-surface);
+    padding: var(--space-3) var(--space-4);
+    border-radius: var(--radius-md);
+    text-decoration: none;
+    transition: top 0.15s;
+  }
+  .skip-link:focus {
+    top: var(--space-4);
+  }
+</style>

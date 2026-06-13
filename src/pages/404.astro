@@ -1,0 +1,44 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Button from '../components/ui/Button.astro';
+import Section from '../components/ui/Section.astro';
+import { useTranslations } from '../i18n/index.ts';
+
+const t = useTranslations('de');
+---
+
+<Layout title={t.seo['404Title']} description={t.seo['404Description']} locale="de" noindex>
+  <Section>
+    <div class="notfound">
+      <p class="notfound__code">404</p>
+      <h1 class="notfound__title">{t.seo['404Heading']}</h1>
+      <p class="notfound__text">{t.seo['404Text']}</p>
+      <Button href="/" size="lg">{t.seo['404Back']}</Button>
+    </div>
+  </Section>
+</Layout>
+
+<style>
+  .notfound {
+    text-align: center;
+    padding-block: var(--space-16);
+  }
+  .notfound__code {
+    font-size: clamp(4rem, 12vw, 8rem);
+    font-weight: 700;
+    color: var(--color-primary);
+    line-height: 1;
+    margin-bottom: var(--space-4);
+  }
+  .notfound__title {
+    font-size: clamp(1.5rem, 4vw, 2.5rem);
+    font-weight: 700;
+    margin-bottom: var(--space-4);
+  }
+  .notfound__text {
+    color: var(--color-text-muted);
+    max-width: 48ch;
+    margin-inline: auto;
+    margin-bottom: var(--space-8);
+  }
+</style>

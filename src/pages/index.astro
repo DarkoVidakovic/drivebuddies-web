@@ -2,9 +2,18 @@
 import Layout from '../layouts/Layout.astro';
 import Button from '../components/ui/Button.astro';
 import Section from '../components/ui/Section.astro';
+import { useTranslations } from '../i18n/index.ts';
+
+const t = useTranslations('de');
 ---
 
-<Layout title="DriveBuddies – Token Scratch Page">
+<Layout
+  title={t.seo.homeTitle}
+  description={t.seo.homeDescription}
+  locale="de"
+  hreflangDe="https://drivebuddies.ch/"
+  hreflangEn="https://drivebuddies.ch/en/"
+>
   <!-- Hero Section -->
   <Section>
     <div class="hero">

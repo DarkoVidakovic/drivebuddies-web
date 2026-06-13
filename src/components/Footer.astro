@@ -1,0 +1,215 @@
+---
+import { useTranslations, type Locale } from '../i18n/index.ts';
+
+interface Props {
+  locale: Locale;
+}
+
+const { locale } = Astro.props;
+const t = useTranslations(locale);
+const prefix = locale === 'en' ? '/en' : '';
+const year = new Date().getFullYear();
+
+const navLinks =
+  locale === 'en'
+    ? [
+        { href: '/en/courses/', label: t.nav.courses },
+        { href: '/en/lernfahrausweis/', label: t.nav.learnerLicence },
+        { href: '/en/fuehrerausweis/', label: t.nav.licence },
+        { href: '/en/2-phasen-ausbildung/', label: t.nav.twoPhase },
+        { href: '/en/about/', label: t.nav.about },
+        { href: '/en/blog/', label: t.nav.blog },
+        { href: '/en/contact/', label: t.nav.contact },
+      ]
+    : [
+        { href: '/kurse/', label: t.nav.courses },
+        { href: '/lernfahrausweis/', label: t.nav.learnerLicence },
+        { href: '/fuehrerausweis/', label: t.nav.licence },
+        { href: '/2-phasen-ausbildung/', label: t.nav.twoPhase },
+        { href: '/ueber-uns/', label: t.nav.about },
+        { href: '/blog/', label: t.nav.blog },
+        { href: '/kontakt/', label: t.nav.contact },
+      ];
+
+const legalLinks =
+  locale === 'en'
+    ? [
+        { href: '/en/impressum/', label: t.footer.impressum },
+        { href: '/en/datenschutz/', label: t.footer.datenschutz },
+      ]
+    : [
+        { href: '/impressum/', label: t.footer.impressum },
+        { href: '/datenschutz/', label: t.footer.datenschutz },
+      ];
+
+const socials = [
+  { href: 'https://www.instagram.com/drive_buddies/', label: 'Instagram' },
+  {
+    href: 'https://www.google.com/maps/place/Drive+Buddies+Fahrschule/data=!4m2!3m1!1s0x0:0xaed93d82704b5f67',
+    label: 'Google Maps',
+  },
+];
+---
+
+<footer class="footer">
+  <div class="footer__inner">
+    <div class="footer__col footer__col--brand">
+      <a href={`${prefix}/`} class="footer__brand">DriveBuddies</a>
+      <p class="footer__tagline">{t.footer.tagline}</p>
+      <ul class="footer__socials">
+        {
+          socials.map((s) => (
+            <li>
+              <a href={s.href} class="footer__social" rel="noopener noreferrer" target="_blank">
+                {s.label}
+              </a>
+            </li>
+          ))
+        }
+      </ul>
+    </div>
+
+    <div class="footer__col">
+      <h2 class="footer__heading">{t.footer.navigation}</h2>
+      <ul class="footer__list">
+        {navLinks.map((l) => (
+          <li><a href={l.href} class="footer__link">{l.label}</a></li>
+        ))}
+      </ul>
+    </div>
+
+    <div class="footer__col">
+      <h2 class="footer__heading">{t.footer.contact}</h2>
+      <address class="footer__address">
+        <span class="footer__np">Drive Buddies Fahrschule</span>
+        <span>{t.footer.address}</span>
+        <a href={`tel:${t.footer.phone.replace(/\s/g, '')}`} class="footer__link">{t.footer.phone}</a>
+        <a href={`mailto:${t.footer.email}`} class="footer__link">{t.footer.email}</a>
+      </address>
+    </div>
+
+    <div class="footer__col">
+      <h2 class="footer__heading">{t.footer.legal}</h2>
+      <ul class="footer__list">
+        {legalLinks.map((l) => (
+          <li><a href={l.href} class="footer__link">{l.label}</a></li>
+        ))}
+        <li><a href="/sitemap-index.xml" class="footer__link">{t.footer.sitemap}</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="footer__bar">
+    <p class="footer__copyright">{t.footer.copyright.replace('{year}', String(year))}</p>
+  </div>
+</footer>
+
+<style>
+  .footer {
+    background: var(--color-accent);
+    color: var(--color-surface);
+    margin-top: var(--space-24);
+  }
+
+  .footer__inner {
+    max-width: 1200px;
+    margin-inline: auto;
+    padding: var(--space-16) var(--space-6) var(--space-12);
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 1fr;
+    gap: var(--space-12);
+  }
+
+  .footer__brand {
+    font-family: var(--font-heading);
+    font-weight: 700;
+    font-size: 1.5rem;
+    color: var(--color-surface);
+    text-decoration: none;
+  }
+
+  .footer__tagline {
+    color: rgba(255, 255, 255, 0.7);
+    margin-top: var(--space-3);
+    max-width: 36ch;
+  }
+
+  .footer__socials {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--space-4);
+    list-style: none;
+    margin: var(--space-6) 0 0;
+    padding: 0;
+  }
+
+  .footer__heading {
+    font-size: 0.8125rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: rgba(255, 255, 255, 0.6);
+    margin-bottom: var(--space-4);
+  }
+
+  .footer__list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-3);
+  }
+
+  .footer__address {
+    font-style: normal;
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-2);
+    color: rgba(255, 255, 255, 0.7);
+  }
+
+  .footer__np {
+    font-weight: 600;
+    color: var(--color-surface);
+  }
+
+  .footer__link,
+  .footer__social {
+    color: rgba(255, 255, 255, 0.7);
+    text-decoration: none;
+    transition: color 0.15s;
+  }
+
+  .footer__link:hover,
+  .footer__link:focus-visible,
+  .footer__social:hover,
+  .footer__social:focus-visible {
+    color: var(--color-surface);
+  }
+
+  .footer__bar {
+    border-top: 1px solid rgba(255, 255, 255, 0.12);
+  }
+
+  .footer__copyright {
+    max-width: 1200px;
+    margin-inline: auto;
+    padding: var(--space-6);
+    font-size: 0.875rem;
+    color: rgba(255, 255, 255, 0.6);
+  }
+
+  @media (max-width: 880px) {
+    .footer__inner {
+      grid-template-columns: 1fr 1fr;
+      gap: var(--space-10);
+    }
+  }
+
+  @media (max-width: 540px) {
+    .footer__inner {
+      grid-template-columns: 1fr;
+    }
+  }
+</style>

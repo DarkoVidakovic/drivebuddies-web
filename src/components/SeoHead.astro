@@ -1,0 +1,129 @@
+---
+import type { Locale } from '../i18n/index.ts';
+
+interface Props {
+  title: string;
+  description: string;
+  canonical: string;
+  locale?: Locale;
+  /** Full URL of the DE (default) page for hreflang */
+  hreflangDe?: string;
+  /** Full URL of the EN page for hreflang */
+  hreflangEn?: string;
+  /** OG/Twitter image — defaults to /og-default.png */
+  image?: string;
+  noindex?: boolean;
+  /** Extra JSON-LD objects merged with the global LocalBusiness schema */
+  jsonLd?: Record<string, unknown> | Record<string, unknown>[];
+}
+
+const {
+  title,
+  description,
+  canonical,
+  locale = 'de',
+  hreflangDe,
+  hreflangEn,
+  image = '/og-default.png',
+  noindex = false,
+  jsonLd,
+} = Astro.props;
+
+const site = 'https://drivebuddies.ch';
+const ogImage = image.startsWith('http') ? image : `${site}${image}`;
+
+// ── Global LocalBusiness / DrivingSchool schema ─────────────────────────────
+const localBusinessSchema = {
+  '@context': 'https://schema.org',
+  '@type': ['DrivingSchool', 'LocalBusiness'],
+  name: 'Drive Buddies Fahrschule',
+  url: site,
+  logo: `${site}/favicon.svg`,
+  image: ogImage,
+  description:
+    'Moderne Fahrschule in Zürich. Grundkurs, VKU, Nothelfer, Lernfahrausweis und mehr.',
+  telephone: '+41765861317',
+  email: 'info@drivebuddies.ch',
+  address: {
+    '@type': 'PostalAddress',
+    streetAddress: 'Albisstrasse 1',
+    addressLocality: 'Thalwil',
+    addressRegion: 'ZH',
+    postalCode: '8800',
+    addressCountry: 'CH',
+  },
+  geo: {
+    '@type': 'GeoCoordinates',
+    latitude: 47.2911056,
+    longitude: 8.5656282,
+  },
+  openingHoursSpecification: [
+    {
+      '@type': 'OpeningHoursSpecification',
+      dayOfWeek: ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday'],
+      opens: '07:00',
+      closes: '22:00',
+    },
+    {
+      '@type': 'OpeningHoursSpecification',
+      dayOfWeek: 'Saturday',
+      opens: '07:00',
+      closes: '19:00',
+    },
+  ],
+  areaServed: [
+    { '@type': 'City', name: 'Zürich' },
+    { '@type': 'AdministrativeArea', name: 'Kanton Zürich' },
+  ],
+  sameAs: [
+    'https://www.instagram.com/drive_buddies/',
+    'https://www.google.com/maps/place/Drive+Buddies+Fahrschule/data=!4m2!3m1!1s0x0:0xaed93d82704b5f67',
+  ],
+};
+
+const extraSchemas = jsonLd
+  ? Array.isArray(jsonLd)
+    ? jsonLd
+    : [jsonLd]
+  : [];
+
+const allSchemas = [localBusinessSchema, ...extraSchemas];
+---
+
+<!-- Primary meta -->
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta name="generator" content={Astro.generator} />
+<title>{title}</title>
+<meta name="description" content={description} />
+{noindex && <meta name="robots" content="noindex, nofollow" />}
+<link rel="canonical" href={canonical} />
+<link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+<link rel="icon" href="/favicon.ico" sizes="any" />
+
+<!-- hreflang -->
+{hreflangDe && <link rel="alternate" hreflang="de" href={hreflangDe} />}
+{hreflangEn && <link rel="alternate" hreflang="en" href={hreflangEn} />}
+{hreflangDe && <link rel="alternate" hreflang="x-default" href={hreflangDe} />}
+
+<!-- Open Graph -->
+<meta property="og:type" content="website" />
+<meta property="og:site_name" content="DriveBuddies Fahrschule Zürich" />
+<meta property="og:title" content={title} />
+<meta property="og:description" content={description} />
+<meta property="og:url" content={canonical} />
+<meta property="og:image" content={ogImage} />
+<meta property="og:image:width" content="1200" />
+<meta property="og:image:height" content="630" />
+<meta property="og:locale" content={locale === 'en' ? 'en_US' : 'de_CH'} />
+
+<!-- Twitter Card -->
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content={title} />
+<meta name="twitter:description" content={description} />
+<meta name="twitter:image" content={ogImage} />
+
+<!-- JSON-LD -->
+{allSchemas.map((schema) => (
+  <script type="application/ld+json" set:html={JSON.stringify(schema)} />
+))}
