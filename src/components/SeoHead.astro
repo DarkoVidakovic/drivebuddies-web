@@ -38,7 +38,7 @@ const localBusinessSchema = {
   '@type': ['DrivingSchool', 'LocalBusiness'],
   name: 'Drive Buddies Fahrschule',
   url: site,
-  logo: `${site}/favicon.svg`,
+  logo: `${site}/logo-icon.png`,
   image: ogImage,
   description:
     'Moderne Fahrschule in Zürich. Grundkurs, VKU, Nothelfer, Lernfahrausweis und mehr.',
@@ -100,6 +100,7 @@ const allSchemas = [localBusinessSchema, ...extraSchemas];
 <link rel="canonical" href={canonical} />
 <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
 <link rel="icon" href="/favicon.ico" sizes="any" />
+<link rel="apple-touch-icon" href="/apple-touch-icon.png" />
 
 <!-- hreflang -->
 {hreflangDe && <link rel="alternate" hreflang="de" href={hreflangDe} />}

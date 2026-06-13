@@ -39,7 +39,7 @@ const current = Astro.url.pathname;
 <header class="nav">
   <div class="nav__inner">
     <a href={`${prefix}/`} class="nav__brand" aria-label="DriveBuddies Home">
-      DriveBuddies
+      <img src="/logo.svg" alt="DriveBuddies" class="nav__logo" width="156" height="41" />
     </a>
 
     <button
@@ -99,12 +99,15 @@ const current = Astro.url.pathname;
   }
 
   .nav__brand {
-    font-family: var(--font-heading);
-    font-weight: 700;
-    font-size: 1.375rem;
-    color: var(--color-primary);
-    text-decoration: none;
+    display: flex;
+    align-items: center;
     flex-shrink: 0;
+  }
+
+  .nav__logo {
+    height: 40px;
+    width: auto;
+    display: block;
   }
 
   .nav__menu {

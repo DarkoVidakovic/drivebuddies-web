@@ -54,7 +54,9 @@ const socials = [
 <footer class="footer">
   <div class="footer__inner">
     <div class="footer__col footer__col--brand">
-      <a href={`${prefix}/`} class="footer__brand">DriveBuddies</a>
+      <a href={`${prefix}/`} class="footer__brand" aria-label="DriveBuddies Home">
+        <img src="/logo-white.svg" alt="DriveBuddies" class="footer__logo" width="200" height="52" />
+      </a>
       <p class="footer__tagline">{t.footer.tagline}</p>
       <ul class="footer__socials">
         {
@@ -121,11 +123,14 @@ const socials = [
   }
 
   .footer__brand {
-    font-family: var(--font-heading);
-    font-weight: 700;
-    font-size: 1.5rem;
-    color: var(--color-surface);
-    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+  }
+
+  .footer__logo {
+    height: 48px;
+    width: auto;
+    display: block;
   }
 
   .footer__tagline {
