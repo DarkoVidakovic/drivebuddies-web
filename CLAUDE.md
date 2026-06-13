@@ -7,11 +7,12 @@
 ## 1. Brand Tokens (placeholders — replace once design tokens are finalised)
 
 ```
-/* Sampled from drivebuddies.ch Webflow CSS (M1, 2026-06-13) */
+/* Brand blue aligned to official logo (M2, 2026-06-14).
+   Previous values sampled from Webflow CSS were #1d68f4/#155dcf/#5a93f7. */
 
---color-primary:        #1d68f4   /* Brand blue — primary CTA, links */
---color-primary-dark:   #155dcf   /* Hover / active state of primary */
---color-primary-light:  #5a93f7   /* Tinted accent, focus rings */
+--color-primary:        #2a4cd5   /* Brand blue — matches logo, primary CTA, links */
+--color-primary-dark:   #223eaf   /* Hover / active state of primary */
+--color-primary-light:  #7b90e5   /* Tinted accent, focus rings */
 --color-accent:         #010101   /* Near-black — dark scheme foreground */
 --color-surface:        #ffffff
 --color-surface-alt:    #f5f5f5
