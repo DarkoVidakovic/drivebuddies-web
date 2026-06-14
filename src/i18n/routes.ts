@@ -37,6 +37,7 @@ export const ROUTES = {
 
   impressum: { de: '/impressum/', en: '/en/impressum/' },
   datenschutz: { de: '/datenschutz/', en: '/en/datenschutz/' },
+  agb: { de: '/agb/', en: '/en/agb/' },
 } as const satisfies Record<string, RoutePair>;
 
 export type RouteKey = keyof typeof ROUTES;

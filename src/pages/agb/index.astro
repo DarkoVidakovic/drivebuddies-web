@@ -1,0 +1,45 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import Section from '../../components/ui/Section.astro';
+import { useTranslations } from '../../i18n/index.ts';
+import { hreflang } from '../../i18n/routes.ts';
+
+const locale = 'de';
+const t = useTranslations(locale);
+const p = t.agb;
+const links = hreflang('agb');
+---
+
+<Layout
+  title={p.seoTitle}
+  description={p.seoDescription}
+  locale={locale}
+  hreflangDe={links.de}
+  hreflangEn={links.en}
+>
+  <Section>
+    <article class="legal">
+      <h1 class="legal__title">{p.title}</h1>
+      <p class="legal__lead">{p.lead}</p>
+      {
+        p.sections.map((section) => (
+          <section class="legal__section">
+            <h2 class="legal__heading">{section.heading}</h2>
+            {section.body.map((line) => (
+              <p class="legal__text">{line}</p>
+            ))}
+          </section>
+        ))
+      }
+    </article>
+  </Section>
+</Layout>
+
+<style>
+  .legal { max-width: 72ch; margin: 0 auto; }
+  .legal__title { font-size: clamp(2rem, 4vw, 2.75rem); font-weight: 800; line-height: 1.15; margin-bottom: var(--space-4); }
+  .legal__lead { color: var(--color-text-muted); font-size: 1.0625rem; line-height: 1.7; margin: 0 0 var(--space-12); }
+  .legal__section { margin-bottom: var(--space-10); }
+  .legal__heading { font-size: 1.25rem; font-weight: 700; margin-bottom: var(--space-4); }
+  .legal__text { color: var(--color-text-muted); line-height: 1.7; margin: 0 0 var(--space-2); }
+</style>

@@ -77,6 +77,7 @@ All components **must** reference these tokens. Never hard-code hex values or pi
 | Blog-Tag (thin) | `/blog/tags/[tag]/` | `noindex`, excluded from sitemap |
 | Impressum | `/impressum/` | — |
 | Datenschutz | `/datenschutz/` | — |
+| AGB | `/agb/` | — |
 | 404 | — | `noindex` |
 
 > Note: M5 consolidated the original separate "Grundkurs" course pages into the
@@ -103,7 +104,7 @@ EN slugs are **translated**, not prefixed mirrors. Full map in `routes.ts`:
 | `/preise/` | `/en/prices/` |
 | `/kontakt/` | `/en/contact/` |
 | `/blog/` (+`[slug]`) | `/en/blog/` (+ same `[slug]`) |
-| `/impressum/` `/datenschutz/` | `/en/impressum/` `/en/datenschutz/` |
+| `/impressum/` `/datenschutz/` `/agb/` | `/en/impressum/` `/en/datenschutz/` `/en/agb/` |
 
 ### Legacy / redirect map
 

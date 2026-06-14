@@ -1,0 +1,109 @@
+---
+import type { Locale } from '../i18n/index.ts';
+import { route } from '../i18n/routes.ts';
+
+interface Props {
+  locale: Locale;
+}
+
+const { locale } = Astro.props;
+const privacyHref = route('datenschutz', locale);
+
+const label =
+  locale === 'en'
+    ? 'We use cookieless, privacy-friendly analytics (Plausible).'
+    : 'Wir verwenden cookiefreie, datenschutzfreundliche Statistiken (Plausible).';
+const learnMore = locale === 'en' ? 'Learn more' : 'Mehr erfahren';
+const dismiss = locale === 'en' ? 'OK' : 'OK';
+---
+
+<div class="abanner" id="analytics-banner" role="status" aria-live="polite">
+  <p class="abanner__text">
+    {label}
+    <a href={privacyHref} class="abanner__link">{learnMore}</a>
+  </p>
+  <button class="abanner__close" id="analytics-banner-close" aria-label={dismiss} type="button">
+    {dismiss}
+  </button>
+</div>
+
+<style>
+  .abanner {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 40;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: var(--space-4);
+    background: var(--color-accent);
+    color: rgba(255,255,255,0.85);
+    padding: var(--space-3) var(--space-6);
+    font-size: 0.875rem;
+    flex-wrap: wrap;
+  }
+
+  .abanner[hidden] {
+    display: none;
+  }
+
+  .abanner__text {
+    margin: 0;
+    display: flex;
+    align-items: center;
+    gap: var(--space-2);
+    flex-wrap: wrap;
+  }
+
+  .abanner__link {
+    color: var(--color-primary-light);
+    text-underline-offset: 3px;
+  }
+
+  .abanner__link:hover,
+  .abanner__link:focus-visible {
+    color: #fff;
+  }
+
+  .abanner__close {
+    background: rgba(255,255,255,0.15);
+    border: 1px solid rgba(255,255,255,0.3);
+    color: #fff;
+    border-radius: var(--radius-sm);
+    padding: var(--space-1) var(--space-4);
+    font-size: 0.8125rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.15s;
+    flex-shrink: 0;
+  }
+
+  .abanner__close:hover,
+  .abanner__close:focus-visible {
+    background: rgba(255,255,255,0.25);
+  }
+
+  .abanner__close:focus-visible {
+    outline: 2px solid var(--color-primary-light);
+    outline-offset: 2px;
+  }
+</style>
+
+<script>
+  const KEY = 'db_analytics_notice_dismissed';
+  const banner = document.getElementById('analytics-banner');
+  const btn = document.getElementById('analytics-banner-close');
+
+  if (banner) {
+    if (localStorage.getItem(KEY)) {
+      banner.hidden = true;
+    }
+
+    btn?.addEventListener('click', () => {
+      banner.hidden = true;
+      localStorage.setItem(KEY, '1');
+    });
+  }
+</script>

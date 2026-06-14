@@ -20,6 +20,7 @@
     "contact": "Contact",
     "impressum": "Impressum",
     "datenschutz": "Privacy Policy",
+    "agb": "Terms & Conditions",
     "sitemap": "Sitemap",
     "copyright": "© {year} Drive Buddies Fahrschule. All rights reserved.",
     "address": "Albisstrasse 1, 8800 Thalwil",
@@ -945,10 +946,27 @@
       { "heading": "Responsible entity", "body": ["Drive Buddies Fahrschule, Albisstrasse 1, 8800 Thalwil. Contact: info@drivebuddies.ch, +41 76 586 13 17."] },
       { "heading": "What data we collect", "body": ["When you use our contact form, we collect the data you provide (first and last name, email, phone number, selected service and message) and optionally an uploaded Lernfahrausweis. We use this data solely to process your enquiry."] },
       { "heading": "Server log files", "body": ["When you visit our website, technical data such as IP address, browser type and access time are automatically processed by our hosting provider (Netlify). This data serves the technical provision and security of the website."] },
-      { "heading": "Cookies and tracking", "body": ["This website does not use marketing or tracking cookies. Only technically necessary data is processed."] },
+      { "heading": "Cookies and tracking", "body": ["This website uses Plausible Analytics — a privacy-friendly, cookieless analytics tool. Plausible collects no personal data, sets no cookies, and transfers no data to the US. All measurement data is aggregated and cannot be traced back to individuals. More information: plausible.io/data-policy.", "No marketing or tracking cookies are used."] },
       { "heading": "Disclosure to third parties", "body": ["Your data is not sold to third parties. It is only passed on where this is necessary to process your enquiry or required by law. Form submissions are processed via Netlify Forms."] },
       { "heading": "Your rights", "body": ["You have the right to information about, correction of and deletion of the personal data we hold about you. To exercise these rights, contact info@drivebuddies.ch."] },
       { "heading": "Retention", "body": ["We retain your data only for as long as necessary to process your enquiry or as required by law."] }
+    ]
+  },
+  "agb": {
+    "seoTitle": "Terms & Conditions | DriveBuddies Driving School",
+    "seoDescription": "General terms and conditions of Drive Buddies Fahrschule for driving lessons, courses and other services.",
+    "title": "Terms & Conditions",
+    "lead": "Applicable to all driving lessons, courses and services provided by Drive Buddies Fahrschule. As of June 2026.",
+    "sections": [
+      { "heading": "Scope", "body": ["These General Terms and Conditions apply to all contracts for driving lessons, courses and other services between Drive Buddies Fahrschule (hereinafter 'the School') and its customers (hereinafter 'customers')."] },
+      { "heading": "Booking and contract", "body": ["Bookings may be made by email, phone, WhatsApp or via the contact form on the website. The contract is concluded upon written or verbal confirmation by the School.", "Customers who are minors require the consent of a parent or legal guardian."] },
+      { "heading": "Prices and payment", "body": ["The prices communicated at the time of booking on the website or in person apply. All prices are stated in Swiss Francs (CHF) and include VAT.", "Payment is generally due after each lesson or upon completion of a course package. Prepayment is available on request. If payment is not received within 14 days of invoicing, the School reserves the right to suspend further lessons."] },
+      { "heading": "Cancellations and rescheduling", "body": ["Driving lessons must be cancelled or rescheduled at least 24 hours before the agreed appointment. For shorter notice or non-attendance, the booked lesson will be charged at the full price.", "Courses (e.g. VKU, Nothelfer) are subject to the cancellation conditions of the respective course provider. The School informs customers of the applicable deadlines at the time of booking.", "If the School cancels due to illness, accident or official order, no costs are incurred by the customer; agreed appointments will be rescheduled free of charge."] },
+      { "heading": "Fitness to drive", "body": ["Customers must hold a valid Lernfahrausweis and carry it to every lesson. Driving under the influence of alcohol, drugs or medication that impairs driving ability is prohibited.", "The School may terminate or refuse a lesson at any time if a customer's fitness or readiness to drive is not given. In this case the booked lesson will be charged at the full price."] },
+      { "heading": "Liability", "body": ["The School is liable for damage caused intentionally or through gross negligence by the School or its instructors. Further liability — in particular for lost learning progress, failed examinations or consequential damages — is excluded to the extent permitted by law.", "For damage to the School's vehicle caused by the customer, the School may charge a reasonable contribution to costs."] },
+      { "heading": "Data protection", "body": ["Personal data is processed in accordance with our Privacy Policy, available on our website at /en/datenschutz/."] },
+      { "heading": "Governing law and jurisdiction", "body": ["Swiss law applies. The place of jurisdiction for all disputes arising from or in connection with these Terms is Thalwil (Canton of Zurich), unless mandatory statutory provisions provide otherwise."] },
+      { "heading": "Amendments", "body": ["The School reserves the right to amend these Terms at any time. The version published on the website at the time of booking is always authoritative."] }
     ]
   }
 }

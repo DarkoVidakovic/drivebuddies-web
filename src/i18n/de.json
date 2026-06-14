@@ -20,6 +20,7 @@
     "contact": "Kontakt",
     "impressum": "Impressum",
     "datenschutz": "Datenschutz",
+    "agb": "AGB",
     "sitemap": "Sitemap",
     "copyright": "© {year} Drive Buddies Fahrschule. Alle Rechte vorbehalten.",
     "address": "Albisstrasse 1, 8800 Thalwil",
@@ -945,10 +946,27 @@
       { "heading": "Verantwortliche Stelle", "body": ["Drive Buddies Fahrschule, Albisstrasse 1, 8800 Thalwil. Kontakt: info@drivebuddies.ch, +41 76 586 13 17."] },
       { "heading": "Welche Daten wir erheben", "body": ["Wenn du unser Kontaktformular nutzt, erheben wir die von dir angegebenen Daten (Vor- und Nachname, E-Mail, Telefonnummer, gewählte Dienstleistung und Nachricht) sowie optional einen hochgeladenen Lernfahrausweis. Diese Daten verwenden wir ausschliesslich zur Bearbeitung deiner Anfrage."] },
       { "heading": "Server-Logfiles", "body": ["Beim Besuch unserer Website werden durch unseren Hosting-Anbieter (Netlify) automatisch technische Daten wie IP-Adresse, Browsertyp und Zugriffszeit verarbeitet. Diese Daten dienen der technischen Bereitstellung und Sicherheit der Website."] },
-      { "heading": "Cookies und Tracking", "body": ["Diese Website setzt keine Marketing- oder Tracking-Cookies ein. Es werden lediglich technisch notwendige Daten verarbeitet."] },
+      { "heading": "Cookies und Tracking", "body": ["Diese Website verwendet Plausible Analytics – ein datenschutzfreundliches, cookiefreies Analysetool. Plausible erhebt keine personenbezogenen Daten, setzt keine Cookies und überträgt keine Daten in die USA. Alle Messdaten sind aggregiert und nicht auf einzelne Personen zurückführbar. Weitere Informationen: plausible.io/data-policy.", "Darüber hinaus werden keine Marketing- oder Tracking-Cookies eingesetzt."] },
       { "heading": "Weitergabe an Dritte", "body": ["Deine Daten werden nicht an Dritte verkauft. Eine Weitergabe erfolgt nur, soweit dies zur Bearbeitung deiner Anfrage erforderlich oder gesetzlich vorgeschrieben ist. Formularübermittlungen werden über Netlify Forms verarbeitet."] },
       { "heading": "Deine Rechte", "body": ["Du hast das Recht auf Auskunft, Berichtigung und Löschung deiner bei uns gespeicherten Personendaten. Wende dich dazu an info@drivebuddies.ch."] },
       { "heading": "Aufbewahrung", "body": ["Wir bewahren deine Daten nur so lange auf, wie es für die Bearbeitung deiner Anfrage oder aufgrund gesetzlicher Vorgaben erforderlich ist."] }
+    ]
+  },
+  "agb": {
+    "seoTitle": "AGB | DriveBuddies Fahrschule",
+    "seoDescription": "Allgemeine Geschäftsbedingungen der Drive Buddies Fahrschule für Fahrstunden, Kurse und weitere Dienstleistungen.",
+    "title": "Allgemeine Geschäftsbedingungen",
+    "lead": "Gültig für alle Fahrstunden, Kurse und Dienstleistungen der Drive Buddies Fahrschule, Stand: Juni 2026.",
+    "sections": [
+      { "heading": "Geltungsbereich", "body": ["Diese Allgemeinen Geschäftsbedingungen gelten für alle Verträge über Fahrstunden, Kurse und weitere Dienstleistungen zwischen der Drive Buddies Fahrschule (nachfolgend «Fahrschule») und ihren Kundinnen und Kunden (nachfolgend «Kunden»)."] },
+      { "heading": "Buchung und Vertragsschluss", "body": ["Eine Buchung kann per E-Mail, Telefon, WhatsApp oder über das Kontaktformular der Website erfolgen. Der Vertrag kommt mit der schriftlichen oder mündlichen Bestätigung der Fahrschule zustande.", "Minderjährige Kundinnen und Kunden benötigen die Zustimmung eines Elternteils oder Erziehungsberechtigten."] },
+      { "heading": "Preise und Zahlung", "body": ["Es gelten die zum Zeitpunkt der Buchung auf der Website oder im persönlichen Gespräch kommunizierten Preise. Alle Preise sind in Schweizer Franken (CHF) angegeben und verstehen sich inklusive Mehrwertsteuer.", "Die Bezahlung erfolgt in der Regel nach jeder Fahrstunde oder nach Abschluss eines Kurspakets. Auf Wunsch ist eine Vorauszahlung möglich. Bei Nichtzahlung innert 14 Tagen nach Rechnungstellung behält sich die Fahrschule das Recht vor, weitere Stunden auszusetzen."] },
+      { "heading": "Absagen und Stornierungen", "body": ["Fahrstunden müssen mindestens 24 Stunden vor dem vereinbarten Termin abgesagt oder verschoben werden. Bei kürzerer Frist oder Nichterscheinen wird die gebuchte Stunde zum vollen Preis in Rechnung gestellt.", "Kurse (z. B. VKU, Nothelferkurs) unterliegen den Stornobedingungen des jeweiligen Kursanbieters. Die Fahrschule informiert Kunden bei Buchung über die massgebenden Fristen.", "Bei Absagen durch die Fahrschule wegen Krankheit, Unfall oder behördlicher Anordnung entstehen keine Kosten für den Kunden; vereinbarte Termine werden kostenlos verschoben."] },
+      { "heading": "Fahrbereitschaft und Fahreignung", "body": ["Kunden müssen im Besitz eines gültigen Lernfahrausweises sein und diesen zu jeder Fahrstunde mitführen. Das Fahren unter Einfluss von Alkohol, Drogen oder Medikamenten, die die Fahrtüchtigkeit beeinträchtigen, ist verboten.", "Die Fahrschule kann eine Fahrstunde jederzeit abbrechen oder verweigern, wenn die Fahreignung oder -bereitschaft des Kunden nicht gegeben ist. In diesem Fall wird die gebuchte Stunde zum vollen Preis verrechnet."] },
+      { "heading": "Haftung", "body": ["Die Fahrschule haftet für Schäden, die sie oder ihre Fahrlehrer vorsätzlich oder grobfahrlässig verursachen. Eine weitergehende Haftung – insbesondere für entgangene Lernfortschritte, nicht bestandene Prüfungen oder Folgeschäden – ist ausgeschlossen, soweit gesetzlich zulässig.", "Für Schäden am Fahrschulfahrzeug, die vom Kunden verursacht werden, kann die Fahrschule eine angemessene Kostenbeteiligung verlangen."] },
+      { "heading": "Datenschutz", "body": ["Die Bearbeitung personenbezogener Daten erfolgt gemäss unserer Datenschutzerklärung, die auf unserer Website unter /datenschutz/ abrufbar ist."] },
+      { "heading": "Anwendbares Recht und Gerichtsstand", "body": ["Es gilt Schweizer Recht. Gerichtsstand für alle Streitigkeiten aus oder im Zusammenhang mit diesen AGB ist Thalwil (Kanton Zürich), soweit zwingende gesetzliche Bestimmungen nichts anderes vorschreiben."] },
+      { "heading": "Änderungen", "body": ["Die Fahrschule behält sich das Recht vor, diese AGB jederzeit anzupassen. Massgebend ist stets die zum Zeitpunkt der Buchung gültige Fassung, die auf der Website publiziert ist."] }
     ]
   }
 }
