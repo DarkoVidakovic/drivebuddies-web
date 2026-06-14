@@ -562,6 +562,129 @@
       "ctaWhatsapp": "Per WhatsApp anfragen"
     }
   },
+  "about": {
+    "seoTitle": "Über uns – DriveBuddies Fahrschule Zürich",
+    "seoDescription": "Lerne Jakov und Mario Budimir kennen – die Fahrlehrer hinter DriveBuddies. Über 1.000 zufriedene Kunden, 90 % Erstversuch-Erfolgsquote, moderne Fahrzeugflotte.",
+    "breadcrumb": "Über uns",
+    "story": {
+      "eyebrow": "Die Geschichte von DriveBuddies und unsere Vision",
+      "title": "Sicher, selbstbewusst und zielorientiert ans Ziel",
+      "p1": "Unsere Vision ist es, DICH sicher, selbstbewusst und zielorientiert das Fahren erlernen zu lassen.",
+      "p2": "Unsere Fahrschule steht für moderne Methoden, persönliche Betreuung und den extra Buddies-Drive, damit DU schneller und entspannter ans Ziel kommst. Unser Ziel ist es, neue Fahrer durch qualitativ hochwertigen Unterricht mit moderner Fahrzeugflotte zu unterstützen."
+    },
+    "instructors": {
+      "eyebrow": "Unser Team",
+      "title": "Engagierte Fahrlehrer – persönlich und erfahren",
+      "intro": "Lernen Sie unser engagiertes Fahrlehrer-Team kennen, das Sie mit Fachkompetenz, Geduld und individueller Betreuung auf Ihrem Weg zum Führerschein begleitet. Jeder unserer Fahrlehrer bringt jahrelange Erfahrung hinter dem Steuer mit und passt seinen Unterricht individuell an Ihre Bedürfnisse und Ihr Lerntempo an.",
+      "items": [
+        {
+          "name": "Jakov Budimir",
+          "role": "Fahrlehrer",
+          "photo": "/instructors/jakov-budimir.avif",
+          "phone": "+41 79 274 71 48",
+          "email": "jakov@drivebuddies.ch"
+        },
+        {
+          "name": "Mario Budimir",
+          "role": "Fahrlehrer",
+          "photo": "/instructors/mario-budimir.avif",
+          "phone": "+41 76 586 13 17",
+          "email": "mario@drivebuddies.ch"
+        }
+      ]
+    },
+    "stats": {
+      "eyebrow": "Unsere Statistiken auf einen Blick",
+      "title": "Wir sind stolz auf unsere Erfolge",
+      "subtitle": "Wir sind stolz auf unsere hohen Erfolgsquoten und die Zufriedenheit unserer Schüler.",
+      "items": [
+        { "value": "90%", "label": "Erstversuch-Erfolgsquote" },
+        { "value": "1'000+", "label": "Zufriedene Kunden in der Region" },
+        { "value": "500+", "label": "Schüler, die wir jährlich ausbilden" }
+      ]
+    },
+    "vehicles": {
+      "eyebrow": "Unsere Flotte",
+      "title": "Moderne Fahrzeugflotte",
+      "intro": "Wir setzen auf qualitativ hochwertigen Unterricht mit moderner Fahrzeugflotte – damit du dich voll auf das Fahren konzentrieren kannst.",
+      "items": [
+        {
+          "icon": "car",
+          "title": "Personenwagen – Kat. B",
+          "text": "Aktuelle Kompaktwagen mit Schalt- und Automatikgetriebe, Doppelpedalen und Zusatzspiegeln für ein sicheres Lernerlebnis."
+        },
+        {
+          "icon": "motorcycle",
+          "title": "Motorrad – Kat. A / A1",
+          "text": "Modernes Motorrad für A1- und A-Ausbildungen sowie Grundkurs-Trainingsfahrzeuge auf dem Übungsgelände."
+        },
+        {
+          "icon": "trailer",
+          "title": "Anhänger – Kat. BE",
+          "text": "Kompakter Anhänger für Rangier- und Strassenübungen der Kategorie BE – prüfungsgerecht ausgestattet."
+        }
+      ]
+    },
+    "whyUs": {
+      "eyebrow": "Warum DriveBuddies?",
+      "title": "Der DriveBuddies-Unterschied",
+      "items": [
+        {
+          "title": "Moderne Methoden",
+          "text": "Wir unterrichten nach aktuellen didaktischen Methoden – klar, strukturiert und auf den Punkt."
+        },
+        {
+          "title": "Persönliche Betreuung",
+          "text": "Jede Fahrstunde wird individuell auf Ihre Bedürfnisse und Ihr Lerntempo abgestimmt."
+        },
+        {
+          "title": "Der Buddies-Drive",
+          "text": "Unser besonderer Ansatz bringt dich schneller und entspannter ans Ziel – mit Motivation und echtem Teamgeist."
+        },
+        {
+          "title": "Hohe Erfolgsquote",
+          "text": "Über 90 % unserer Absolventen bestehen ihre Prüfungen beim ersten Versuch."
+        }
+      ]
+    },
+    "reviews": {
+      "eyebrow": "Google-Bewertungen",
+      "title": "Das sagen unsere Fahrschüler:innen",
+      "ratingLabel": "von 5 Sternen",
+      "reviewsLabel": "Google-Rezensionen",
+      "allReviewsCta": "Alle Bewertungen auf Google ansehen",
+      "allReviewsUrl": "https://www.google.com/maps/place/Drive+Buddies+Fahrschule/data=!4m2!3m1!1s0x0:0xaed93d82704b5f67",
+      "quotes": [
+        {
+          "author": "Alex Sgouros",
+          "rating": 5,
+          "text": "Jakov ist ein top Fahrlehrer! Ruhig, kompetent und immer motivierend."
+        },
+        {
+          "author": "Burak Giray",
+          "rating": 5,
+          "text": "Super Fahrstunden bei Mario! Sehr geduldig, freundlich und immer klar erklärt."
+        },
+        {
+          "author": "Sandro Pavlovic",
+          "rating": 5,
+          "text": "Die Fahrlehrer sind sehr kompetent, geduldig und erklären alles praxisnah."
+        },
+        {
+          "author": "Mathias Keller",
+          "rating": 5,
+          "text": "Die Fahrlehrer sind super freundlich, geduldig und erklären alles verständlich."
+        }
+      ]
+    },
+    "cta": {
+      "title": "Unterrichtsstunde buchen",
+      "text": "Möchten Sie Ihre Fahrkünste verbessern? Buchen Sie jetzt eine Unterrichtsstunde und starten Sie Ihre Reise zur Fahrerlaubnis!",
+      "primary": "Jetzt anmelden",
+      "whatsapp": "Per WhatsApp anfragen",
+      "whatsappMessage": "Ich interessiere mich für die Fahrausbildung bei DriveBuddies. Bitte nehmt Kontakt mit mir auf."
+    }
+  },
   "preise": {
     "seoTitle": "Preise Fahrschule Zürich – Fahrstunden & Kurse | DriveBuddies",
     "seoDescription": "Transparente Preise der Fahrschule DriveBuddies Zürich: Fahrstunden Auto & Motorrad, Grundkurs, Anhänger-Paket, VKU und Sparpakete. CHF-Preise auf einen Blick.",

@@ -1,0 +1,718 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import Section from '../../components/ui/Section.astro';
+import Button from '../../components/ui/Button.astro';
+import Icon from '../../components/ui/Icon.astro';
+import { useTranslations } from '../../i18n/index.ts';
+
+const locale = 'de';
+const t = useTranslations(locale);
+const a = t.about;
+const site = 'https://drivebuddies.ch';
+
+const googleMapsUrl =
+  'https://www.google.com/maps/place/Drive+Buddies+Fahrschule/data=!4m2!3m1!1s0x0:0xaed93d82704b5f67';
+
+// Rating data — replace with build-time Places API fetch when key is available.
+const rating = { value: 4.9, count: 127 };
+const fullStars = Math.round(rating.value);
+const formattedValue = rating.value.toLocaleString('de-CH', {
+  minimumFractionDigits: 1,
+  maximumFractionDigits: 1,
+});
+
+// ── JSON-LD ──────────────────────────────────────────────────────────────────
+const aboutPageSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'AboutPage',
+  name: a.seoTitle,
+  url: `${site}/ueber-uns/`,
+  inLanguage: 'de-CH',
+  about: { '@id': `${site}/#organization` },
+};
+
+const aggregateRatingSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'DrivingSchool',
+  '@id': `${site}/#organization`,
+  name: 'Drive Buddies Fahrschule',
+  aggregateRating: {
+    '@type': 'AggregateRating',
+    ratingValue: String(rating.value),
+    reviewCount: String(rating.count),
+    bestRating: '5',
+    worstRating: '1',
+  },
+  review: a.reviews.quotes.map((q) => ({
+    '@type': 'Review',
+    author: { '@type': 'Person', name: q.author },
+    reviewRating: { '@type': 'Rating', ratingValue: String(q.rating), bestRating: '5' },
+    reviewBody: q.text,
+  })),
+};
+
+const jsonLd = [aboutPageSchema, aggregateRatingSchema];
+---
+
+<Layout
+  title={a.seoTitle}
+  description={a.seoDescription}
+  locale={locale}
+  hreflangDe={`${site}/ueber-uns/`}
+  hreflangEn={`${site}/en/about/`}
+  jsonLd={jsonLd}
+>
+  <!-- ── Story / Vision ────────────────────────────────────────────────────── -->
+  <Section>
+    <div class="about-story">
+      <div class="about-story__body">
+        <p class="eyebrow">{a.story.eyebrow}</p>
+        <h1 class="about-story__title">{a.story.title}</h1>
+        <p class="about-story__lead">{a.story.p1}</p>
+        <p class="about-story__lead">{a.story.p2}</p>
+      </div>
+      <div class="about-story__logo" aria-hidden="true">
+        <img
+          src="/logo.svg"
+          alt=""
+          width="280"
+          height="280"
+          loading="eager"
+          decoding="async"
+        />
+      </div>
+    </div>
+  </Section>
+
+  <!-- ── Stats ─────────────────────────────────────────────────────────────── -->
+  <section class="stats-section" aria-labelledby="stats-heading">
+    <div class="stats-section__inner">
+      <p class="eyebrow eyebrow--light">{a.stats.eyebrow}</p>
+      <h2 id="stats-heading" class="stats-section__title">{a.stats.title}</h2>
+      <p class="stats-section__subtitle">{a.stats.subtitle}</p>
+      <div class="stats-grid">
+        {
+          a.stats.items.map((s) => (
+            <div class="stat-card">
+              <span class="stat-card__value">{s.value}</span>
+              <span class="stat-card__label">{s.label}</span>
+            </div>
+          ))
+        }
+      </div>
+    </div>
+  </section>
+
+  <!-- ── Instructor Bios ──────────────────────────────────────────────────── -->
+  <Section variant="alt" id="team">
+    <p class="eyebrow">{a.instructors.eyebrow}</p>
+    <h2 class="section-title">{a.instructors.title}</h2>
+    <p class="section-intro">{a.instructors.intro}</p>
+    <div class="instructors-grid">
+      {
+        a.instructors.items.map((inst) => (
+          <article class="instructor-card">
+            <div class="instructor-card__photo-wrap">
+              <img
+                src={inst.photo}
+                alt={inst.name}
+                width="200"
+                height="200"
+                loading="lazy"
+                decoding="async"
+                class="instructor-card__photo"
+                onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"
+              />
+              <span class="instructor-card__avatar" aria-hidden="true">
+                <Icon name="instructor" />
+              </span>
+            </div>
+            <div class="instructor-card__body">
+              <h3 class="instructor-card__name">{inst.name}</h3>
+              <p class="instructor-card__role">{inst.role}</p>
+              <ul class="instructor-card__contact">
+                <li>
+                  <a href={`tel:${inst.phone.replace(/\s/g, '')}`}>{inst.phone}</a>
+                </li>
+                <li>
+                  <a href={`mailto:${inst.email}`}>{inst.email}</a>
+                </li>
+              </ul>
+            </div>
+          </article>
+        ))
+      }
+    </div>
+  </Section>
+
+  <!-- ── Vehicles ─────────────────────────────────────────────────────────── -->
+  <Section>
+    <p class="eyebrow">{a.vehicles.eyebrow}</p>
+    <h2 class="section-title">{a.vehicles.title}</h2>
+    <p class="section-intro">{a.vehicles.intro}</p>
+    <div class="vehicles-grid">
+      {
+        a.vehicles.items.map((v) => (
+          <div class="vehicle-card">
+            <span class="vehicle-card__icon" aria-hidden="true">
+              <Icon name={v.icon as any} />
+            </span>
+            <h3 class="vehicle-card__title">{v.title}</h3>
+            <p class="vehicle-card__text">{v.text}</p>
+          </div>
+        ))
+      }
+    </div>
+  </Section>
+
+  <!-- ── Why DriveBuddies ─────────────────────────────────────────────────── -->
+  <Section variant="alt">
+    <p class="eyebrow">{a.whyUs.eyebrow}</p>
+    <h2 class="section-title">{a.whyUs.title}</h2>
+    <div class="why-grid">
+      {
+        a.whyUs.items.map((item, i) => (
+          <div class="why-card">
+            <span class="why-card__num" aria-hidden="true">{String(i + 1).padStart(2, '0')}</span>
+            <h3 class="why-card__title">{item.title}</h3>
+            <p class="why-card__text">{item.text}</p>
+          </div>
+        ))
+      }
+    </div>
+  </Section>
+
+  <!-- ── Google Rating ─────────────────────────────────────────────────────── -->
+  <section class="reviews-section" aria-labelledby="reviews-heading">
+    <div class="reviews-section__inner">
+      <p class="eyebrow eyebrow--light">{a.reviews.eyebrow}</p>
+      <h2 id="reviews-heading" class="reviews-section__title">{a.reviews.title}</h2>
+
+      <div class="rating-display">
+        <span class="rating-display__value">{formattedValue}</span>
+        <div class="rating-display__right">
+          <span
+            class="rating-display__stars"
+            role="img"
+            aria-label={`${formattedValue} ${a.reviews.ratingLabel}`}
+          >
+            {
+              Array.from({ length: 5 }).map((_, i) => (
+                <Icon
+                  name="star"
+                  class={i < fullStars ? 'star--on' : 'star--off'}
+                />
+              ))
+            }
+          </span>
+          <span class="rating-display__count">{rating.count}+ {a.reviews.reviewsLabel}</span>
+          <a
+            href={googleMapsUrl}
+            class="rating-display__link"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            {a.reviews.allReviewsCta}
+          </a>
+        </div>
+      </div>
+
+      <div class="quotes-grid">
+        {
+          a.reviews.quotes.map((q) => (
+            <blockquote class="quote-card">
+              <div class="quote-card__stars" role="img" aria-label={`${q.rating} von 5 Sternen`}>
+                {Array.from({ length: q.rating }).map(() => (
+                  <Icon name="star" class="star--on star--sm" />
+                ))}
+              </div>
+              <p class="quote-card__text">„{q.text}"</p>
+              <footer class="quote-card__author">— {q.author}</footer>
+            </blockquote>
+          ))
+        }
+      </div>
+    </div>
+  </section>
+
+  <!-- ── CTA ──────────────────────────────────────────────────────────────── -->
+  <Section>
+    <div class="cta-block">
+      <h2 class="cta-block__title">{a.cta.title}</h2>
+      <p class="cta-block__text">{a.cta.text}</p>
+      <div class="cta-block__actions">
+        <Button href="/kontakt/">{a.cta.primary}</Button>
+        <Button
+          href={`https://wa.me/41765861317?text=${encodeURIComponent(a.cta.whatsappMessage)}`}
+          variant="secondary"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          {a.cta.whatsapp}
+        </Button>
+      </div>
+    </div>
+  </Section>
+</Layout>
+
+<style>
+  .eyebrow {
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    font-size: 0.875rem;
+    font-weight: 600;
+    color: var(--color-primary);
+    margin: 0 0 var(--space-3);
+  }
+
+  .eyebrow--light {
+    color: rgba(255, 255, 255, 0.7);
+  }
+
+  .section-title {
+    font-size: clamp(1.75rem, 3vw, 2.5rem);
+    font-weight: 700;
+    margin: 0 0 var(--space-6);
+  }
+
+  .section-intro {
+    color: var(--color-text-muted);
+    font-size: 1.0625rem;
+    max-width: 64ch;
+    margin: 0 0 var(--space-12);
+    line-height: 1.65;
+  }
+
+  /* ── Story ──────────────────────────────────────────────────────────────── */
+  .about-story {
+    display: grid;
+    gap: var(--space-12);
+    align-items: center;
+  }
+
+  .about-story__title {
+    font-size: clamp(2rem, 4vw, 3rem);
+    font-weight: 700;
+    margin: 0 0 var(--space-6);
+    line-height: 1.15;
+  }
+
+  .about-story__lead {
+    color: var(--color-text-muted);
+    font-size: 1.125rem;
+    margin: 0 0 var(--space-4);
+    max-width: 64ch;
+    line-height: 1.65;
+  }
+
+  .about-story__logo {
+    display: flex;
+    justify-content: center;
+  }
+
+  .about-story__logo img {
+    max-width: 260px;
+    width: 100%;
+    height: auto;
+  }
+
+  @media (min-width: 768px) {
+    .about-story {
+      grid-template-columns: 1fr auto;
+    }
+  }
+
+  /* ── Stats ──────────────────────────────────────────────────────────────── */
+  .stats-section {
+    background: var(--color-primary);
+    color: var(--color-surface);
+    padding: var(--space-16) var(--space-6);
+  }
+
+  .stats-section__inner {
+    max-width: 1200px;
+    margin-inline: auto;
+  }
+
+  .stats-section__title {
+    font-size: clamp(1.5rem, 3vw, 2rem);
+    font-weight: 700;
+    margin: 0 0 var(--space-3);
+    color: var(--color-surface);
+  }
+
+  .stats-section__subtitle {
+    color: rgba(255, 255, 255, 0.8);
+    margin: 0 0 var(--space-10);
+    font-size: 1.0625rem;
+  }
+
+  .stats-grid {
+    display: grid;
+    gap: var(--space-8);
+  }
+
+  .stat-card {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-2);
+  }
+
+  .stat-card__value {
+    font-size: clamp(2.5rem, 6vw, 3.5rem);
+    font-weight: 800;
+    line-height: 1;
+  }
+
+  .stat-card__label {
+    font-size: 1rem;
+    color: rgba(255, 255, 255, 0.8);
+    font-weight: 500;
+  }
+
+  @media (min-width: 640px) {
+    .stats-grid {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+
+  @media (min-width: 768px) {
+    .stats-section {
+      padding: var(--space-20) var(--space-8);
+    }
+  }
+
+  /* ── Instructor cards ───────────────────────────────────────────────────── */
+  .instructors-grid {
+    display: grid;
+    gap: var(--space-8);
+  }
+
+  .instructor-card {
+    background: var(--color-surface);
+    border-radius: var(--radius-lg);
+    box-shadow: var(--shadow-md);
+    padding: var(--space-8);
+    display: grid;
+    gap: var(--space-8);
+    align-items: start;
+  }
+
+  .instructor-card__photo-wrap {
+    display: flex;
+    justify-content: center;
+  }
+
+  .instructor-card__photo {
+    width: 160px;
+    height: 160px;
+    border-radius: var(--radius-full);
+    object-fit: cover;
+    box-shadow: var(--shadow-sm);
+  }
+
+  .instructor-card__avatar {
+    display: none;
+    align-items: center;
+    justify-content: center;
+    width: 160px;
+    height: 160px;
+    border-radius: var(--radius-full);
+    background: color-mix(in srgb, var(--color-primary) 12%, var(--color-surface));
+    color: var(--color-primary);
+    box-shadow: var(--shadow-sm);
+    flex-shrink: 0;
+  }
+
+  .instructor-card__avatar :global(.icon) {
+    width: 72px;
+    height: 72px;
+  }
+
+  .instructor-card__name {
+    font-size: 1.375rem;
+    font-weight: 700;
+    margin: 0 0 var(--space-1);
+  }
+
+  .instructor-card__role {
+    color: var(--color-primary);
+    font-weight: 600;
+    font-size: 0.9375rem;
+    margin: 0 0 var(--space-4);
+  }
+
+  .instructor-card__contact {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-2);
+  }
+
+  .instructor-card__contact a {
+    color: var(--color-text-muted);
+    font-size: 0.9375rem;
+    text-decoration: none;
+  }
+
+  .instructor-card__contact a:hover,
+  .instructor-card__contact a:focus-visible {
+    color: var(--color-primary);
+    text-decoration: underline;
+  }
+
+  @media (min-width: 640px) {
+    .instructor-card {
+      grid-template-columns: auto 1fr;
+    }
+
+    .instructor-card__photo-wrap {
+      justify-content: flex-start;
+    }
+  }
+
+  @media (min-width: 900px) {
+    .instructors-grid {
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+
+  /* ── Vehicles ───────────────────────────────────────────────────────────── */
+  .vehicles-grid {
+    display: grid;
+    gap: var(--space-6);
+  }
+
+  .vehicle-card {
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-lg);
+    padding: var(--space-8);
+  }
+
+  .vehicle-card__icon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 48px;
+    height: 48px;
+    border-radius: var(--radius-md);
+    background: color-mix(in srgb, var(--color-primary) 10%, var(--color-surface));
+    color: var(--color-primary);
+    margin-bottom: var(--space-4);
+  }
+
+  .vehicle-card__icon :global(.icon) {
+    width: 28px;
+    height: 28px;
+  }
+
+  .vehicle-card__title {
+    font-size: 1.125rem;
+    font-weight: 700;
+    margin: 0 0 var(--space-3);
+  }
+
+  .vehicle-card__text {
+    color: var(--color-text-muted);
+    margin: 0;
+    line-height: 1.6;
+  }
+
+  @media (min-width: 768px) {
+    .vehicles-grid {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+
+  /* ── Why DriveBuddies ───────────────────────────────────────────────────── */
+  .why-grid {
+    display: grid;
+    gap: var(--space-6);
+  }
+
+  .why-card {
+    padding: var(--space-6) 0;
+    border-top: 2px solid var(--color-border);
+  }
+
+  .why-card__num {
+    display: block;
+    font-size: 2.5rem;
+    font-weight: 800;
+    color: color-mix(in srgb, var(--color-primary) 20%, var(--color-surface-alt));
+    line-height: 1;
+    margin-bottom: var(--space-3);
+    font-variant-numeric: tabular-nums;
+  }
+
+  .why-card__title {
+    font-size: 1.125rem;
+    font-weight: 700;
+    margin: 0 0 var(--space-2);
+  }
+
+  .why-card__text {
+    color: var(--color-text-muted);
+    margin: 0;
+    line-height: 1.6;
+  }
+
+  @media (min-width: 640px) {
+    .why-grid {
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+
+  /* ── Reviews section ────────────────────────────────────────────────────── */
+  .reviews-section {
+    background: var(--color-accent);
+    color: var(--color-surface);
+    padding: var(--space-20) var(--space-6);
+  }
+
+  .reviews-section__inner {
+    max-width: 1200px;
+    margin-inline: auto;
+  }
+
+  .reviews-section__title {
+    font-size: clamp(1.75rem, 3vw, 2.5rem);
+    font-weight: 700;
+    margin: 0 0 var(--space-10);
+    color: var(--color-surface);
+  }
+
+  .rating-display {
+    display: flex;
+    align-items: center;
+    gap: var(--space-6);
+    flex-wrap: wrap;
+  }
+
+  .rating-display__value {
+    font-size: clamp(3rem, 7vw, 4.5rem);
+    font-weight: 800;
+    line-height: 1;
+  }
+
+  .rating-display__right {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-2);
+  }
+
+  .rating-display__stars {
+    display: inline-flex;
+    gap: var(--space-1);
+  }
+
+  :global(.star--on) {
+    width: 22px;
+    height: 22px;
+    color: #f5b301;
+    flex-shrink: 0;
+  }
+
+  :global(.star--off) {
+    width: 22px;
+    height: 22px;
+    color: rgba(255, 255, 255, 0.25);
+    flex-shrink: 0;
+  }
+
+  .rating-display__count {
+    font-size: 1rem;
+    color: rgba(255, 255, 255, 0.75);
+    font-weight: 600;
+  }
+
+  .rating-display__link {
+    color: rgba(255, 255, 255, 0.85);
+    font-weight: 600;
+    font-size: 0.9375rem;
+    text-underline-offset: 3px;
+  }
+
+  .rating-display__link:hover,
+  .rating-display__link:focus-visible {
+    color: var(--color-surface);
+  }
+
+  .quotes-grid {
+    display: grid;
+    gap: var(--space-6);
+    margin-top: var(--space-12);
+  }
+
+  .quote-card {
+    background: rgba(255, 255, 255, 0.07);
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    border-radius: var(--radius-lg);
+    padding: var(--space-8);
+    margin: 0;
+  }
+
+  .quote-card__stars {
+    display: flex;
+    gap: var(--space-1);
+    margin-bottom: var(--space-4);
+  }
+
+  :global(.star--sm) {
+    width: 16px !important;
+    height: 16px !important;
+  }
+
+  .quote-card__text {
+    font-size: 1.0625rem;
+    line-height: 1.65;
+    margin: 0 0 var(--space-4);
+    color: rgba(255, 255, 255, 0.9);
+  }
+
+  .quote-card__author {
+    font-size: 0.9375rem;
+    font-weight: 600;
+    color: rgba(255, 255, 255, 0.6);
+  }
+
+  @media (min-width: 640px) {
+    .quotes-grid {
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+
+  @media (min-width: 768px) {
+    .reviews-section {
+      padding: var(--space-24) var(--space-8);
+    }
+  }
+
+  /* ── CTA ────────────────────────────────────────────────────────────────── */
+  .cta-block {
+    text-align: center;
+    max-width: 640px;
+    margin-inline: auto;
+  }
+
+  .cta-block__title {
+    font-size: clamp(1.75rem, 3vw, 2.25rem);
+    font-weight: 700;
+    margin: 0 0 var(--space-4);
+  }
+
+  .cta-block__text {
+    color: var(--color-text-muted);
+    font-size: 1.0625rem;
+    margin: 0 0 var(--space-8);
+  }
+
+  .cta-block__actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--space-4);
+    justify-content: center;
+  }
+</style>

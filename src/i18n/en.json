@@ -562,6 +562,129 @@
       "ctaWhatsapp": "Ask us on WhatsApp"
     }
   },
+  "about": {
+    "seoTitle": "About Us – DriveBuddies Driving School Zurich",
+    "seoDescription": "Meet Jakov and Mario Budimir – the Fahrlehrer behind DriveBuddies. 1,000+ satisfied customers, 90% first-attempt pass rate, modern vehicle fleet.",
+    "breadcrumb": "About us",
+    "story": {
+      "eyebrow": "The story of DriveBuddies and our vision",
+      "title": "Safe, confident and goal-oriented on the road",
+      "p1": "Our vision is to teach YOU to drive safely, confidently and with purpose.",
+      "p2": "Our driving school stands for modern methods, personal coaching and the extra Buddies-Drive – so YOU reach your goal faster and more relaxed. Our aim is to support new drivers through high-quality instruction with a modern vehicle fleet."
+    },
+    "instructors": {
+      "eyebrow": "Our team",
+      "title": "Dedicated Fahrlehrer – personal and experienced",
+      "intro": "Meet our dedicated team of Fahrlehrer who guide you to your licence with expertise, patience and individual coaching. Each instructor brings years of experience behind the wheel and tailors every lesson to your needs and learning pace.",
+      "items": [
+        {
+          "name": "Jakov Budimir",
+          "role": "Fahrlehrer",
+          "photo": "/instructors/jakov-budimir.avif",
+          "phone": "+41 79 274 71 48",
+          "email": "jakov@drivebuddies.ch"
+        },
+        {
+          "name": "Mario Budimir",
+          "role": "Fahrlehrer",
+          "photo": "/instructors/mario-budimir.avif",
+          "phone": "+41 76 586 13 17",
+          "email": "mario@drivebuddies.ch"
+        }
+      ]
+    },
+    "stats": {
+      "eyebrow": "Our statistics at a glance",
+      "title": "We are proud of our results",
+      "subtitle": "We are proud of our high pass rates and the satisfaction of our students.",
+      "items": [
+        { "value": "90%", "label": "First-attempt pass rate" },
+        { "value": "1,000+", "label": "Satisfied customers in the region" },
+        { "value": "500+", "label": "Students we train every year" }
+      ]
+    },
+    "vehicles": {
+      "eyebrow": "Our fleet",
+      "title": "Modern vehicle fleet",
+      "intro": "We rely on high-quality instruction with a modern vehicle fleet – so you can focus entirely on learning to drive.",
+      "items": [
+        {
+          "icon": "car",
+          "title": "Car – Cat. B",
+          "text": "Current compact cars with manual and automatic gearboxes, dual controls and extra mirrors for a safe learning experience."
+        },
+        {
+          "icon": "motorcycle",
+          "title": "Motorcycle – Cat. A / A1",
+          "text": "Modern motorcycle for A1 and A training, plus Grundkurs training bikes on our closed practice course."
+        },
+        {
+          "icon": "trailer",
+          "title": "Trailer – Cat. BE",
+          "text": "Compact trailer for manoeuvring and road exercises in Category BE – fully exam-compliant."
+        }
+      ]
+    },
+    "whyUs": {
+      "eyebrow": "Why DriveBuddies?",
+      "title": "The DriveBuddies difference",
+      "items": [
+        {
+          "title": "Modern methods",
+          "text": "We teach using up-to-date methods – clear, structured and to the point."
+        },
+        {
+          "title": "Personal coaching",
+          "text": "Every lesson is tailored to your individual needs and learning pace."
+        },
+        {
+          "title": "The Buddies-Drive",
+          "text": "Our special approach gets you to your goal faster and more relaxed – with motivation and genuine team spirit."
+        },
+        {
+          "title": "High pass rate",
+          "text": "Over 90% of our graduates pass their test at the first attempt."
+        }
+      ]
+    },
+    "reviews": {
+      "eyebrow": "Google reviews",
+      "title": "What our students say",
+      "ratingLabel": "out of 5 stars",
+      "reviewsLabel": "Google reviews",
+      "allReviewsCta": "Read all reviews on Google",
+      "allReviewsUrl": "https://www.google.com/maps/place/Drive+Buddies+Fahrschule/data=!4m2!3m1!1s0x0:0xaed93d82704b5f67",
+      "quotes": [
+        {
+          "author": "Alex Sgouros",
+          "rating": 5,
+          "text": "Jakov is a top instructor! Calm, competent and always motivating."
+        },
+        {
+          "author": "Burak Giray",
+          "rating": 5,
+          "text": "Great lessons with Mario! Very patient, friendly and always explains things clearly."
+        },
+        {
+          "author": "Sandro Pavlovic",
+          "rating": 5,
+          "text": "The instructors are very competent, patient and explain everything in a practical way."
+        },
+        {
+          "author": "Mathias Keller",
+          "rating": 5,
+          "text": "The instructors are super friendly, patient and explain everything in an understandable way."
+        }
+      ]
+    },
+    "cta": {
+      "title": "Book a lesson",
+      "text": "Ready to improve your driving skills? Book a lesson now and start your journey to your licence!",
+      "primary": "Sign up now",
+      "whatsapp": "Ask us on WhatsApp",
+      "whatsappMessage": "I'm interested in driver training at DriveBuddies. Please get in touch."
+    }
+  },
   "preise": {
     "seoTitle": "Driving School Prices Zurich – Lessons & Courses | DriveBuddies",
     "seoDescription": "Transparent pricing at DriveBuddies driving school Zurich: car & motorcycle lessons, Grundkurs, trailer package, VKU and bundle deals. All prices in CHF.",
