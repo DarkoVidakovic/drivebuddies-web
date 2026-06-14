@@ -723,5 +723,89 @@
     "ctaWhatsapp": "Ask us on WhatsApp",
     "ctaWhatsappMessage": "I'm interested in driver training at DriveBuddies and would like to make an appointment.",
     "disclaimer": "All prices in CHF, VAT included. Prices subject to change. Fees charged by the Strassenverkehrsamt (exam, Lernfahrausweis etc.) are not included."
+  },
+  "kontakt": {
+    "seoTitle": "Contact – DriveBuddies Driving School Zurich",
+    "seoDescription": "Contact DriveBuddies – your driving school in Zurich and Thalwil. Use the form, call us, WhatsApp or email – we reply promptly.",
+    "eyebrow": "Get in touch",
+    "title": "Write to us – we reply promptly",
+    "lead": "Whether you want to sign up, have a question or would like to book a lesson – use the form below or call us directly. We usually reply within 24 hours.",
+    "form": {
+      "heading": "Contact form",
+      "firstName": "First name",
+      "lastName": "Last name",
+      "email": "Email address",
+      "phone": "Phone number",
+      "service": "Service",
+      "servicePlaceholder": "Please select…",
+      "serviceOptions": [
+        "Car lessons (Cat. B)",
+        "Motorcycle lessons (Cat. A / A1)",
+        "Motorcycle Grundkurs",
+        "Trailer training (Cat. BE)",
+        "VKU – Verkehrskundeunterricht",
+        "Other / General enquiry"
+      ],
+      "message": "Message",
+      "messagePlaceholder": "Your question or request…",
+      "preferredDay": "Preferred day (optional)",
+      "preferredDayPlaceholder": "Any day",
+      "preferredDayOptions": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
+      "preferredTime": "Preferred time (optional)",
+      "preferredTimePlaceholder": "Any time",
+      "preferredTimeOptions": ["Morning (07–10)", "Late morning (10–12)", "Midday (12–14)", "Afternoon (14–17)", "Evening (17–20)"],
+      "upload": "Upload Lernfahrausweis (optional)",
+      "uploadHint": "JPG, PNG or PDF, max. 5 MB",
+      "consent": "I agree to the processing of my data in accordance with the privacy policy.",
+      "submit": "Send enquiry",
+      "sending": "Sending…",
+      "successTitle": "Message received!",
+      "successText": "Thank you for your enquiry. We will get back to you within 24 hours.",
+      "errorText": "Something went wrong. Please try again or contact us directly by email.",
+      "requiredHint": "* Required field"
+    },
+    "contact": {
+      "heading": "How to reach us",
+      "phone": "Phone",
+      "email": "Email",
+      "address": "Address",
+      "hours": "Availability",
+      "hoursValue": "Mon–Sat, 07–20",
+      "whatsappLabel": "Message us on WhatsApp",
+      "whatsappMessage": "Hi, I'm interested in driver training at DriveBuddies. Please get in touch."
+    },
+    "instructors": {
+      "heading": "Contact an instructor directly",
+      "items": [
+        {
+          "name": "Jakov Budimir",
+          "role": "Driving instructor",
+          "phone": "+41 79 274 71 48",
+          "whatsappNumber": "41792747148",
+          "whatsappMessage": "Hi Jakov, I'm interested in a driving lesson at DriveBuddies."
+        },
+        {
+          "name": "Mario Budimir",
+          "role": "Driving instructor",
+          "phone": "+41 76 586 13 17",
+          "whatsappNumber": "41765861317",
+          "whatsappMessage": "Hi Mario, I'm interested in a driving lesson at DriveBuddies."
+        }
+      ]
+    },
+    "meetingPoints": {
+      "heading": "Meeting points & map",
+      "lead": "We teach in Zurich, Thalwil and the surrounding area. Main meeting point is Thalwil – other start locations by arrangement.",
+      "items": [
+        { "name": "Main location Thalwil", "address": "Albisstrasse 1, 8800 Thalwil" },
+        { "name": "Zurich main station", "address": "Zürich HB, by arrangement" },
+        { "name": "Other locations", "address": "On request – call or write to us" }
+      ]
+    },
+    "floatingWhatsapp": {
+      "label": "WhatsApp",
+      "ariaLabel": "Contact us on WhatsApp",
+      "message": "Hi, I'm interested in driver training at DriveBuddies. Please get in touch."
+    }
   }
 }

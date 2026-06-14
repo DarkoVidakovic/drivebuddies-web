@@ -3,6 +3,8 @@ import '../styles/global.css';
 import Nav from '../components/Nav.astro';
 import Footer from '../components/Footer.astro';
 import SeoHead from '../components/SeoHead.astro';
+import Icon from '../components/ui/Icon.astro';
+import { useTranslations } from '../i18n/index.ts';
 import type { Locale } from '../i18n/index.ts';
 
 interface Props {
@@ -28,6 +30,12 @@ const {
   noindex,
   jsonLd,
 } = Astro.props;
+
+const t = useTranslations(locale);
+const waMessage = t.kontakt.floatingWhatsapp.message;
+const waAriaLabel = t.kontakt.floatingWhatsapp.ariaLabel;
+const waLabel = t.kontakt.floatingWhatsapp.label;
+const waHref = `https://wa.me/41765861317?text=${encodeURIComponent(waMessage)}`;
 
 const site = 'https://drivebuddies.ch';
 const resolvedCanonical = canonical ?? new URL(Astro.url.pathname, site).href;
@@ -56,6 +64,18 @@ const htmlLang = locale === 'en' ? 'en' : 'de-CH';
       <slot />
     </main>
     <Footer locale={locale} />
+
+    <!-- Floating WhatsApp button -->
+    <a
+      href={waHref}
+      class="wa-float"
+      target="_blank"
+      rel="noopener noreferrer"
+      aria-label={waAriaLabel}
+    >
+      <Icon name="whatsapp" class="wa-float__icon" />
+      <span class="wa-float__label">{waLabel}</span>
+    </a>
   </body>
 </html>
 
@@ -74,5 +94,60 @@ const htmlLang = locale === 'en' ? 'en' : 'de-CH';
   }
   .skip-link:focus {
     top: var(--space-4);
+  }
+
+  /* ── Floating WhatsApp button ─────────────────────────────────────────── */
+  .wa-float {
+    position: fixed;
+    bottom: var(--space-6);
+    right: var(--space-6);
+    z-index: 50;
+    display: inline-flex;
+    align-items: center;
+    gap: var(--space-2);
+    background: #25d366;
+    color: #ffffff;
+    border-radius: var(--radius-full);
+    padding: var(--space-3) var(--space-5);
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 0.9375rem;
+    box-shadow: var(--shadow-lg);
+    transition: background 0.15s, transform 0.15s, box-shadow 0.15s;
+  }
+
+  .wa-float:hover,
+  .wa-float:focus-visible {
+    background: #1aab52;
+    transform: translateY(-2px);
+    box-shadow: 0 12px 32px rgba(37,211,102,.35);
+  }
+
+  .wa-float:focus-visible {
+    outline: 3px solid #ffffff;
+    outline-offset: 3px;
+  }
+
+  .wa-float__icon {
+    width: 22px;
+    height: 22px;
+    flex-shrink: 0;
+  }
+
+  /* On mobile: icon-only pill, label hidden */
+  @media (max-width: 639px) {
+    .wa-float {
+      padding: var(--space-4);
+      border-radius: var(--radius-full);
+    }
+
+    .wa-float__label {
+      display: none;
+    }
+
+    .wa-float__icon {
+      width: 26px;
+      height: 26px;
+    }
   }
 </style>

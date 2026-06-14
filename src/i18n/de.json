@@ -723,5 +723,89 @@
     "ctaWhatsapp": "Per WhatsApp anfragen",
     "ctaWhatsappMessage": "Ich interessiere mich für die Fahrausbildung bei DriveBuddies und möchte einen Termin vereinbaren.",
     "disclaimer": "Alle Preise in CHF, inkl. MwSt. Preisänderungen vorbehalten. Gebühren des Strassenverkehrsamts (Prüfung, Lernfahrausweis etc.) sind nicht inbegriffen."
+  },
+  "kontakt": {
+    "seoTitle": "Kontakt – DriveBuddies Fahrschule Zürich",
+    "seoDescription": "Kontaktiere DriveBuddies – deine Fahrschule in Zürich und Thalwil. Formular, Telefon, WhatsApp oder E-Mail – wir antworten prompt.",
+    "eyebrow": "Kontakt aufnehmen",
+    "title": "Schreib uns – wir melden uns prompt",
+    "lead": "Ob Anmeldung, Frage oder Terminwunsch – nutze das Formular oder ruf uns direkt an. Wir antworten in der Regel innerhalb von 24 Stunden.",
+    "form": {
+      "heading": "Kontaktformular",
+      "firstName": "Vorname",
+      "lastName": "Nachname",
+      "email": "E-Mail-Adresse",
+      "phone": "Telefonnummer",
+      "service": "Dienstleistung",
+      "servicePlaceholder": "Bitte wählen…",
+      "serviceOptions": [
+        "Auto-Fahrstunden (Kat. B)",
+        "Motorrad-Fahrstunden (Kat. A / A1)",
+        "Motorrad-Grundkurs",
+        "Anhänger-Ausbildung (Kat. BE)",
+        "VKU – Verkehrskundeunterricht",
+        "Andere / Allgemeine Anfrage"
+      ],
+      "message": "Nachricht",
+      "messagePlaceholder": "Deine Frage oder dein Anliegen…",
+      "preferredDay": "Bevorzugter Tag (optional)",
+      "preferredDayPlaceholder": "Beliebig",
+      "preferredDayOptions": ["Montag", "Dienstag", "Mittwoch", "Donnerstag", "Freitag", "Samstag"],
+      "preferredTime": "Bevorzugte Uhrzeit (optional)",
+      "preferredTimePlaceholder": "Beliebig",
+      "preferredTimeOptions": ["Morgens (07–10 Uhr)", "Vormittags (10–12 Uhr)", "Mittags (12–14 Uhr)", "Nachmittags (14–17 Uhr)", "Abends (17–20 Uhr)"],
+      "upload": "Lernfahrausweis hochladen (optional)",
+      "uploadHint": "JPG, PNG oder PDF, max. 5 MB",
+      "consent": "Ich stimme der Verarbeitung meiner Daten gemäss der Datenschutzerklärung zu.",
+      "submit": "Anfrage senden",
+      "sending": "Wird gesendet…",
+      "successTitle": "Nachricht erhalten!",
+      "successText": "Vielen Dank für deine Anfrage. Wir melden uns innerhalb von 24 Stunden.",
+      "errorText": "Beim Senden ist ein Fehler aufgetreten. Bitte versuch es erneut oder schreib uns direkt per E-Mail.",
+      "requiredHint": "* Pflichtfeld"
+    },
+    "contact": {
+      "heading": "So erreichst du uns",
+      "phone": "Telefon",
+      "email": "E-Mail",
+      "address": "Adresse",
+      "hours": "Erreichbarkeit",
+      "hoursValue": "Mo–Sa, 07–20 Uhr",
+      "whatsappLabel": "WhatsApp schreiben",
+      "whatsappMessage": "Hallo, ich interessiere mich für die Fahrausbildung bei DriveBuddies. Bitte nehmt Kontakt mit mir auf."
+    },
+    "instructors": {
+      "heading": "Direkt zum Fahrlehrer",
+      "items": [
+        {
+          "name": "Jakov Budimir",
+          "role": "Fahrlehrer",
+          "phone": "+41 79 274 71 48",
+          "whatsappNumber": "41792747148",
+          "whatsappMessage": "Hallo Jakov, ich interessiere mich für eine Fahrstunde bei DriveBuddies."
+        },
+        {
+          "name": "Mario Budimir",
+          "role": "Fahrlehrer",
+          "phone": "+41 76 586 13 17",
+          "whatsappNumber": "41765861317",
+          "whatsappMessage": "Hallo Mario, ich interessiere mich für eine Fahrstunde bei DriveBuddies."
+        }
+      ]
+    },
+    "meetingPoints": {
+      "heading": "Treffpunkte & Karte",
+      "lead": "Wir fahren in Zürich, Thalwil und der Agglomeration. Haupttreffpunkt ist Thalwil – weitere Startorte nach Absprache.",
+      "items": [
+        { "name": "Hauptstandort Thalwil", "address": "Albisstrasse 1, 8800 Thalwil" },
+        { "name": "Zürich Hauptbahnhof", "address": "Zürich HB, nach Absprache" },
+        { "name": "Weitere Orte", "address": "Auf Anfrage – ruf uns an oder schreib uns" }
+      ]
+    },
+    "floatingWhatsapp": {
+      "label": "WhatsApp",
+      "ariaLabel": "Per WhatsApp anfragen",
+      "message": "Hallo, ich interessiere mich für die Fahrausbildung bei DriveBuddies. Bitte nehmt Kontakt mit mir auf."
+    }
   }
 }
