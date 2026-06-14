@@ -1,0 +1,147 @@
+---
+import { getCollection } from 'astro:content';
+import Layout from '../../../layouts/Layout.astro';
+import PostCard from '../../../components/blog/PostCard.astro';
+
+export async function getStaticPaths() {
+  const posts = await getCollection('blog', ({ data }) => data.lang === 'de' && !data.draft);
+  const tags = [...new Set(posts.flatMap((p) => p.data.tags))];
+  return tags.map((tag) => ({
+    params: { tag },
+    props: { tag, posts: posts.filter((p) => p.data.tags.includes(tag)) },
+  }));
+}
+
+const { tag, posts } = Astro.props;
+const sortedPosts = posts.sort((a, b) => b.data.date.getTime() - a.data.date.getTime());
+
+const site = 'https://drivebuddies.ch';
+const canonical = `${site}/blog/tags/${encodeURIComponent(tag)}/`;
+const title = `${tag} – Blog | DriveBuddies`;
+const description = `Alle Beiträge zum Thema „${tag}" im DriveBuddies-Blog.`;
+
+const breadcrumbSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: site },
+    { '@type': 'ListItem', position: 2, name: 'Blog', item: `${site}/blog/` },
+    { '@type': 'ListItem', position: 3, name: tag, item: canonical },
+  ],
+};
+---
+
+<Layout
+  title={title}
+  description={description}
+  canonical={canonical}
+  hreflangDe={canonical}
+  jsonLd={breadcrumbSchema}
+>
+  <section class="tag-hero">
+    <div class="tag-hero__inner">
+      <nav aria-label="Breadcrumb" class="tag-hero__breadcrumb">
+        <ol>
+          <li><a href="/">Home</a></li>
+          <li aria-hidden="true">›</li>
+          <li><a href="/blog/">Blog</a></li>
+          <li aria-hidden="true">›</li>
+          <li aria-current="page">{tag}</li>
+        </ol>
+      </nav>
+      <p class="tag-hero__eyebrow">Thema</p>
+      <h1 class="tag-hero__title">{tag}</h1>
+      <p class="tag-hero__count">{sortedPosts.length} Beitrag{sortedPosts.length !== 1 ? 'e' : ''}</p>
+    </div>
+  </section>
+
+  <div class="tag-content">
+    <div class="post-grid">
+      {sortedPosts.map((post) => <PostCard post={post} lang="de" />)}
+    </div>
+    <div class="tag-back">
+      <a href="/blog/" class="tag-back__link">← Alle Beiträge</a>
+    </div>
+  </div>
+</Layout>
+
+<style>
+  .tag-hero {
+    background: var(--color-surface-alt);
+    border-bottom: 1px solid var(--color-border);
+    padding: var(--space-12) 0 var(--space-10);
+  }
+
+  .tag-hero__inner {
+    max-width: 760px;
+    margin: 0 auto;
+    padding: 0 var(--space-6);
+  }
+
+  .tag-hero__breadcrumb ol {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: var(--space-2);
+    list-style: none;
+    padding: 0;
+    margin: 0 0 var(--space-6);
+    font-size: 0.875rem;
+    color: var(--color-text-muted);
+  }
+
+  .tag-hero__breadcrumb a {
+    color: var(--color-primary);
+    text-decoration: none;
+  }
+
+  .tag-hero__breadcrumb a:hover {
+    text-decoration: underline;
+  }
+
+  .tag-hero__eyebrow {
+    font-size: 0.875rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: var(--color-primary);
+    margin: 0 0 var(--space-2);
+  }
+
+  .tag-hero__title {
+    font-size: clamp(1.75rem, 4vw, 2.5rem);
+    font-weight: 800;
+    margin: 0 0 var(--space-2);
+    color: var(--color-text);
+  }
+
+  .tag-hero__count {
+    font-size: 0.9375rem;
+    color: var(--color-text-muted);
+    margin: 0;
+  }
+
+  .tag-content {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: var(--space-12) var(--space-6) var(--space-16);
+  }
+
+  .post-grid {
+    display: grid;
+    gap: var(--space-8);
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    margin-bottom: var(--space-10);
+  }
+
+  .tag-back__link {
+    color: var(--color-primary);
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 0.9375rem;
+  }
+
+  .tag-back__link:hover {
+    text-decoration: underline;
+  }
+</style>

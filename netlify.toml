@@ -17,3 +17,22 @@
   from   = "/sitemap.xml"
   to     = "/sitemap-index.xml"
   status = 200
+
+# ── Blog 301s: legacy Webflow slugs → new Astro slugs ──────────────────────
+[[redirects]]
+  from   = "/blog/an-sich-selber-arbeiten---bis-zum-status-gute-fahrerin-guter-fahrer"
+  to     = "/blog/an-sich-selber-arbeiten/"
+  status = 301
+  force  = true
+
+[[redirects]]
+  from   = "/blog/haufige-fehler-in-der-fahrprufung---und-wie-du-sie-vermeidest"
+  to     = "/blog/haufige-fehler-fahrpruefung/"
+  status = 301
+  force  = true
+
+[[redirects]]
+  from   = "/blog/5-tipps-wie-du-entspannt-durch-die-fuhrerprufung-kommst"
+  to     = "/blog/5-tipps-fuehrerpruefung/"
+  status = 301
+  force  = true

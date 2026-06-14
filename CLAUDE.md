@@ -76,9 +76,9 @@ Mirror every DE route under `/en/<slug>/`. E.g. `/en/courses/`, `/en/courses/vku
 
 | Old URL | New URL | Code |
 |---------|---------|------|
-| TBD | TBD | 301 |
-
-(Populate before launch from the existing site audit.)
+| `/blog/an-sich-selber-arbeiten---bis-zum-status-gute-fahrerin-guter-fahrer` | `/blog/an-sich-selber-arbeiten/` | 301 |
+| `/blog/haufige-fehler-in-der-fahrprufung---und-wie-du-sie-vermeidest` | `/blog/haufige-fehler-fahrpruefung/` | 301 |
+| `/blog/5-tipps-wie-du-entspannt-durch-die-fuhrerprufung-kommst` | `/blog/5-tipps-fuehrerpruefung/` | 301 |
 
 ---
 
