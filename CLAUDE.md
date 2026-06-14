@@ -47,38 +47,74 @@ All components **must** reference these tokens. Never hard-code hex values or pi
 
 ## 2. Information Architecture & Slug / Redirect Map
 
+> **Source of truth:** the actual built routes and their DE↔EN slug pairs live
+> in `src/i18n/routes.ts` (`ROUTES`). Nav, Footer, the language switcher,
+> hreflang, OG-image selection and the sitemap all derive from it. Keep this
+> table and `routes.ts` in sync.
+
 ### DE routes (default locale, no prefix)
 
 | Page | Slug | JSON-LD type |
 |------|------|-------------|
-| Home | `/` | `WebSite` + `Organization` |
-| Kursübersicht | `/kurse/` | `ItemList` |
-| Grundkurs (Theorie) | `/kurse/grundkurs-theorie/` | `Course` |
-| Grundkurs (Praxis) | `/kurse/grundkurs-praxis/` | `Course` |
-| VKU | `/kurse/vku/` | `Course` |
-| Nothelfer | `/kurse/nothelfer/` | `Course` |
-| Lernfahrausweis (Lernfahr) | `/lernfahrausweis/` | `HowTo` |
-| Führerausweis | `/fuehrerausweis/` | `HowTo` |
-| 2-Phasen / WAB | `/2-phasen-ausbildung/` | `HowTo` |
-| Über uns | `/ueber-uns/` | `AboutPage` |
+| Home | `/` | `WebSite` + `Organization`(+`AggregateRating`) + `FAQPage` |
+| Dienstleistungen (Übersicht) | `/dienstleistungen/` | `ItemList` |
+| — Auto Kat. B | `/dienstleistungen/auto/` | `Course` |
+| — Motorrad Kat. A | `/dienstleistungen/motorrad/` | `Course` |
+| — Anhänger Kat. BE | `/dienstleistungen/anhaenger/` | `Course` |
+| Kurse (Übersicht) | `/kurse/` | `ItemList` |
+| VKU | `/vku/` | `BreadcrumbList` + `Course` + `FAQPage` |
+| Nothelferkurs | `/nothelferkurs/` | `BreadcrumbList` + `FAQPage` |
+| Theorieprüfung | `/theoriepruefung/` | `BreadcrumbList` + `FAQPage` |
+| Lernfahrausweis | `/lernfahrausweis/` | `BreadcrumbList` + `FAQPage` |
+| Führerausweis | `/fuehrerausweis/` | `BreadcrumbList` + `FAQPage` |
+| Der Weg zum Führerschein (Hub) | `/fuehrerschein/` | `BreadcrumbList` + `HowTo` + `FAQPage` |
+| 2-Phasen / WAB | `/2-phasen-ausbildung/` | `BreadcrumbList` + `FAQPage` |
+| Über uns | `/ueber-uns/` | `AboutPage` + `AggregateRating` |
+| Preise | `/preise/` | `Offer` list |
 | Kontakt | `/kontakt/` | `ContactPage` |
 | Blog | `/blog/` | `Blog` |
 | Blog-Post | `/blog/[slug]/` | `BlogPosting` |
+| Blog-Tag (thin) | `/blog/tags/[tag]/` | `noindex`, excluded from sitemap |
 | Impressum | `/impressum/` | — |
 | Datenschutz | `/datenschutz/` | — |
-| 404 | — | — |
+| 404 | — | `noindex` |
 
-### EN routes (`/en/` prefix)
+> Note: M5 consolidated the original separate "Grundkurs" course pages into the
+> flat structure above and the `/fuehrerschein/` journey hub. The licence-step
+> pages (`/lernfahrausweis/`, `/fuehrerausweis/`) are informational pages using
+> `BreadcrumbList`+`FAQPage`; the single canonical `HowTo` lives on the hub.
 
-Mirror every DE route under `/en/<slug>/`. E.g. `/en/courses/`, `/en/courses/vku/`, `/en/blog/[slug]/`.
+### EN routes (`/en/` prefix, translated slugs)
+
+EN slugs are **translated**, not prefixed mirrors. Full map in `routes.ts`:
+
+| DE | EN |
+|----|----|
+| `/dienstleistungen/` (`/auto/` `/motorrad/` `/anhaenger/`) | `/en/services/` (`/car/` `/motorcycle/` `/trailer/`) |
+| `/kurse/` | `/en/courses/` |
+| `/vku/` | `/en/vku/` |
+| `/nothelferkurs/` | `/en/first-aid-course/` |
+| `/theoriepruefung/` | `/en/theory-exam/` |
+| `/lernfahrausweis/` | `/en/learner-licence/` |
+| `/fuehrerausweis/` | `/en/driving-licence/` |
+| `/fuehrerschein/` | `/en/how-to-get-swiss-licence/` |
+| `/2-phasen-ausbildung/` | `/en/two-phase-training/` |
+| `/ueber-uns/` | `/en/about/` |
+| `/preise/` | `/en/prices/` |
+| `/kontakt/` | `/en/contact/` |
+| `/blog/` (+`[slug]`) | `/en/blog/` (+ same `[slug]`) |
+| `/impressum/` `/datenschutz/` | `/en/impressum/` `/en/datenschutz/` |
 
 ### Legacy / redirect map
+
+Configured in `netlify.toml`. See `docs/SEO-LAUNCH.md` for the full status.
 
 | Old URL | New URL | Code |
 |---------|---------|------|
 | `/blog/an-sich-selber-arbeiten---bis-zum-status-gute-fahrerin-guter-fahrer` | `/blog/an-sich-selber-arbeiten/` | 301 |
 | `/blog/haufige-fehler-in-der-fahrprufung---und-wie-du-sie-vermeidest` | `/blog/haufige-fehler-fahrpruefung/` | 301 |
 | `/blog/5-tipps-wie-du-entspannt-durch-die-fuhrerprufung-kommst` | `/blog/5-tipps-fuehrerpruefung/` | 301 |
+| naive cross-locale paths (e.g. `/en/kontakt/`, `/about/`, `/services/car/`) | canonical locale page | 301 (×28) |
 
 ---
 

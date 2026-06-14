@@ -117,6 +117,9 @@ const allSchemas = [localBusinessSchema, ...extraSchemas];
 <meta property="og:image:width" content="1200" />
 <meta property="og:image:height" content="630" />
 <meta property="og:locale" content={locale === 'en' ? 'en_US' : 'de_CH'} />
+{(hreflangDe || hreflangEn) && (
+  <meta property="og:locale:alternate" content={locale === 'en' ? 'de_CH' : 'en_US'} />
+)}
 
 <!-- Twitter Card -->
 <meta name="twitter:card" content="summary_large_image" />
