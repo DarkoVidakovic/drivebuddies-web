@@ -104,16 +104,26 @@ const htmlLang = locale === 'en' ? 'en' : 'de-CH';
     z-index: 50;
     display: inline-flex;
     align-items: center;
-    gap: var(--space-2);
+    gap: var(--space-3);
     background: #25d366;
     color: #ffffff;
     border-radius: var(--radius-full);
-    padding: var(--space-3) var(--space-5);
+    padding: var(--space-4) var(--space-6);
     text-decoration: none;
     font-weight: 700;
     font-size: 0.9375rem;
     box-shadow: var(--shadow-lg);
-    transition: background 0.15s, transform 0.15s, box-shadow 0.15s;
+    /* hidden by default; JS reveals it after scroll or immediately on non-home pages */
+    opacity: 0;
+    pointer-events: none;
+    transform: translateY(8px);
+    transition: opacity 0.25s ease, transform 0.25s ease, background 0.15s, box-shadow 0.15s;
+  }
+
+  .wa-float.is-visible {
+    opacity: 1;
+    pointer-events: auto;
+    transform: translateY(0);
   }
 
   .wa-float:hover,
@@ -134,11 +144,10 @@ const htmlLang = locale === 'en' ? 'en' : 'de-CH';
     flex-shrink: 0;
   }
 
-  /* On mobile: icon-only pill, label hidden */
+  /* On mobile: icon-only circle, label hidden */
   @media (max-width: 639px) {
     .wa-float {
       padding: var(--space-4);
-      border-radius: var(--radius-full);
     }
 
     .wa-float__label {
@@ -151,3 +160,23 @@ const htmlLang = locale === 'en' ? 'en' : 'de-CH';
     }
   }
 </style>
+
+<script>
+  const btn = document.querySelector<HTMLAnchorElement>('.wa-float');
+  if (btn) {
+    const sentinel = document.querySelector('[data-wa-hide-sentinel]');
+    if (sentinel) {
+      // Home page: reveal once the hero scrolls out of view
+      const obs = new IntersectionObserver(
+        ([entry]) => {
+          btn.classList.toggle('is-visible', !entry.isIntersecting);
+        },
+        { threshold: 0 }
+      );
+      obs.observe(sentinel);
+    } else {
+      // All other pages: show immediately
+      btn.classList.add('is-visible');
+    }
+  }
+</script>
