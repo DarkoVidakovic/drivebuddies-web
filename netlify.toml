@@ -36,3 +36,175 @@
   to     = "/blog/5-tipps-fuehrerpruefung/"
   status = 301
   force  = true
+
+# ── Legacy cross-locale slug 301s ───────────────────────────────────────────
+# The pre-M10 site linked to naive prefix-swapped paths (e.g. /en/kontakt/,
+# /about/) that 404'd because DE/EN slugs diverge. Redirect them to canonicals.
+[[redirects]]
+  from   = "/en/dienstleistungen/"
+  to     = "/en/services/"
+  status = 301
+  force  = true
+
+[[redirects]]
+  from   = "/services/"
+  to     = "/dienstleistungen/"
+  status = 301
+  force  = true
+
+[[redirects]]
+  from   = "/en/dienstleistungen/auto/"
+  to     = "/en/services/car/"
+  status = 301
+  force  = true
+
+[[redirects]]
+  from   = "/services/car/"
+  to     = "/dienstleistungen/auto/"
+  status = 301
+  force  = true
+
+[[redirects]]
+  from   = "/en/dienstleistungen/motorrad/"
+  to     = "/en/services/motorcycle/"
+  status = 301
+  force  = true
+
+[[redirects]]
+  from   = "/services/motorcycle/"
+  to     = "/dienstleistungen/motorrad/"
+  status = 301
+  force  = true
+
+[[redirects]]
+  from   = "/en/dienstleistungen/anhaenger/"
+  to     = "/en/services/trailer/"
+  status = 301
+  force  = true
+
+[[redirects]]
+  from   = "/services/trailer/"
+  to     = "/dienstleistungen/anhaenger/"
+  status = 301
+  force  = true
+
+[[redirects]]
+  from   = "/en/kurse/"
+  to     = "/en/courses/"
+  status = 301
+  force  = true
+
+[[redirects]]
+  from   = "/courses/"
+  to     = "/kurse/"
+  status = 301
+  force  = true
+
+[[redirects]]
+  from   = "/en/nothelferkurs/"
+  to     = "/en/first-aid-course/"
+  status = 301
+  force  = true
+
+[[redirects]]
+  from   = "/first-aid-course/"
+  to     = "/nothelferkurs/"
+  status = 301
+  force  = true
+
+[[redirects]]
+  from   = "/en/theoriepruefung/"
+  to     = "/en/theory-exam/"
+  status = 301
+  force  = true
+
+[[redirects]]
+  from   = "/theory-exam/"
+  to     = "/theoriepruefung/"
+  status = 301
+  force  = true
+
+[[redirects]]
+  from   = "/en/fuehrerschein/"
+  to     = "/en/how-to-get-swiss-licence/"
+  status = 301
+  force  = true
+
+[[redirects]]
+  from   = "/how-to-get-swiss-licence/"
+  to     = "/fuehrerschein/"
+  status = 301
+  force  = true
+
+[[redirects]]
+  from   = "/en/lernfahrausweis/"
+  to     = "/en/learner-licence/"
+  status = 301
+  force  = true
+
+[[redirects]]
+  from   = "/learner-licence/"
+  to     = "/lernfahrausweis/"
+  status = 301
+  force  = true
+
+[[redirects]]
+  from   = "/en/fuehrerausweis/"
+  to     = "/en/driving-licence/"
+  status = 301
+  force  = true
+
+[[redirects]]
+  from   = "/driving-licence/"
+  to     = "/fuehrerausweis/"
+  status = 301
+  force  = true
+
+[[redirects]]
+  from   = "/en/2-phasen-ausbildung/"
+  to     = "/en/two-phase-training/"
+  status = 301
+  force  = true
+
+[[redirects]]
+  from   = "/two-phase-training/"
+  to     = "/2-phasen-ausbildung/"
+  status = 301
+  force  = true
+
+[[redirects]]
+  from   = "/en/ueber-uns/"
+  to     = "/en/about/"
+  status = 301
+  force  = true
+
+[[redirects]]
+  from   = "/about/"
+  to     = "/ueber-uns/"
+  status = 301
+  force  = true
+
+[[redirects]]
+  from   = "/en/preise/"
+  to     = "/en/prices/"
+  status = 301
+  force  = true
+
+[[redirects]]
+  from   = "/prices/"
+  to     = "/preise/"
+  status = 301
+  force  = true
+
+[[redirects]]
+  from   = "/en/kontakt/"
+  to     = "/en/contact/"
+  status = 301
+  force  = true
+
+[[redirects]]
+  from   = "/contact/"
+  to     = "/kontakt/"
+  status = 301
+  force  = true
+
