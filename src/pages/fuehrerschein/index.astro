@@ -1,0 +1,248 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import Section from '../../components/ui/Section.astro';
+import Button from '../../components/ui/Button.astro';
+import WhatsAppButton from '../../components/ui/WhatsAppButton.astro';
+import { useTranslations } from '../../i18n/index.ts';
+
+const locale = 'de';
+const t = useTranslations(locale);
+const p = t.fuehrerschein;
+const site = 'https://drivebuddies.ch';
+
+const breadcrumbSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Startseite', item: `${site}/` },
+    { '@type': 'ListItem', position: 2, name: 'Der Weg zum Führerschein', item: `${site}/fuehrerschein/` },
+  ],
+};
+
+const howToSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'HowTo',
+  name: 'Führerausweis Schweiz beantragen – Schritt für Schritt',
+  description: p.lead,
+  inLanguage: 'de-CH',
+  totalTime: 'P6M',
+  supply: [
+    { '@type': 'HowToSupply', name: 'Nothelferzertifikat' },
+    { '@type': 'HowToSupply', name: 'Sehtest-Zertifikat' },
+    { '@type': 'HowToSupply', name: 'Identitätsausweis / Pass' },
+    { '@type': 'HowToSupply', name: 'Passfoto' },
+  ],
+  step: p.steps.map((s, i) => ({
+    '@type': 'HowToStep',
+    position: i + 1,
+    name: s.title,
+    text: s.text,
+    url: `${site}${s.href}`,
+  })),
+};
+
+const faqSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'FAQPage',
+  mainEntity: p.faq.items.map((item) => ({
+    '@type': 'Question',
+    name: item.q,
+    acceptedAnswer: { '@type': 'Answer', text: item.a },
+  })),
+};
+---
+
+<Layout
+  title={p.seoTitle}
+  description={p.seoDescription}
+  locale={locale}
+  hreflangDe={`${site}/fuehrerschein/`}
+  hreflangEn={`${site}/en/how-to-get-swiss-licence/`}
+  jsonLd={[breadcrumbSchema, howToSchema, faqSchema]}
+>
+  <!-- Breadcrumb -->
+  <Section>
+    <nav class="breadcrumb" aria-label="Breadcrumb">
+      <ol class="breadcrumb__list">
+        <li><a href="/">{p.breadcrumbHome}</a></li>
+        <li aria-current="page">Der Weg zum Führerschein</li>
+      </ol>
+    </nav>
+
+    <div class="hub__head">
+      <span class="hub__eyebrow">{p.eyebrow}</span>
+      <h1 class="hub__title">{p.title}</h1>
+      <p class="hub__lead">{p.lead}</p>
+    </div>
+  </Section>
+
+  <!-- Timeline -->
+  <Section variant="alt">
+    <h2 class="timeline__heading">{p.timelineTitle}</h2>
+    <ol class="timeline" role="list">
+      {p.steps.map((step) => (
+        <li class="timeline__item">
+          <div class="timeline__marker" aria-hidden="true">
+            <span class="timeline__num">{step.num}</span>
+          </div>
+          <div class="timeline__body">
+            <h3 class="timeline__title">{step.title}</h3>
+            <p class="timeline__text">{step.text}</p>
+            <a href={step.href} class="timeline__link">
+              {step.linkLabel}
+              <svg viewBox="0 0 16 16" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M3 8h10M9 4l4 4-4 4"/></svg>
+            </a>
+          </div>
+        </li>
+      ))}
+    </ol>
+  </Section>
+
+  <!-- FAQ -->
+  <Section>
+    <div class="faq">
+      <span class="faq__eyebrow">{p.faq.eyebrow}</span>
+      <h2 class="faq__title">{p.faq.title}</h2>
+      <dl class="faq__list">
+        {p.faq.items.map((item) => (
+          <div class="faq__item">
+            <dt class="faq__question">{item.q}</dt>
+            <dd class="faq__answer">{item.a}</dd>
+          </div>
+        ))}
+      </dl>
+    </div>
+  </Section>
+
+  <!-- CTA -->
+  <Section variant="alt">
+    <div class="cta-band">
+      <h2 class="cta-band__title">{p.ctaTitle}</h2>
+      <p class="cta-band__text">{p.ctaText}</p>
+      <div class="cta-band__actions">
+        <Button href="/kontakt/" variant="primary" size="lg">{p.ctaPrimary}</Button>
+        <WhatsAppButton label={p.ctaWhatsapp} message={p.ctaWhatsappMessage} />
+      </div>
+    </div>
+  </Section>
+</Layout>
+
+<style>
+  .breadcrumb { margin-bottom: var(--space-10); }
+  .breadcrumb__list {
+    list-style: none; margin: 0; padding: 0;
+    display: flex; flex-wrap: wrap; gap: var(--space-2);
+    font-size: 0.875rem; color: var(--color-text-muted);
+  }
+  .breadcrumb__list li + li::before { content: '/'; margin-right: var(--space-2); }
+  .breadcrumb__list a { color: var(--color-primary); text-decoration: none; }
+  .breadcrumb__list a:hover { text-decoration: underline; }
+
+  .hub__head { max-width: 72ch; }
+  .hub__eyebrow {
+    display: inline-block; font-size: 0.875rem; font-weight: 600;
+    letter-spacing: 0.08em; text-transform: uppercase;
+    color: var(--color-primary); margin-bottom: var(--space-3);
+  }
+  .hub__title {
+    font-size: clamp(2rem, 4vw, 3rem); font-weight: 800;
+    line-height: 1.15; margin-bottom: var(--space-6);
+  }
+  .hub__lead {
+    font-size: 1.125rem; color: var(--color-text-muted); line-height: 1.7; margin: 0;
+  }
+
+  .timeline__heading {
+    font-size: clamp(1.5rem, 2.5vw, 2rem); font-weight: 700;
+    margin-bottom: var(--space-12);
+  }
+
+  .timeline {
+    list-style: none; margin: 0; padding: 0;
+    display: flex; flex-direction: column; gap: 0;
+  }
+
+  .timeline__item {
+    display: grid;
+    grid-template-columns: 56px 1fr;
+    gap: var(--space-6);
+    position: relative;
+  }
+
+  .timeline__item:not(:last-child)::before {
+    content: '';
+    position: absolute;
+    left: 27px;
+    top: 56px;
+    bottom: 0;
+    width: 2px;
+    background: var(--color-border);
+  }
+
+  .timeline__marker {
+    display: flex; align-items: flex-start; justify-content: center;
+    padding-top: var(--space-1);
+  }
+
+  .timeline__num {
+    display: flex; align-items: center; justify-content: center;
+    width: 56px; height: 56px; flex-shrink: 0;
+    border-radius: 50%;
+    background: var(--color-primary);
+    color: var(--color-surface);
+    font-size: 1.25rem; font-weight: 700;
+  }
+
+  .timeline__body {
+    padding-bottom: var(--space-12);
+  }
+
+  .timeline__title {
+    font-size: 1.25rem; font-weight: 700;
+    margin-bottom: var(--space-3); margin-top: var(--space-2);
+  }
+
+  .timeline__text {
+    color: var(--color-text-muted); line-height: 1.65;
+    margin-bottom: var(--space-4);
+  }
+
+  .timeline__link {
+    display: inline-flex; align-items: center; gap: var(--space-2);
+    color: var(--color-primary); font-weight: 600; font-size: 0.9375rem;
+    text-decoration: none;
+  }
+  .timeline__link:hover { text-decoration: underline; }
+
+  .faq { max-width: 72ch; margin: 0 auto; }
+  .faq__eyebrow {
+    display: inline-block; font-size: 0.875rem; font-weight: 600;
+    letter-spacing: 0.08em; text-transform: uppercase;
+    color: var(--color-primary); margin-bottom: var(--space-3);
+  }
+  .faq__title {
+    font-size: clamp(1.5rem, 2.5vw, 2rem); font-weight: 700;
+    margin-bottom: var(--space-10);
+  }
+  .faq__list { display: flex; flex-direction: column; gap: var(--space-6); }
+  .faq__item {
+    border-left: 3px solid var(--color-primary);
+    padding-left: var(--space-6);
+  }
+  .faq__question { font-size: 1rem; font-weight: 700; margin-bottom: var(--space-2); }
+  .faq__answer { color: var(--color-text-muted); line-height: 1.65; margin: 0; }
+
+  .cta-band {
+    display: flex; flex-direction: column;
+    align-items: center; gap: var(--space-6); text-align: center;
+  }
+  .cta-band__title {
+    font-size: clamp(1.5rem, 2.5vw, 2rem); font-weight: 700; margin: 0;
+  }
+  .cta-band__text {
+    font-size: 1.0625rem; color: var(--color-text-muted); margin: 0; max-width: 56ch;
+  }
+  .cta-band__actions {
+    display: flex; flex-wrap: wrap; gap: var(--space-4); justify-content: center;
+  }
+</style>

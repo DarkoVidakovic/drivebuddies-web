@@ -109,6 +109,336 @@
       "ctaWhatsappMessage": "Ich interessiere mich für die Anhänger-Ausbildung (Kat. BE) bei DriveBuddies. Bitte nehmt Kontakt mit mir auf."
     }
   },
+  "fuehrerschein": {
+    "seoTitle": "Führerschein Schweiz – So läuft der Weg zum Führerausweis ab",
+    "seoDescription": "Alle Schritte zum Schweizer Führerausweis Kat. B: Nothelferkurs, Sehtest, Lernfahrausweis, Theorieprüfung, VKU, Fahrprüfung und 2-Phasen-Ausbildung.",
+    "breadcrumbHome": "Startseite",
+    "eyebrow": "Dein Weg zum Führerausweis",
+    "title": "Der Weg zum Führerschein in der Schweiz",
+    "lead": "Vom Nothelferkurs bis zum definitiven Führerausweis – hier findest du alle Schritte der Schweizer Fahrausbildung kompakt erklärt. DriveBuddies begleitet dich durch jede Phase.",
+    "timelineTitle": "Die 7 Phasen der Fahrausbildung",
+    "steps": [
+      {
+        "num": "1",
+        "title": "Nothelferkurs",
+        "text": "Bevor du den Lernfahrausweis beantragst, musst du einen Nothelferkurs (ca. 10 Std.) absolvieren. Das Zertifikat ist unbefristet gültig.",
+        "href": "/nothelferkurs/",
+        "linkLabel": "Zum Nothelferkurs"
+      },
+      {
+        "num": "2",
+        "title": "Sehtest & Lernfahrausweis",
+        "text": "Mit dem Nothelferzertifikat und einem gültigen Sehtest beantragst du den Lernfahrausweis beim kantonalen Strassenverkehrsamt. Mindestalter: 17 Jahre.",
+        "href": "/lernfahrausweis/",
+        "linkLabel": "Lernfahrausweis beantragen"
+      },
+      {
+        "num": "3",
+        "title": "Theorieprüfung",
+        "text": "Die Theorieprüfung besteht aus 70 Fragen am Computer. Mindestpunktzahl: 57/70. Du kannst sie jederzeit während der Ausbildung ablegen.",
+        "href": "/theoriepruefung/",
+        "linkLabel": "Zur Theorieprüfung"
+      },
+      {
+        "num": "4",
+        "title": "Fahrstunden",
+        "text": "Mit dem Lernfahrausweis absolvierst du Fahrstunden bei einem diplomierten Fahrlehrer. Die Anzahl richtet sich nach deinem Lernfortschritt.",
+        "href": "/dienstleistungen/auto/",
+        "linkLabel": "Zur Auto-Ausbildung"
+      },
+      {
+        "num": "5",
+        "title": "VKU – Verkehrskundeunterricht",
+        "text": "Der VKU umfasst 2 Halbtage und ist obligatorisch vor der praktischen Führerprüfung. Themen: Verkehrssicherheit, ökologisches Fahren, Einstellungen.",
+        "href": "/vku/",
+        "linkLabel": "Zum VKU"
+      },
+      {
+        "num": "6",
+        "title": "Praktische Führerprüfung",
+        "text": "Nach dem VKU legst du die praktische Prüfung ab (ca. 45 Min.). Bei Bestehen erhältst du den Probeführerausweis (3-jährige Probezeit).",
+        "href": "/fuehrerausweis/",
+        "linkLabel": "Zur Führerprüfung"
+      },
+      {
+        "num": "7",
+        "title": "2-Phasen-Ausbildung (WAB)",
+        "text": "Innerhalb der ersten 12 Monate der Probezeit absolvierst du den obligatorischen WAB-Kurs. Nach 3 Jahren Probezeit ohne schwere Vergehen erhältst du den definitiven Führerausweis.",
+        "href": "/2-phasen-ausbildung/",
+        "linkLabel": "Zur 2-Phasen-Ausbildung"
+      }
+    ],
+    "faq": {
+      "eyebrow": "Häufige Fragen",
+      "title": "Fragen rund um den Führerschein Schweiz",
+      "items": [
+        {
+          "q": "Wie lange dauert die Fahrausbildung in der Schweiz?",
+          "a": "Die Dauer ist individuell. Von der Anmeldung bis zur Prüfung vergehen typischerweise 6–12 Monate, abhängig von Lernfortschritt, freien Terminen und der Zeit für Pflichtschritte wie Nothelferkurs und VKU."
+        },
+        {
+          "q": "Was kostet der Führerschein in der Schweiz?",
+          "a": "Die Gesamtkosten setzen sich zusammen aus: Nothelferkurs (ca. CHF 100–120), Lernfahrausweis (ca. CHF 60), Theorieprüfung (ca. CHF 50–80), Fahrstunden (je nach Anzahl), VKU (ca. CHF 220–280), Prüfungsgebühr (ca. CHF 160–250) und WAB-Kurs (ca. CHF 500–600). Insgesamt rechnet man mit CHF 2'000–4'000."
+        },
+        {
+          "q": "Ab welchem Alter kann ich mit dem Autofahren anfangen?",
+          "a": "Den Lernfahrausweis kannst du ab 17 Jahren beantragen. Die Führerprüfung darf frühestens mit 18 Jahren abgelegt werden."
+        },
+        {
+          "q": "Wie viele Fahrstunden sind obligatorisch?",
+          "a": "In der Schweiz gibt es keine Mindestanzahl an Fahrstunden. Empfohlen werden 20–30 Stunden für den Durchschnitt. Dein Fahrlehrer gibt nach einer Probestunde eine realistische Einschätzung."
+        }
+      ]
+    },
+    "ctaTitle": "Starte jetzt deine Fahrausbildung",
+    "ctaText": "DriveBuddies begleitet dich durch jeden Schritt – vom Nothelferkurs bis zum Führerausweis.",
+    "ctaPrimary": "Jetzt anmelden",
+    "ctaWhatsapp": "Per WhatsApp anfragen",
+    "ctaWhatsappMessage": "Ich möchte mit der Fahrausbildung beginnen. Bitte nehmt Kontakt mit mir auf."
+  },
+  "nothelferkurs": {
+    "seoTitle": "Nothelferkurs Zürich – Pflicht vor dem Lernfahrausweis | DriveBuddies",
+    "seoDescription": "Nothelferkurs in Zürich und Umgebung: Warum er obligatorisch ist, was er kostet und wo du ihn absolvieren kannst. Infos von DriveBuddies Fahrschule.",
+    "breadcrumbHub": "Weg zum Führerschein",
+    "eyebrow": "Phase 1 der Fahrausbildung",
+    "title": "Nothelferkurs – Pflicht vor dem Lernfahrausweis",
+    "lead": "Bevor du den Lernfahrausweis beantragst, musst du in der Schweiz einen Nothelferkurs absolvieren. Dieser dauert ca. 10 Stunden und bereitet dich auf Erste-Hilfe-Situationen im Strassenverkehr vor.",
+    "whatTitle": "Was ist der Nothelferkurs?",
+    "whatText": "Der Nothelferkurs (auch Erste-Hilfe-Kurs genannt) ist gesetzlich vorgeschrieben und muss vor der Ausstellung des Lernfahrausweises absolviert werden. Du lernst, wie du bei Unfällen richtig reagierst – von der Absicherung der Unfallstelle bis zu Wiederbelebungsmassnahmen.",
+    "contentTitle": "Inhalte des Kurses",
+    "contentItems": [
+      "Unfallsicherung und Warnen des Verkehrs",
+      "Stabile Seitenlage und Bewusstlosigkeit",
+      "Herz-Lungen-Wiederbelebung (HLW) und AED-Einsatz",
+      "Blutstillung und Wundversorgung",
+      "Verhalten bei Schock und Bewusstlosigkeit",
+      "Notruf 144 richtig absetzen"
+    ],
+    "factsTitle": "Wichtige Fakten",
+    "facts": [
+      { "label": "Dauer", "value": "ca. 10 Stunden (1–2 Tage)" },
+      { "label": "Kosten", "value": "ca. CHF 100–120" },
+      { "label": "Gültigkeit", "value": "unbefristet (kein Ablaufdatum)" },
+      { "label": "Mindestalter", "value": "ab 16 Jahren" },
+      { "label": "Anbieter", "value": "TCS, Samariter, Rotkreuz, REGA u.a." }
+    ],
+    "whereTitle": "Wo absolviere ich den Nothelferkurs?",
+    "whereText": "Der Kurs wird von anerkannten Organisationen wie dem TCS (Touring Club Schweiz), den Samariterinnen und Samaritern sowie dem Schweizerischen Roten Kreuz angeboten. Es gibt regelmässige Kurse in Zürich, Thalwil und den umliegenden Gemeinden.",
+    "nextTitle": "Nächster Schritt",
+    "nextText": "Nach dem Nothelferkurs: Sehtest absolvieren und Lernfahrausweis beim Strassenverkehrsamt beantragen.",
+    "nextHref": "/lernfahrausweis/",
+    "nextLabel": "Zum Lernfahrausweis",
+    "faq": {
+      "eyebrow": "Häufige Fragen",
+      "title": "Fragen zum Nothelferkurs",
+      "items": [
+        {
+          "q": "Muss ich den Nothelferkurs vor dem Lernfahrausweis machen?",
+          "a": "Ja. Der Nothelferkurs muss vor der Ausstellung des Lernfahrausweises absolviert werden. Ohne Nothelferzertifikat stellt das Strassenverkehrsamt keinen Lernfahrausweis aus."
+        },
+        {
+          "q": "Wie lange ist der Nothelferkurs gültig?",
+          "a": "Das Nothelferzertifikat hat für den Lernfahrausweis kein Ablaufdatum. Es bleibt unbefristet gültig."
+        },
+        {
+          "q": "Kann ich den Nothelferkurs online machen?",
+          "a": "Nein. Der Nothelferkurs muss als Präsenzkurs absolviert werden, da die praktischen Übungen (z.B. HLW) nur in der Gruppe geübt werden können."
+        },
+        {
+          "q": "Kann DriveBuddies einen Nothelferkurs empfehlen?",
+          "a": "Ja. Kontaktiere uns – wir verweisen dich gerne an einen geeigneten Kursanbieter in Zürich oder Thalwil."
+        }
+      ]
+    },
+    "ctaTitle": "Fragen zum Einstieg?",
+    "ctaText": "Wir helfen dir, den richtigen Kurs zu finden und begleiten dich durch die gesamte Fahrausbildung.",
+    "ctaPrimary": "Jetzt Kontakt aufnehmen",
+    "ctaWhatsapp": "Per WhatsApp anfragen",
+    "ctaWhatsappMessage": "Ich habe Fragen zum Nothelferkurs und dem Einstieg in die Fahrausbildung. Bitte nehmt Kontakt mit mir auf."
+  },
+  "theoriepruefung": {
+    "seoTitle": "Theorieprüfung Schweiz – Ablauf, Fragen & Tipps | DriveBuddies",
+    "seoDescription": "Die Theorieprüfung in der Schweiz: 70 Fragen, 57 davon richtig zum Bestehen. Alles über Ablauf, Kosten, Vorbereitung und häufige Fehler.",
+    "breadcrumbHub": "Weg zum Führerschein",
+    "eyebrow": "Phase 3 der Fahrausbildung",
+    "title": "Theorieprüfung Schweiz – so bereitest du dich vor",
+    "lead": "Die Theorieprüfung ist ein obligatorischer Schritt auf dem Weg zur Fahrprüfung. Du beantwortest 70 Fragen am Computer – mindestens 57 müssen korrekt sein.",
+    "ablaufTitle": "Ablauf der Theorieprüfung",
+    "ablaufItems": [
+      "Anmeldung beim kantonalen Strassenverkehrsamt oder einer zugelassenen Prüfungsstelle",
+      "Prüfung am Computer: 70 Fragen zu Verkehrsregeln, Gefahrenerkennung und Fahrzeugtechnik",
+      "Bestehensgrenze: mindestens 57 von 70 Fragen richtig (≥ 81,4 %)",
+      "Bearbeitungszeit: 70 Minuten",
+      "Bei Nichtbestehen: Wiederholung frühestens nach 7 Tagen möglich"
+    ],
+    "factsTitle": "Fakten auf einen Blick",
+    "facts": [
+      { "label": "Fragen", "value": "70 (Multiple-Choice)" },
+      { "label": "Bestehensgrenze", "value": "57/70 (≥ 81,4 %)" },
+      { "label": "Dauer", "value": "70 Minuten" },
+      { "label": "Kosten", "value": "ca. CHF 50–80" },
+      { "label": "Sprache", "value": "DE, FR, IT, EN und weitere" },
+      { "label": "Wiederholung", "value": "nach 7 Tagen möglich" }
+    ],
+    "tipsTitle": "Tipps zur Vorbereitung",
+    "tipsItems": [
+      "Lerne mit einer offiziellen Lern-App (z.B. theorie24 oder TCS)",
+      "Übe regelmässig – lieber täglich 20 Min. als einmal 3 Stunden",
+      "Fokussiere auf häufig falsch beantwortete Fragen",
+      "Mache Probeprüfungen, bis du konstant über 90 % erreichst",
+      "Achte auf Gefahrenerkennung – diese Fragen kosten häufig Punkte"
+    ],
+    "faq": {
+      "eyebrow": "Häufige Fragen",
+      "title": "Fragen zur Theorieprüfung",
+      "items": [
+        {
+          "q": "Wann kann ich die Theorieprüfung ablegen?",
+          "a": "Die Theorieprüfung kann abgelegt werden, sobald du den Lernfahrausweis erhalten hast. Du kannst sie aber auch schon früher ablegen, wenn du das Mindestalter von 17 Jahren erreicht hast."
+        },
+        {
+          "q": "Wie lange ist die Theorieprüfung gültig?",
+          "a": "Die bestandene Theorieprüfung ist 2 Jahre gültig. Die praktische Führerprüfung muss innerhalb dieser Frist abgelegt werden."
+        },
+        {
+          "q": "In welcher Sprache kann ich die Theorieprüfung ablegen?",
+          "a": "Die Theorieprüfung steht in vielen Sprachen zur Verfügung, darunter Deutsch, Französisch, Italienisch, Englisch, Albanisch, Bosnisch, Kroatisch, Portugiesisch, Serbisch, Spanisch und weitere."
+        },
+        {
+          "q": "Was passiert, wenn ich die Theorieprüfung nicht bestehe?",
+          "a": "Du kannst die Prüfung nach 7 Tagen wiederholen. Nach zweimaligem Nichtbestehen verlängert sich die Wartefrist."
+        }
+      ]
+    },
+    "nextTitle": "Nächster Schritt",
+    "nextText": "Nach der Theorieprüfung: Fahrstunden nehmen und den VKU absolvieren.",
+    "nextHref": "/vku/",
+    "nextLabel": "Zum VKU",
+    "ctaTitle": "Prüfungsangst? Wir helfen dir!",
+    "ctaText": "Unsere erfahrenen Fahrlehrer bereiten dich optimal auf die Theorieprüfung und die Fahrprüfung vor.",
+    "ctaPrimary": "Jetzt anmelden",
+    "ctaWhatsapp": "Per WhatsApp anfragen",
+    "ctaWhatsappMessage": "Ich möchte mich auf die Theorieprüfung vorbereiten. Bitte nehmt Kontakt mit mir auf."
+  },
+  "vku": {
+    "seoTitle": "VKU Zürich – Verkehrskundeunterricht vor der Fahrprüfung | DriveBuddies",
+    "seoDescription": "VKU in Zürich: Der Verkehrskundeunterricht ist Pflicht vor der Führerprüfung. 2 Halbtage, Themen, Kosten und Anmeldung – alles kompakt erklärt.",
+    "breadcrumbHub": "Weg zum Führerschein",
+    "eyebrow": "Phase 5 der Fahrausbildung",
+    "title": "VKU – Verkehrskundeunterricht in Zürich",
+    "lead": "Der VKU (Verkehrskundeunterricht) ist ein gesetzlich vorgeschriebener Kurs, den du vor der praktischen Führerprüfung absolvieren musst. Er dauert 2 Halbtage und behandelt Themen rund um Verkehrssicherheit und ökologisches Fahren.",
+    "whatTitle": "Was ist der VKU?",
+    "whatText": "Der Verkehrskundeunterricht (VKU) ist eine Ergänzung zur praktischen Fahrausbildung. Im Unterschied zu Fahrstunden geht es hier nicht ums Steuern des Fahrzeugs, sondern um Wissen, Haltungen und Kompetenzen im Strassenverkehr. Der Kurs wird in Gruppen durchgeführt.",
+    "contentTitle": "Inhalte des VKU",
+    "contentItems": [
+      "Risikobewusstsein und Gefahrenerkennung im Strassenverkehr",
+      "Einfluss von Alkohol, Drogen und Medikamenten auf die Fahrtüchtigkeit",
+      "Ökologisches und wirtschaftliches Fahren",
+      "Verhalten bei Unfällen und rechtliche Grundlagen",
+      "Soziale Verantwortung im Strassenverkehr"
+    ],
+    "factsTitle": "Fakten auf einen Blick",
+    "facts": [
+      { "label": "Dauer", "value": "2 Halbtage (je ca. 4 Std.)" },
+      { "label": "Kosten", "value": "ca. CHF 220–280" },
+      { "label": "Zeitpunkt", "value": "vor der praktischen Prüfung" },
+      { "label": "Gültigkeit", "value": "12 Monate vor der Prüfung" },
+      { "label": "Anbieter", "value": "diplomierte Fahrschulen" }
+    ],
+    "atDbTitle": "VKU bei DriveBuddies",
+    "atDbText": "Als diplomierte Fahrschule führt DriveBuddies VKU-Kurse in Zürich durch. Die Kurse finden in kleinen Gruppen statt und können auf Deutsch oder Englisch belegt werden.",
+    "faq": {
+      "eyebrow": "Häufige Fragen",
+      "title": "Fragen zum VKU",
+      "items": [
+        {
+          "q": "Wann muss ich den VKU absolvieren?",
+          "a": "Der VKU muss vor der praktischen Führerprüfung absolviert werden. Er muss spätestens 12 Monate vor der Prüfung abgeschlossen sein und mindestens 3 Monate nach dem Erhalt des Lernfahrausweises stattfinden."
+        },
+        {
+          "q": "Kann ich den VKU auch auf Englisch machen?",
+          "a": "Ja. Bei DriveBuddies bieten wir den VKU auf Deutsch und Englisch an – sprich uns einfach an."
+        },
+        {
+          "q": "Wie melde ich mich zum VKU an?",
+          "a": "Du kannst dich direkt bei DriveBuddies anmelden. Kontaktiere uns per Telefon, WhatsApp oder über unser Kontaktformular."
+        },
+        {
+          "q": "Kann ich den VKU bei einer anderen Fahrschule besuchen als die Fahrstunden?",
+          "a": "Ja. Der VKU muss nicht zwingend bei deiner Fahrschule stattfinden. Du kannst ihn bei jeder anerkannten Fahrschule absolvieren."
+        }
+      ]
+    },
+    "nextTitle": "Nächster Schritt",
+    "nextText": "Nach dem VKU: Zur praktischen Führerprüfung anmelden und die Prüfung ablegen.",
+    "nextHref": "/fuehrerausweis/",
+    "nextLabel": "Zur Führerprüfung",
+    "ctaTitle": "VKU bei DriveBuddies buchen",
+    "ctaText": "Wir führen VKU-Kurse auf Deutsch und Englisch durch. Melde dich jetzt an.",
+    "ctaPrimary": "VKU anmelden",
+    "ctaWhatsapp": "Per WhatsApp anfragen",
+    "ctaWhatsappMessage": "Ich möchte den VKU (Verkehrskundeunterricht) bei DriveBuddies buchen. Bitte nehmt Kontakt mit mir auf."
+  },
+  "zweiPhasen": {
+    "seoTitle": "2-Phasen-Ausbildung & WAB Zürich – So funktioniert's | DriveBuddies",
+    "seoDescription": "Die 2-Phasen-Ausbildung (WAB) ist nach der Führerprüfung obligatorisch. Alles über den WAB-Kurs, Fristen, Kosten und den Weg zum definitiven Führerausweis.",
+    "breadcrumbHub": "Weg zum Führerschein",
+    "eyebrow": "Phase 7 – Nach der Führerprüfung",
+    "title": "2-Phasen-Ausbildung & WAB – Der Weg zum definitiven Führerausweis",
+    "lead": "Du hast die Fahrprüfung bestanden – herzlichen Glückwunsch! Jetzt beginnt die 3-jährige Probezeit mit dem Probeführerausweis. Innerhalb der ersten 12 Monate musst du den obligatorischen WAB-Kurs (Weiterausbildungsphase) absolvieren.",
+    "probeTitle": "Der Probeführerausweis",
+    "probeText": "Nach bestandener praktischer Prüfung erhältst du zunächst einen Probeführerausweis. Dieser gilt 3 Jahre lang. In dieser Zeit gelten besondere Regeln:",
+    "probeItems": [
+      "Alkohol am Steuer: 0,0 ‰ (statt 0,5 ‰ für erfahrene Fahrer)",
+      "Schwere Verkehrsverstösse können zum Entzug des Probeführerausweises führen",
+      "Innerhalb von 12 Monaten nach Prüfung: WAB-Kurs obligatorisch",
+      "Nach 3 Jahren ohne schwere Vergehen: automatische Umwandlung in definitiven Führerausweis"
+    ],
+    "wabTitle": "Was ist die WAB?",
+    "wabText": "Die Weiterausbildungsphase (WAB) besteht aus einem Kurs an einem anerkannten Fahrsicherheitszentrum. Der Kurs umfasst 2 Kurstage und verbindet theoretische Elemente mit praktischen Übungen auf dem Übungsgelände.",
+    "wabContentTitle": "Inhalte der WAB",
+    "wabContentItems": [
+      "Fahrdynamik-Training auf dem Sicherheitsübungsplatz",
+      "Verhalten bei Aquaplaning, Ausweichen und Notbremsung",
+      "Theoretische Vertiefung zu Sicherheit und Haltungen",
+      "Nachfahrt auf öffentlichen Strassen mit Feedback"
+    ],
+    "factsTitle": "Fakten zur WAB",
+    "facts": [
+      { "label": "Zeitpunkt", "value": "innerhalb 12 Monate nach Prüfung" },
+      { "label": "Dauer", "value": "2 Kurstage" },
+      { "label": "Kosten", "value": "ca. CHF 500–650" },
+      { "label": "Anbieter", "value": "TCS, BUSA, bfu-Zentren u.a." },
+      { "label": "Ergebnis", "value": "Beitrag zum definitiven Führerausweis" }
+    ],
+    "faq": {
+      "eyebrow": "Häufige Fragen",
+      "title": "Fragen zur 2-Phasen-Ausbildung",
+      "items": [
+        {
+          "q": "Was passiert, wenn ich den WAB-Kurs nicht rechtzeitig mache?",
+          "a": "Wenn du den WAB-Kurs nicht innerhalb von 12 Monaten nach bestandener Prüfung absolvierst, wird der Probeführerausweis ungültig. Du musst dann die Fahrprüfung erneut ablegen."
+        },
+        {
+          "q": "Wo kann ich die WAB absolvieren?",
+          "a": "Der WAB-Kurs muss bei einem anerkannten Fahrsicherheitszentrum absolviert werden, z.B. beim TCS (Verkehrssicherheitszentrum), BUSA oder anderen bfu-anerkannten Zentren in der Schweiz."
+        },
+        {
+          "q": "Was kostet die WAB?",
+          "a": "Die Kosten variieren je nach Anbieter und liegen in der Regel zwischen CHF 500 und CHF 650 für die 2 Kurstage."
+        },
+        {
+          "q": "Was zählt als schweres Vergehen in der Probezeit?",
+          "a": "Schwere Vergehen sind z.B. Fahren unter Alkoholeinfluss (ab 0,0 ‰ bei Neulenkern), deutliches Überschreiten der Höchstgeschwindigkeit, krasses Überholmanöver oder Rotlichtmissachtung. Ein schweres Vergehen verlängert die Probezeit um 1 Jahr."
+        }
+      ]
+    },
+    "ctaTitle": "Noch Fragen zur Fahrausbildung?",
+    "ctaText": "DriveBuddies begleitet dich von der ersten Fahrstunde bis zum definitiven Führerausweis.",
+    "ctaPrimary": "Jetzt Kontakt aufnehmen",
+    "ctaWhatsapp": "Per WhatsApp anfragen",
+    "ctaWhatsappMessage": "Ich habe Fragen zur 2-Phasen-Ausbildung (WAB). Bitte nehmt Kontakt mit mir auf."
+  },
   "home": {
     "hero": {
       "eyebrow": "Fahrschule in Zürich & Thalwil",

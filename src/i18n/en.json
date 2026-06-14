@@ -109,6 +109,336 @@
       "ctaWhatsappMessage": "I am interested in trailer training (Cat. BE) at DriveBuddies. Please get in touch."
     }
   },
+  "fuehrerschein": {
+    "seoTitle": "How to Get Your Swiss Driving Licence – Step-by-Step Guide",
+    "seoDescription": "Complete guide to getting a Swiss driving licence (Führerausweis) Cat. B: Nothelfer, eye test, Lernfahrausweis, theory exam, VKU, driving test and WAB.",
+    "breadcrumbHome": "Home",
+    "eyebrow": "Your path to the Swiss licence",
+    "title": "How to Get Your Swiss Driving Licence",
+    "lead": "From the Nothelfer first-aid course to the definitive Führerausweis – here you'll find every step of the Swiss driver training explained clearly. DriveBuddies guides you through each phase.",
+    "timelineTitle": "The 7 phases of Swiss driver training",
+    "steps": [
+      {
+        "num": "1",
+        "title": "Nothelferkurs (First-Aid Course)",
+        "text": "Before you can apply for the Lernfahrausweis, you must complete a Nothelferkurs (approx. 10 hours). The certificate has no expiry date.",
+        "href": "/en/first-aid-course/",
+        "linkLabel": "About the Nothelferkurs"
+      },
+      {
+        "num": "2",
+        "title": "Eye Test & Lernfahrausweis",
+        "text": "With your Nothelfer certificate and a current eye test, apply for the Lernfahrausweis at the cantonal Strassenverkehrsamt. Minimum age: 17.",
+        "href": "/en/lernfahrausweis/",
+        "linkLabel": "Applying for the Lernfahrausweis"
+      },
+      {
+        "num": "3",
+        "title": "Theory Exam (Theorieprüfung)",
+        "text": "The theory exam consists of 70 computer-based questions. You need at least 57 correct. You can take it at any point during training.",
+        "href": "/en/theory-exam/",
+        "linkLabel": "About the theory exam"
+      },
+      {
+        "num": "4",
+        "title": "Driving Lessons (Fahrstunden)",
+        "text": "With your Lernfahrausweis you take lessons with a qualified Fahrlehrer. The number of lessons depends on your progress.",
+        "href": "/en/services/car/",
+        "linkLabel": "Car training"
+      },
+      {
+        "num": "5",
+        "title": "VKU – Traffic Knowledge Course",
+        "text": "The VKU covers 2 half-days and is mandatory before the practical driving test. Topics: road safety, eco-driving, attitudes.",
+        "href": "/en/vku/",
+        "linkLabel": "About the VKU"
+      },
+      {
+        "num": "6",
+        "title": "Practical Driving Test",
+        "text": "After the VKU you sit the practical exam (approx. 45 min). If you pass, you receive the Probeführerausweis (3-year probationary period).",
+        "href": "/en/fuehrerausweis/",
+        "linkLabel": "About the driving test"
+      },
+      {
+        "num": "7",
+        "title": "2-Phasen-Ausbildung (WAB)",
+        "text": "Within the first 12 months of your probationary period you must complete the mandatory WAB course. After 3 years without serious offences you receive the definitive Führerausweis.",
+        "href": "/en/two-phase-training/",
+        "linkLabel": "About the 2-Phasen-Ausbildung"
+      }
+    ],
+    "faq": {
+      "eyebrow": "Frequently asked",
+      "title": "Questions about the Swiss driving licence",
+      "items": [
+        {
+          "q": "How long does the Swiss driver training take?",
+          "a": "The duration varies individually. From registration to the exam it typically takes 6–12 months, depending on learning progress, appointment availability and the time needed for mandatory steps such as the Nothelfer course and VKU."
+        },
+        {
+          "q": "How much does a Swiss driving licence cost?",
+          "a": "The total costs include: Nothelfer course (approx. CHF 100–120), Lernfahrausweis (approx. CHF 60), theory exam (approx. CHF 50–80), driving lessons (varies), VKU (approx. CHF 220–280), exam fee (approx. CHF 160–250) and WAB course (approx. CHF 500–600). Expect to spend CHF 2,000–4,000 in total."
+        },
+        {
+          "q": "At what age can I start learning to drive?",
+          "a": "You can apply for the Lernfahrausweis from age 17. The practical driving test may not be taken before age 18."
+        },
+        {
+          "q": "How many driving lessons are mandatory?",
+          "a": "Switzerland has no minimum number of lessons. 20–30 hours is typical. After a trial lesson your Fahrlehrer can give you a realistic estimate."
+        }
+      ]
+    },
+    "ctaTitle": "Start your driver training now",
+    "ctaText": "DriveBuddies guides you through every step – from the Nothelfer course to your Führerausweis.",
+    "ctaPrimary": "Sign up now",
+    "ctaWhatsapp": "Ask us on WhatsApp",
+    "ctaWhatsappMessage": "I'd like to start my driver training. Please get in touch."
+  },
+  "nothelferkurs": {
+    "seoTitle": "Nothelferkurs Zurich – Mandatory Before the Lernfahrausweis | DriveBuddies",
+    "seoDescription": "Nothelferkurs in Zurich: why it's mandatory, what it costs and where to take it. Information from DriveBuddies driving school.",
+    "breadcrumbHub": "How to get your Swiss licence",
+    "eyebrow": "Phase 1 of driver training",
+    "title": "Nothelferkurs – Mandatory Before the Lernfahrausweis",
+    "lead": "Before you apply for the Lernfahrausweis in Switzerland you must complete a Nothelferkurs (first-aid course). It lasts approximately 10 hours and prepares you for first-aid situations on the road.",
+    "whatTitle": "What is the Nothelferkurs?",
+    "whatText": "The Nothelferkurs (also called Erste-Hilfe-Kurs) is required by Swiss law and must be completed before the Lernfahrausweis is issued. You learn how to respond correctly at accident scenes – from securing the scene to performing CPR.",
+    "contentTitle": "Course content",
+    "contentItems": [
+      "Securing the accident scene and warning other road users",
+      "Recovery position and managing unconsciousness",
+      "CPR (cardiopulmonary resuscitation) and AED use",
+      "Stopping bleeding and wound care",
+      "Managing shock and unconsciousness",
+      "Correctly calling emergency services (144)"
+    ],
+    "factsTitle": "Key facts",
+    "facts": [
+      { "label": "Duration", "value": "approx. 10 hours (1–2 days)" },
+      { "label": "Cost", "value": "approx. CHF 100–120" },
+      { "label": "Validity", "value": "no expiry date" },
+      { "label": "Minimum age", "value": "from 16" },
+      { "label": "Providers", "value": "TCS, Samariter, Red Cross, REGA etc." }
+    ],
+    "whereTitle": "Where to take the Nothelferkurs?",
+    "whereText": "The course is offered by recognised organisations such as the TCS (Touring Club Switzerland), Samaritan associations and the Swiss Red Cross. Regular courses are available in Zurich, Thalwil and surrounding areas.",
+    "nextTitle": "Next step",
+    "nextText": "After the Nothelferkurs: complete the eye test and apply for the Lernfahrausweis at the Strassenverkehrsamt.",
+    "nextHref": "/en/lernfahrausweis/",
+    "nextLabel": "About the Lernfahrausweis",
+    "faq": {
+      "eyebrow": "Frequently asked",
+      "title": "Questions about the Nothelferkurs",
+      "items": [
+        {
+          "q": "Must I take the Nothelferkurs before the Lernfahrausweis?",
+          "a": "Yes. The Nothelferkurs must be completed before the Lernfahrausweis is issued. The Strassenverkehrsamt will not issue the learner permit without a Nothelfer certificate."
+        },
+        {
+          "q": "How long is the Nothelferkurs certificate valid?",
+          "a": "The Nothelfer certificate has no expiry date for the purposes of the Lernfahrausweis application. It remains valid indefinitely."
+        },
+        {
+          "q": "Can I take the Nothelferkurs online?",
+          "a": "No. The Nothelferkurs must be completed in person because practical exercises (e.g. CPR) can only be practised in a group setting."
+        },
+        {
+          "q": "Can DriveBuddies recommend a Nothelferkurs?",
+          "a": "Yes. Contact us – we are happy to point you to a suitable course provider in Zurich or Thalwil."
+        }
+      ]
+    },
+    "ctaTitle": "Questions about getting started?",
+    "ctaText": "We help you find the right course and guide you through the full driver training journey.",
+    "ctaPrimary": "Get in touch",
+    "ctaWhatsapp": "Ask us on WhatsApp",
+    "ctaWhatsappMessage": "I have questions about the Nothelferkurs and getting started with driver training. Please get in touch."
+  },
+  "theoriepruefung": {
+    "seoTitle": "Swiss Theory Exam (Theorieprüfung) – How It Works | DriveBuddies",
+    "seoDescription": "The Swiss theory exam: 70 questions, 57 correct to pass. Everything about the process, costs, preparation tips and common mistakes.",
+    "breadcrumbHub": "How to get your Swiss licence",
+    "eyebrow": "Phase 3 of driver training",
+    "title": "Swiss Theory Exam – How to Prepare and Pass",
+    "lead": "The Theorieprüfung is a mandatory step towards your driving licence. You answer 70 computer-based questions – at least 57 must be correct.",
+    "ablaufTitle": "How the theory exam works",
+    "ablaufItems": [
+      "Register at the cantonal Strassenverkehrsamt or an authorised test centre",
+      "Computer-based exam: 70 questions on traffic rules, hazard perception and vehicle technology",
+      "Pass mark: at least 57 out of 70 correct (≥ 81.4 %)",
+      "Allowed time: 70 minutes",
+      "If you fail: you may retake the exam after 7 days"
+    ],
+    "factsTitle": "Key facts at a glance",
+    "facts": [
+      { "label": "Questions", "value": "70 (multiple choice)" },
+      { "label": "Pass mark", "value": "57/70 (≥ 81.4 %)" },
+      { "label": "Time allowed", "value": "70 minutes" },
+      { "label": "Cost", "value": "approx. CHF 50–80" },
+      { "label": "Language", "value": "DE, FR, IT, EN and others" },
+      { "label": "Retake", "value": "possible after 7 days" }
+    ],
+    "tipsTitle": "Tips for preparation",
+    "tipsItems": [
+      "Study with an official learning app (e.g. theorie24 or TCS)",
+      "Practise regularly – 20 min daily beats a 3-hour session once a week",
+      "Focus on questions you frequently get wrong",
+      "Take mock exams until you consistently score above 90 %",
+      "Pay attention to hazard perception – these questions cost many candidates points"
+    ],
+    "faq": {
+      "eyebrow": "Frequently asked",
+      "title": "Questions about the theory exam",
+      "items": [
+        {
+          "q": "When can I take the theory exam?",
+          "a": "You can take the theory exam once you have received the Lernfahrausweis. It can also be taken earlier if you have reached the minimum age of 17."
+        },
+        {
+          "q": "How long is the theory exam valid?",
+          "a": "A passed theory exam is valid for 2 years. The practical driving test must be taken within this period."
+        },
+        {
+          "q": "In which language can I take the theory exam?",
+          "a": "The theory exam is available in many languages including German, French, Italian, English, Albanian, Bosnian, Croatian, Portuguese, Serbian, Spanish and others."
+        },
+        {
+          "q": "What happens if I fail the theory exam?",
+          "a": "You can retake the exam after 7 days. After failing twice, the waiting period between attempts increases."
+        }
+      ]
+    },
+    "nextTitle": "Next step",
+    "nextText": "After the theory exam: take driving lessons and complete the VKU.",
+    "nextHref": "/en/vku/",
+    "nextLabel": "About the VKU",
+    "ctaTitle": "Exam nerves? We can help!",
+    "ctaText": "Our experienced instructors prepare you for both the theory exam and the practical driving test.",
+    "ctaPrimary": "Sign up now",
+    "ctaWhatsapp": "Ask us on WhatsApp",
+    "ctaWhatsappMessage": "I'd like to prepare for the theory exam. Please get in touch."
+  },
+  "vku": {
+    "seoTitle": "VKU Zurich – Traffic Knowledge Course Before the Driving Test | DriveBuddies",
+    "seoDescription": "VKU in Zurich: the Verkehrskundeunterricht is mandatory before the practical driving exam. 2 half-days, topics, costs and registration – everything explained.",
+    "breadcrumbHub": "How to get your Swiss licence",
+    "eyebrow": "Phase 5 of driver training",
+    "title": "VKU – Traffic Knowledge Course in Zurich",
+    "lead": "The VKU (Verkehrskundeunterricht) is a legally required course that you must complete before the practical driving test. It lasts 2 half-days and covers road safety and eco-driving.",
+    "whatTitle": "What is the VKU?",
+    "whatText": "The Verkehrskundeunterricht (VKU) complements the practical driving training. Unlike Fahrstunden, the focus here is not on controlling the car but on knowledge, attitudes and road competence. The course is held in groups.",
+    "contentTitle": "VKU course content",
+    "contentItems": [
+      "Risk awareness and hazard perception in road traffic",
+      "Effects of alcohol, drugs and medication on driving ability",
+      "Eco-friendly and economical driving",
+      "Behaviour at accidents and basic legal framework",
+      "Social responsibility in road traffic"
+    ],
+    "factsTitle": "Key facts at a glance",
+    "facts": [
+      { "label": "Duration", "value": "2 half-days (approx. 4 hrs each)" },
+      { "label": "Cost", "value": "approx. CHF 220–280" },
+      { "label": "When", "value": "before the practical exam" },
+      { "label": "Validity", "value": "within 12 months of the exam" },
+      { "label": "Providers", "value": "qualified driving schools" }
+    ],
+    "atDbTitle": "VKU at DriveBuddies",
+    "atDbText": "As a qualified driving school DriveBuddies runs VKU courses in Zurich. Courses are held in small groups and can be attended in German or English.",
+    "faq": {
+      "eyebrow": "Frequently asked",
+      "title": "Questions about the VKU",
+      "items": [
+        {
+          "q": "When do I have to complete the VKU?",
+          "a": "The VKU must be completed before the practical driving test. It must be finished no more than 12 months before the exam and at least 3 months after receiving the Lernfahrausweis."
+        },
+        {
+          "q": "Can I take the VKU in English?",
+          "a": "Yes. At DriveBuddies we offer the VKU in German and English – just let us know."
+        },
+        {
+          "q": "How do I register for the VKU?",
+          "a": "You can register directly with DriveBuddies. Contact us by phone, WhatsApp or via our contact form."
+        },
+        {
+          "q": "Can I take the VKU at a different driving school from my lessons?",
+          "a": "Yes. The VKU does not have to be taken at your regular driving school. You can complete it at any recognised driving school."
+        }
+      ]
+    },
+    "nextTitle": "Next step",
+    "nextText": "After the VKU: register for the practical driving test.",
+    "nextHref": "/en/fuehrerausweis/",
+    "nextLabel": "About the driving test",
+    "ctaTitle": "Book the VKU at DriveBuddies",
+    "ctaText": "We run VKU courses in German and English. Sign up now.",
+    "ctaPrimary": "Register for VKU",
+    "ctaWhatsapp": "Ask us on WhatsApp",
+    "ctaWhatsappMessage": "I'd like to book the VKU (Verkehrskundeunterricht) at DriveBuddies. Please get in touch."
+  },
+  "zweiPhasen": {
+    "seoTitle": "2-Phasen-Ausbildung & WAB Zurich – How It Works | DriveBuddies",
+    "seoDescription": "The 2-Phasen-Ausbildung (WAB) is mandatory after the driving test. Everything about the WAB course, deadlines, costs and the path to the definitive Führerausweis.",
+    "breadcrumbHub": "How to get your Swiss licence",
+    "eyebrow": "Phase 7 – After the driving test",
+    "title": "2-Phasen-Ausbildung & WAB – The Path to Your Definitive Führerausweis",
+    "lead": "You passed the driving test – congratulations! Now begins the 3-year probationary period with the Probeführerausweis. Within the first 12 months you must complete the mandatory WAB course (Weiterausbildungsphase).",
+    "probeTitle": "The Probeführerausweis",
+    "probeText": "After passing the practical test you receive a Probeführerausweis (probationary licence), valid for 3 years. Special rules apply during this period:",
+    "probeItems": [
+      "Alcohol while driving: 0.0 ‰ (instead of 0.5 ‰ for experienced drivers)",
+      "Serious traffic offences can lead to revocation of the Probeführerausweis",
+      "Within 12 months of passing: WAB course mandatory",
+      "After 3 years without serious offences: automatic conversion to definitive Führerausweis"
+    ],
+    "wabTitle": "What is the WAB?",
+    "wabText": "The Weiterausbildungsphase (WAB) consists of a course at a recognised road safety training centre. The course spans 2 days and combines theoretical elements with practical exercises on the training grounds.",
+    "wabContentTitle": "WAB course content",
+    "wabContentItems": [
+      "Vehicle dynamics training on the safety training ground",
+      "Handling aquaplaning, evasive manoeuvres and emergency braking",
+      "Theoretical deepening on safety and attitudes",
+      "Drive on public roads with instructor feedback"
+    ],
+    "factsTitle": "Key facts about the WAB",
+    "facts": [
+      { "label": "Deadline", "value": "within 12 months of passing the test" },
+      { "label": "Duration", "value": "2 course days" },
+      { "label": "Cost", "value": "approx. CHF 500–650" },
+      { "label": "Providers", "value": "TCS, BUSA, bfu-approved centres" },
+      { "label": "Result", "value": "step towards definitive Führerausweis" }
+    ],
+    "faq": {
+      "eyebrow": "Frequently asked",
+      "title": "Questions about the 2-Phasen-Ausbildung",
+      "items": [
+        {
+          "q": "What happens if I don't complete the WAB course on time?",
+          "a": "If you don't complete the WAB course within 12 months of passing the test, the Probeführerausweis becomes invalid. You must then retake the practical driving test."
+        },
+        {
+          "q": "Where can I take the WAB course?",
+          "a": "The WAB course must be completed at a recognised road safety training centre, e.g. TCS (Verkehrssicherheitszentrum), BUSA or other bfu-approved centres in Switzerland."
+        },
+        {
+          "q": "How much does the WAB cost?",
+          "a": "Costs vary by provider and generally range from CHF 500 to CHF 650 for the 2 course days."
+        },
+        {
+          "q": "What counts as a serious offence during the probationary period?",
+          "a": "Serious offences include: driving under the influence of alcohol (from 0.0 ‰ for new drivers), significantly exceeding the speed limit, reckless overtaking or jumping a red light. A serious offence extends the probationary period by 1 year."
+        }
+      ]
+    },
+    "ctaTitle": "Questions about your driver training?",
+    "ctaText": "DriveBuddies guides you from your first lesson to the definitive Führerausweis.",
+    "ctaPrimary": "Get in touch",
+    "ctaWhatsapp": "Ask us on WhatsApp",
+    "ctaWhatsappMessage": "I have questions about the 2-Phasen-Ausbildung (WAB). Please get in touch."
+  },
   "home": {
     "hero": {
       "eyebrow": "Driving school in Zurich & Thalwil",
