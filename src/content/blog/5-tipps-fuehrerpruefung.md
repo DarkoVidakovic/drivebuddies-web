@@ -1,6 +1,7 @@
 ---
 title: "5 Tipps, wie du entspannt durch die Führerprüfung kommst"
 description: "Die praktische Fahrprüfung muss kein Stressfaktor sein. Mit den richtigen Tipps gehst du gelassen in die Prüfung und erhöhst deine Chancen auf Erfolg deutlich."
+seoTitle: "5 Tipps für eine entspannte Führerprüfung | DriveBuddies"
 date: 2025-10-06
 tags: ["Fahrprüfung", "Prüfungsvorbereitung", "Tipps", "Führerausweis"]
 cover: "https://cdn.prod.website-files.com/68d558b40371205e46901425/68e3e05aecc2e6453e4d4494_Rectangle%2034624579.avif"

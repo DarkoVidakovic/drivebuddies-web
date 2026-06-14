@@ -1,6 +1,8 @@
 ---
 title: "An sich selber arbeiten – bis zum Status «gute Fahrerin / guter Fahrer»"
 description: "Der Führerausweis ist erst der Anfang. Was es bedeutet, eine wirklich gute Fahrerin oder ein guter Fahrer zu werden: Selbstwahrnehmung, Haltung und kontinuierliche Arbeit an sich selbst."
+seoTitle: "An sich arbeiten – ein guter Fahrer werden | DriveBuddies"
+seoDescription: "Der Führerausweis ist erst der Anfang – was es heisst, eine wirklich gute Fahrerin oder ein guter Fahrer zu werden: Haltung, Selbstwahrnehmung und Übung."
 date: 2025-10-06
 tags: ["Fahrpraxis", "Führerausweis", "Selbstreflexion"]
 cover: "https://cdn.prod.website-files.com/68d558b40371205e46901425/68e3f436f2a5c38042bcdeec_Mask%20group.avif"

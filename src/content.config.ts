@@ -6,6 +6,10 @@ const blog = defineCollection({
   schema: z.object({
     title: z.string(),
     description: z.string(),
+    /** Optional ≤60-char SEO title override (else `${title} | DriveBuddies`). */
+    seoTitle: z.string().optional(),
+    /** Optional ≤160-char SEO meta description override (else description). */
+    seoDescription: z.string().optional(),
     date: z.coerce.date(),
     tags: z.array(z.string()).default([]),
     cover: z.string().optional(),

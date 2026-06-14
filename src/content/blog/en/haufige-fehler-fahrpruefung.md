@@ -1,6 +1,8 @@
 ---
 title: "Common Mistakes in the Driving Test – and How to Avoid Them"
 description: "A calm head and clean basics count more than perfection. The typical stumbling blocks on exam day — plus concrete countermeasures so you can navigate them with confidence."
+seoTitle: "Common Driving Test Mistakes to Avoid | DriveBuddies"
+seoDescription: "A calm head and clean basics beat perfection. The typical stumbling blocks on exam day – plus concrete countermeasures to navigate them with confidence."
 date: 2025-10-06
 tags: ["Driving Test", "Exam Preparation", "Tips"]
 cover: "https://cdn.prod.website-files.com/68d558b40371205e46901425/68e3ea91922868956b4e4a44_Group%202072751672.avif"

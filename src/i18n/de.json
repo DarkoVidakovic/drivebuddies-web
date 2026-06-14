@@ -70,7 +70,7 @@
       "ctaWhatsappMessage": "Ich interessiere mich für die Auto-Ausbildung (Kat. B) bei DriveBuddies. Bitte nehmt Kontakt mit mir auf."
     },
     "motorrad": {
-      "seoTitle": "Motorrad-Ausbildung A1 & A – Grundkurs & Fahrstunden | DriveBuddies",
+      "seoTitle": "Motorrad-Ausbildung A1 & A – Grundkurs | DriveBuddies",
       "seoDescription": "Motorradausbildung in Zürich: Grundkurs und Fahrstunden für A1 (125cc), A35kW und A unbeschränkt. Sicher auf zwei Rädern mit DriveBuddies.",
       "eyebrow": "Kategorie A",
       "title": "Motorrad – A1 & A",
@@ -92,7 +92,7 @@
       "ctaWhatsappMessage": "Ich interessiere mich für die Motorrad-Ausbildung (Kat. A/A1) bei DriveBuddies. Bitte nehmt Kontakt mit mir auf."
     },
     "anhaenger": {
-      "seoTitle": "Anhänger-Ausbildung Kat. BE – Rangieren & Fahren | DriveBuddies",
+      "seoTitle": "Anhänger Kat. BE – Rangieren & Fahren | DriveBuddies",
       "seoDescription": "Ausbildung für das Fahren mit Anhänger (Kat. BE) in Zürich: sicheres Rangieren, Kurvenfahren und Bremsen mit Anhänger. Jetzt anmelden.",
       "eyebrow": "Kategorie BE",
       "title": "Anhänger – Kat. BE",
@@ -198,7 +198,7 @@
     "ctaWhatsappMessage": "Ich möchte mit der Fahrausbildung beginnen. Bitte nehmt Kontakt mit mir auf."
   },
   "nothelferkurs": {
-    "seoTitle": "Nothelferkurs Zürich – Pflicht vor dem Lernfahrausweis | DriveBuddies",
+    "seoTitle": "Nothelferkurs Zürich – Erste Hilfe Pflicht | DriveBuddies",
     "seoDescription": "Nothelferkurs in Zürich und Umgebung: Warum er obligatorisch ist, was er kostet und wo du ihn absolvieren kannst. Infos von DriveBuddies Fahrschule.",
     "breadcrumbHub": "Weg zum Führerschein",
     "eyebrow": "Phase 1 der Fahrausbildung",
@@ -258,7 +258,7 @@
     "ctaWhatsappMessage": "Ich habe Fragen zum Nothelferkurs und dem Einstieg in die Fahrausbildung. Bitte nehmt Kontakt mit mir auf."
   },
   "theoriepruefung": {
-    "seoTitle": "Theorieprüfung Schweiz – Ablauf, Fragen & Tipps | DriveBuddies",
+    "seoTitle": "Theorieprüfung Schweiz – Ablauf & Tipps | DriveBuddies",
     "seoDescription": "Die Theorieprüfung in der Schweiz: 70 Fragen, 57 davon richtig zum Bestehen. Alles über Ablauf, Kosten, Vorbereitung und häufige Fehler.",
     "breadcrumbHub": "Weg zum Führerschein",
     "eyebrow": "Phase 3 der Fahrausbildung",
@@ -322,7 +322,7 @@
     "ctaWhatsappMessage": "Ich möchte mich auf die Theorieprüfung vorbereiten. Bitte nehmt Kontakt mit mir auf."
   },
   "vku": {
-    "seoTitle": "VKU Zürich – Verkehrskundeunterricht vor der Fahrprüfung | DriveBuddies",
+    "seoTitle": "VKU Zürich – Verkehrskundeunterricht | DriveBuddies",
     "seoDescription": "VKU in Zürich: Der Verkehrskundeunterricht ist Pflicht vor der Führerprüfung. 2 Halbtage, Themen, Kosten und Anmeldung – alles kompakt erklärt.",
     "breadcrumbHub": "Weg zum Führerschein",
     "eyebrow": "Phase 5 der Fahrausbildung",
@@ -381,7 +381,7 @@
     "ctaWhatsappMessage": "Ich möchte den VKU (Verkehrskundeunterricht) bei DriveBuddies buchen. Bitte nehmt Kontakt mit mir auf."
   },
   "zweiPhasen": {
-    "seoTitle": "2-Phasen-Ausbildung & WAB Zürich – So funktioniert's | DriveBuddies",
+    "seoTitle": "2-Phasen-Ausbildung & WAB Zürich | DriveBuddies",
     "seoDescription": "Die 2-Phasen-Ausbildung (WAB) ist nach der Führerprüfung obligatorisch. Alles über den WAB-Kurs, Fristen, Kosten und den Weg zum definitiven Führerausweis.",
     "breadcrumbHub": "Weg zum Führerschein",
     "eyebrow": "Phase 7 – Nach der Führerprüfung",
@@ -686,7 +686,7 @@
     }
   },
   "preise": {
-    "seoTitle": "Preise Fahrschule Zürich – Fahrstunden & Kurse | DriveBuddies",
+    "seoTitle": "Preise Fahrschule Zürich – Fahrstunden | DriveBuddies",
     "seoDescription": "Transparente Preise der Fahrschule DriveBuddies Zürich: Fahrstunden Auto & Motorrad, Grundkurs, Anhänger-Paket, VKU und Sparpakete. CHF-Preise auf einen Blick.",
     "eyebrow": "Transparente Preise",
     "title": "Preise & Pakete",
@@ -807,5 +807,148 @@
       "ariaLabel": "Per WhatsApp anfragen",
       "message": "Hallo, ich interessiere mich für die Fahrausbildung bei DriveBuddies. Bitte nehmt Kontakt mit mir auf."
     }
+  },
+  "kurse": {
+    "seoTitle": "Kurse & Ausbildung – Übersicht | DriveBuddies Fahrschule",
+    "seoDescription": "Alle Kurse und Ausbildungen bei DriveBuddies auf einen Blick: Nothelferkurs, Theorieprüfung, VKU, Fahrstunden und 2-Phasen-Ausbildung in Zürich und Thalwil.",
+    "eyebrow": "Kurse & Ausbildung",
+    "title": "Alle Kurse auf einen Blick",
+    "subtitle": "Vom Nothelferkurs bis zur 2-Phasen-Ausbildung – hier findest du jeden Pflichtschritt der Schweizer Fahrausbildung mit allen Infos.",
+    "ctaText": "Nicht sicher, womit du starten sollst? Wir beraten dich gerne persönlich.",
+    "ctaPrimary": "Kontakt aufnehmen",
+    "ctaWhatsapp": "Per WhatsApp anfragen",
+    "ctaWhatsappMessage": "Ich möchte mehr über die Kurse und die Fahrausbildung bei DriveBuddies erfahren.",
+    "items": [
+      { "title": "Nothelferkurs", "badge": "Phase 1", "text": "Pflicht-Erste-Hilfe-Kurs vor dem Lernfahrausweis. Unbefristet gültig.", "href": "/nothelferkurs/", "cta": "Mehr erfahren" },
+      { "title": "Lernfahrausweis", "badge": "Phase 2", "text": "Sehtest, Antrag und alles, was du für den Lernfahrausweis brauchst.", "href": "/lernfahrausweis/", "cta": "Mehr erfahren" },
+      { "title": "Theorieprüfung", "badge": "Phase 3", "text": "70 Fragen am Computer – wir zeigen dir, wie du sie sicher bestehst.", "href": "/theoriepruefung/", "cta": "Mehr erfahren" },
+      { "title": "Fahrstunden", "badge": "Phase 4", "text": "Praktische Fahrstunden bei diplomierten Fahrlehrern – Auto, Motorrad, Anhänger.", "href": "/dienstleistungen/", "cta": "Mehr erfahren" },
+      { "title": "VKU", "badge": "Phase 5", "text": "Verkehrskundeunterricht – obligatorisch vor der praktischen Prüfung.", "href": "/vku/", "cta": "Mehr erfahren" },
+      { "title": "Führerausweis", "badge": "Phase 6", "text": "Praktische Führerprüfung und der Weg zum Probeführerausweis.", "href": "/fuehrerausweis/", "cta": "Mehr erfahren" },
+      { "title": "2-Phasen-Ausbildung", "badge": "Phase 7", "text": "Obligatorische WAB-Weiterausbildung in der Probezeit.", "href": "/2-phasen-ausbildung/", "cta": "Mehr erfahren" }
+    ]
+  },
+  "lernfahrausweis": {
+    "seoTitle": "Lernfahrausweis Schweiz beantragen | DriveBuddies",
+    "seoDescription": "Lernfahrausweis in der Schweiz beantragen: Voraussetzungen, Sehtest, Antrag beim Strassenverkehrsamt, Kosten und Gültigkeit. Alles erklärt von DriveBuddies.",
+    "breadcrumbHub": "Weg zum Führerschein",
+    "eyebrow": "Phase 2 der Fahrausbildung",
+    "title": "Lernfahrausweis – so beantragst du ihn",
+    "lead": "Mit dem Lernfahrausweis darfst du in Begleitung Auto fahren und mit der praktischen Ausbildung starten. Hier erfährst du, welche Voraussetzungen du erfüllen musst und wie der Antrag beim Strassenverkehrsamt abläuft.",
+    "whatTitle": "Was ist der Lernfahrausweis?",
+    "whatText": "Der Lernfahrausweis (Kategorie B) ist die provisorische Fahrbewilligung, mit der du das Fahren übst – entweder mit einem diplomierten Fahrlehrer oder in privater Begleitung. Er ist die Voraussetzung für sämtliche Fahrstunden und die praktische Führerprüfung.",
+    "contentTitle": "Voraussetzungen für den Antrag",
+    "contentItems": [
+      "Mindestalter 17 Jahre (Kategorie B)",
+      "Absolvierter Nothelferkurs (Zertifikat)",
+      "Bestandener Sehtest bei Optiker oder Augenarzt",
+      "Antragsformular des kantonalen Strassenverkehrsamts",
+      "Aktuelles Passfoto und gültiger Ausweis / Pass",
+      "Wohnsitz im entsprechenden Kanton"
+    ],
+    "factsTitle": "Wichtige Fakten",
+    "facts": [
+      { "label": "Mindestalter", "value": "17 Jahre (Kat. B)" },
+      { "label": "Voraussetzung", "value": "Nothelfer + Sehtest" },
+      { "label": "Gültigkeit", "value": "24 Monate" },
+      { "label": "Kosten", "value": "ca. CHF 30–50" },
+      { "label": "Begleitung", "value": "ab 23 Jahren, Ausweis ≥ 3 Jahre" }
+    ],
+    "whereTitle": "Wo beantrage ich den Lernfahrausweis?",
+    "whereText": "Den Antrag reichst du beim Strassenverkehrsamt deines Wohnkantons ein – im Kanton Zürich beim Strassenverkehrsamt Zürich. Viele Kantone bieten den Antrag inzwischen auch online an. Nach Prüfung der Unterlagen erhältst du den Lernfahrausweis per Post.",
+    "nextTitle": "Nächster Schritt",
+    "nextText": "Mit dem Lernfahrausweis kannst du die Theorieprüfung ablegen und mit den Fahrstunden beginnen.",
+    "nextHref": "/theoriepruefung/",
+    "nextLabel": "Zur Theorieprüfung",
+    "faq": {
+      "eyebrow": "Häufige Fragen",
+      "title": "Fragen zum Lernfahrausweis",
+      "items": [
+        { "q": "Wie lange ist der Lernfahrausweis gültig?", "a": "Der Lernfahrausweis der Kategorie B ist 24 Monate gültig. Innerhalb dieser Frist musst du die praktische Führerprüfung bestehen, sonst muss er neu beantragt werden." },
+        { "q": "Ab welchem Alter bekomme ich den Lernfahrausweis?", "a": "Für die Kategorie B (Auto) kannst du den Lernfahrausweis ab 17 Jahren beantragen. Die praktische Prüfung ist ab 18 Jahren möglich." },
+        { "q": "Wer darf mich als Begleitperson auf Übungsfahrten begleiten?", "a": "Die Begleitperson muss mindestens 23 Jahre alt sein und seit mindestens 3 Jahren einen Führerausweis ohne Probezeit besitzen." },
+        { "q": "Brauche ich den Nothelferkurs vor dem Lernfahrausweis?", "a": "Ja. Ohne gültiges Nothelferzertifikat und Sehtest stellt das Strassenverkehrsamt keinen Lernfahrausweis aus." }
+      ]
+    },
+    "ctaTitle": "Bereit für die ersten Fahrstunden?",
+    "ctaText": "Sobald du den Lernfahrausweis hast, planen wir gemeinsam deine Fahrstunden – flexibel und auf dein Tempo abgestimmt.",
+    "ctaPrimary": "Jetzt Kontakt aufnehmen",
+    "ctaWhatsapp": "Per WhatsApp anfragen",
+    "ctaWhatsappMessage": "Ich habe Fragen zum Lernfahrausweis und möchte mit den Fahrstunden starten. Bitte nehmt Kontakt mit mir auf."
+  },
+  "fuehrerausweis": {
+    "seoTitle": "Führerausweis Schweiz – praktische Prüfung | DriveBuddies",
+    "seoDescription": "Führerausweis in der Schweiz: Ablauf der praktischen Führerprüfung, Voraussetzungen, Kosten und die 3-jährige Probezeit. Alles erklärt von DriveBuddies.",
+    "breadcrumbHub": "Weg zum Führerschein",
+    "eyebrow": "Phase 6 der Fahrausbildung",
+    "title": "Führerausweis – die praktische Prüfung",
+    "lead": "Die praktische Führerprüfung ist der letzte Schritt zum Führerausweis. Hier erfährst du, welche Voraussetzungen du brauchst, wie die Prüfung abläuft und was es mit der Probezeit auf sich hat.",
+    "whatTitle": "Was wird in der praktischen Prüfung verlangt?",
+    "whatText": "In der praktischen Führerprüfung (Kategorie B) zeigst du dem Experten, dass du dein Fahrzeug sicher beherrschst und dich regelkonform im Verkehr bewegst. Die Prüfung dauert rund 45 Minuten und führt durch Stadt, Land und – wo möglich – Autobahn.",
+    "contentTitle": "Voraussetzungen für die Prüfung",
+    "contentItems": [
+      "Gültiger Lernfahrausweis",
+      "Bestandene Theorieprüfung",
+      "Absolvierter VKU (Verkehrskundeunterricht)",
+      "Ausreichende Fahrpraxis und Prüfungsreife",
+      "Anmeldung beim kantonalen Strassenverkehrsamt"
+    ],
+    "factsTitle": "Wichtige Fakten",
+    "facts": [
+      { "label": "Dauer", "value": "ca. 45–60 Minuten" },
+      { "label": "Voraussetzung", "value": "Theorie + VKU bestanden" },
+      { "label": "Mindestalter", "value": "18 Jahre (Kat. B)" },
+      { "label": "Kosten", "value": "ca. CHF 120–160" },
+      { "label": "Nach Bestehen", "value": "Probeführerausweis (3 Jahre)" }
+    ],
+    "whereTitle": "Was passiert nach bestandener Prüfung?",
+    "whereText": "Nach bestandener Prüfung erhältst du den Führerausweis auf Probe. Diese Probezeit dauert 3 Jahre. Innerhalb der ersten 12 Monate musst du die obligatorische 2-Phasen-Ausbildung (WAB) absolvieren. Nach Ablauf der Probezeit ohne schwere Widerhandlungen wird der definitive Führerausweis ausgestellt.",
+    "nextTitle": "Nächster Schritt",
+    "nextText": "Nach der Prüfung folgt die obligatorische Weiterausbildung in der Probezeit.",
+    "nextHref": "/2-phasen-ausbildung/",
+    "nextLabel": "Zur 2-Phasen-Ausbildung",
+    "faq": {
+      "eyebrow": "Häufige Fragen",
+      "title": "Fragen zur Führerprüfung",
+      "items": [
+        { "q": "Welche Voraussetzungen brauche ich für die praktische Prüfung?", "a": "Du brauchst einen gültigen Lernfahrausweis, eine bestandene Theorieprüfung und den absolvierten VKU. Erst dann meldet dich das Strassenverkehrsamt zur praktischen Prüfung an." },
+        { "q": "Wie lange dauert die praktische Führerprüfung?", "a": "Die praktische Prüfung dauert in der Regel etwa 45 bis 60 Minuten, inklusive Vorkontrolle des Fahrzeugs." },
+        { "q": "Was ist der Probeführerausweis?", "a": "Nach bestandener Prüfung erhältst du den Führerausweis auf Probe für 3 Jahre. In dieser Zeit musst du die 2-Phasen-Ausbildung absolvieren." },
+        { "q": "Was passiert, wenn ich die Prüfung nicht bestehe?", "a": "Du kannst die praktische Prüfung wiederholen. Wir analysieren gemeinsam die Schwachstellen und bereiten dich gezielt auf den nächsten Versuch vor." }
+      ]
+    },
+    "ctaTitle": "Bereit für die Führerprüfung?",
+    "ctaText": "Unsere Fahrlehrer bereiten dich gezielt auf die praktische Prüfung vor – mit Prüfungssimulationen und individuellem Feedback.",
+    "ctaPrimary": "Jetzt anmelden",
+    "ctaWhatsapp": "Per WhatsApp anfragen",
+    "ctaWhatsappMessage": "Ich möchte mich auf die praktische Führerprüfung vorbereiten. Bitte nehmt Kontakt mit mir auf."
+  },
+  "impressum": {
+    "seoTitle": "Impressum | DriveBuddies Fahrschule",
+    "seoDescription": "Impressum und rechtliche Angaben der Drive Buddies Fahrschule, Albisstrasse 1, 8800 Thalwil.",
+    "title": "Impressum",
+    "lead": "Angaben gemäss schweizerischem Recht.",
+    "sections": [
+      { "heading": "Verantwortlich für den Inhalt", "body": ["Drive Buddies Fahrschule", "Albisstrasse 1", "8800 Thalwil", "Schweiz"] },
+      { "heading": "Kontakt", "body": ["Telefon: +41 76 586 13 17", "E-Mail: info@drivebuddies.ch"] },
+      { "heading": "Haftungsausschluss", "body": ["Der Inhalt dieser Website wurde mit grösstmöglicher Sorgfalt erstellt. Für die Richtigkeit, Vollständigkeit und Aktualität der Inhalte wird keine Gewähr übernommen. Angaben zu Kursen, Preisen und Abläufen können sich ändern – verbindlich sind die Informationen der zuständigen Behörden (Strassenverkehrsamt)."] },
+      { "heading": "Haftung für Links", "body": ["Diese Website enthält Links zu externen Websites Dritter, auf deren Inhalte wir keinen Einfluss haben. Für diese fremden Inhalte ist stets der jeweilige Anbieter verantwortlich."] },
+      { "heading": "Urheberrecht", "body": ["Die auf dieser Website veröffentlichten Inhalte und Werke unterliegen dem schweizerischen Urheberrecht. Jede Verwertung ausserhalb der Grenzen des Urheberrechts bedarf der vorherigen schriftlichen Zustimmung."] }
+    ]
+  },
+  "datenschutz": {
+    "seoTitle": "Datenschutzerklärung | DriveBuddies Fahrschule",
+    "seoDescription": "Datenschutzerklärung der Drive Buddies Fahrschule: Welche Daten wir erheben, wie wir sie verwenden und welche Rechte du hast.",
+    "title": "Datenschutzerklärung",
+    "lead": "Der Schutz deiner persönlichen Daten ist uns wichtig. Diese Erklärung informiert dich über die Bearbeitung von Personendaten gemäss dem Schweizer Datenschutzgesetz (DSG).",
+    "sections": [
+      { "heading": "Verantwortliche Stelle", "body": ["Drive Buddies Fahrschule, Albisstrasse 1, 8800 Thalwil. Kontakt: info@drivebuddies.ch, +41 76 586 13 17."] },
+      { "heading": "Welche Daten wir erheben", "body": ["Wenn du unser Kontaktformular nutzt, erheben wir die von dir angegebenen Daten (Vor- und Nachname, E-Mail, Telefonnummer, gewählte Dienstleistung und Nachricht) sowie optional einen hochgeladenen Lernfahrausweis. Diese Daten verwenden wir ausschliesslich zur Bearbeitung deiner Anfrage."] },
+      { "heading": "Server-Logfiles", "body": ["Beim Besuch unserer Website werden durch unseren Hosting-Anbieter (Netlify) automatisch technische Daten wie IP-Adresse, Browsertyp und Zugriffszeit verarbeitet. Diese Daten dienen der technischen Bereitstellung und Sicherheit der Website."] },
+      { "heading": "Cookies und Tracking", "body": ["Diese Website setzt keine Marketing- oder Tracking-Cookies ein. Es werden lediglich technisch notwendige Daten verarbeitet."] },
+      { "heading": "Weitergabe an Dritte", "body": ["Deine Daten werden nicht an Dritte verkauft. Eine Weitergabe erfolgt nur, soweit dies zur Bearbeitung deiner Anfrage erforderlich oder gesetzlich vorgeschrieben ist. Formularübermittlungen werden über Netlify Forms verarbeitet."] },
+      { "heading": "Deine Rechte", "body": ["Du hast das Recht auf Auskunft, Berichtigung und Löschung deiner bei uns gespeicherten Personendaten. Wende dich dazu an info@drivebuddies.ch."] },
+      { "heading": "Aufbewahrung", "body": ["Wir bewahren deine Daten nur so lange auf, wie es für die Bearbeitung deiner Anfrage oder aufgrund gesetzlicher Vorgaben erforderlich ist."] }
+    ]
   }
 }

@@ -1,5 +1,6 @@
 ---
 import { useTranslations, type Locale } from '../i18n/index.ts';
+import { route } from '../i18n/routes.ts';
 
 interface Props {
   locale: Locale;
@@ -10,37 +11,20 @@ const t = useTranslations(locale);
 const prefix = locale === 'en' ? '/en' : '';
 const year = new Date().getFullYear();
 
-const navLinks =
-  locale === 'en'
-    ? [
-        { href: '/en/courses/', label: t.nav.courses },
-        { href: '/en/lernfahrausweis/', label: t.nav.learnerLicence },
-        { href: '/en/fuehrerausweis/', label: t.nav.licence },
-        { href: '/en/2-phasen-ausbildung/', label: t.nav.twoPhase },
-        { href: '/en/about/', label: t.nav.about },
-        { href: '/en/blog/', label: t.nav.blog },
-        { href: '/en/contact/', label: t.nav.contact },
-      ]
-    : [
-        { href: '/kurse/', label: t.nav.courses },
-        { href: '/lernfahrausweis/', label: t.nav.learnerLicence },
-        { href: '/fuehrerausweis/', label: t.nav.licence },
-        { href: '/2-phasen-ausbildung/', label: t.nav.twoPhase },
-        { href: '/ueber-uns/', label: t.nav.about },
-        { href: '/blog/', label: t.nav.blog },
-        { href: '/kontakt/', label: t.nav.contact },
-      ];
+const navLinks = [
+  { href: route('courses', locale), label: t.nav.courses },
+  { href: route('learnerLicence', locale), label: t.nav.learnerLicence },
+  { href: route('drivingLicence', locale), label: t.nav.licence },
+  { href: route('twoPhase', locale), label: t.nav.twoPhase },
+  { href: route('about', locale), label: t.nav.about },
+  { href: route('blog', locale), label: t.nav.blog },
+  { href: route('contact', locale), label: t.nav.contact },
+];
 
-const legalLinks =
-  locale === 'en'
-    ? [
-        { href: '/en/impressum/', label: t.footer.impressum },
-        { href: '/en/datenschutz/', label: t.footer.datenschutz },
-      ]
-    : [
-        { href: '/impressum/', label: t.footer.impressum },
-        { href: '/datenschutz/', label: t.footer.datenschutz },
-      ];
+const legalLinks = [
+  { href: route('impressum', locale), label: t.footer.impressum },
+  { href: route('datenschutz', locale), label: t.footer.datenschutz },
+];
 
 const socials = [
   { href: 'https://www.instagram.com/drive_buddies/', label: 'Instagram' },

@@ -1,5 +1,6 @@
 ---
 import { useTranslations, getAlternatePath, type Locale } from '../i18n/index.ts';
+import { route } from '../i18n/routes.ts';
 
 interface Props {
   locale: Locale;
@@ -11,31 +12,18 @@ const altPath = getAlternatePath(Astro.url.pathname, locale);
 
 const prefix = locale === 'en' ? '/en' : '';
 
-// Localised slugs per IA table (CLAUDE.md §2)
-const links =
-  locale === 'en'
-    ? [
-        { href: '/en/services/', label: t.nav.services },
-        { href: '/en/courses/', label: t.nav.courses },
-        { href: '/en/lernfahrausweis/', label: t.nav.learnerLicence },
-        { href: '/en/fuehrerausweis/', label: t.nav.licence },
-        { href: '/en/2-phasen-ausbildung/', label: t.nav.twoPhase },
-        { href: '/en/about/', label: t.nav.about },
-        { href: '/en/prices/', label: t.nav.prices },
-        { href: '/en/blog/', label: t.nav.blog },
-        { href: '/en/contact/', label: t.nav.contact },
-      ]
-    : [
-        { href: '/dienstleistungen/', label: t.nav.services },
-        { href: '/kurse/', label: t.nav.courses },
-        { href: '/lernfahrausweis/', label: t.nav.learnerLicence },
-        { href: '/fuehrerausweis/', label: t.nav.licence },
-        { href: '/2-phasen-ausbildung/', label: t.nav.twoPhase },
-        { href: '/ueber-uns/', label: t.nav.about },
-        { href: '/preise/', label: t.nav.prices },
-        { href: '/blog/', label: t.nav.blog },
-        { href: '/kontakt/', label: t.nav.contact },
-      ];
+// Primary navigation — slugs resolved from the central route map.
+const links = [
+  { href: route('services', locale), label: t.nav.services },
+  { href: route('courses', locale), label: t.nav.courses },
+  { href: route('learnerLicence', locale), label: t.nav.learnerLicence },
+  { href: route('drivingLicence', locale), label: t.nav.licence },
+  { href: route('twoPhase', locale), label: t.nav.twoPhase },
+  { href: route('about', locale), label: t.nav.about },
+  { href: route('prices', locale), label: t.nav.prices },
+  { href: route('blog', locale), label: t.nav.blog },
+  { href: route('contact', locale), label: t.nav.contact },
+];
 
 const current = Astro.url.pathname;
 ---

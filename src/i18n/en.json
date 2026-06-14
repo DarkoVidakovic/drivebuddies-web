@@ -70,7 +70,7 @@
       "ctaWhatsappMessage": "I am interested in car training (Cat. B) at DriveBuddies. Please get in touch."
     },
     "motorrad": {
-      "seoTitle": "Motorcycle Training A1 & A – Grundkurs & Lessons | DriveBuddies",
+      "seoTitle": "Motorcycle Training A1 & A – Grundkurs | DriveBuddies",
       "seoDescription": "Motorcycle training in Zurich: Grundkurs and lessons for A1 (125cc), A35kW and unrestricted A. Confident on two wheels with DriveBuddies.",
       "eyebrow": "Category A",
       "title": "Motorcycle – A1 & A",
@@ -92,7 +92,7 @@
       "ctaWhatsappMessage": "I am interested in motorcycle training (Cat. A/A1) at DriveBuddies. Please get in touch."
     },
     "anhaenger": {
-      "seoTitle": "Trailer Training Cat. BE – Manoeuvring & Driving | DriveBuddies",
+      "seoTitle": "Trailer Training Cat. BE – Manoeuvring | DriveBuddies",
       "seoDescription": "Trailer training (Cat. BE) in Zurich: safe manoeuvring, cornering and braking with a trailer. Sign up with DriveBuddies.",
       "eyebrow": "Category BE",
       "title": "Trailer – Cat. BE",
@@ -130,7 +130,7 @@
         "num": "2",
         "title": "Eye Test & Lernfahrausweis",
         "text": "With your Nothelfer certificate and a current eye test, apply for the Lernfahrausweis at the cantonal Strassenverkehrsamt. Minimum age: 17.",
-        "href": "/en/lernfahrausweis/",
+        "href": "/en/learner-licence/",
         "linkLabel": "Applying for the Lernfahrausweis"
       },
       {
@@ -158,7 +158,7 @@
         "num": "6",
         "title": "Practical Driving Test",
         "text": "After the VKU you sit the practical exam (approx. 45 min). If you pass, you receive the Probeführerausweis (3-year probationary period).",
-        "href": "/en/fuehrerausweis/",
+        "href": "/en/driving-licence/",
         "linkLabel": "About the driving test"
       },
       {
@@ -198,7 +198,7 @@
     "ctaWhatsappMessage": "I'd like to start my driver training. Please get in touch."
   },
   "nothelferkurs": {
-    "seoTitle": "Nothelferkurs Zurich – Mandatory Before the Lernfahrausweis | DriveBuddies",
+    "seoTitle": "Nothelfer First-Aid Course Zurich | DriveBuddies",
     "seoDescription": "Nothelferkurs in Zurich: why it's mandatory, what it costs and where to take it. Information from DriveBuddies driving school.",
     "breadcrumbHub": "How to get your Swiss licence",
     "eyebrow": "Phase 1 of driver training",
@@ -227,7 +227,7 @@
     "whereText": "The course is offered by recognised organisations such as the TCS (Touring Club Switzerland), Samaritan associations and the Swiss Red Cross. Regular courses are available in Zurich, Thalwil and surrounding areas.",
     "nextTitle": "Next step",
     "nextText": "After the Nothelferkurs: complete the eye test and apply for the Lernfahrausweis at the Strassenverkehrsamt.",
-    "nextHref": "/en/lernfahrausweis/",
+    "nextHref": "/en/learner-licence/",
     "nextLabel": "About the Lernfahrausweis",
     "faq": {
       "eyebrow": "Frequently asked",
@@ -258,7 +258,7 @@
     "ctaWhatsappMessage": "I have questions about the Nothelferkurs and getting started with driver training. Please get in touch."
   },
   "theoriepruefung": {
-    "seoTitle": "Swiss Theory Exam (Theorieprüfung) – How It Works | DriveBuddies",
+    "seoTitle": "Swiss Theory Exam (Theorieprüfung) | DriveBuddies",
     "seoDescription": "The Swiss theory exam: 70 questions, 57 correct to pass. Everything about the process, costs, preparation tips and common mistakes.",
     "breadcrumbHub": "How to get your Swiss licence",
     "eyebrow": "Phase 3 of driver training",
@@ -322,7 +322,7 @@
     "ctaWhatsappMessage": "I'd like to prepare for the theory exam. Please get in touch."
   },
   "vku": {
-    "seoTitle": "VKU Zurich – Traffic Knowledge Course Before the Driving Test | DriveBuddies",
+    "seoTitle": "VKU Zurich – Traffic Knowledge Course | DriveBuddies",
     "seoDescription": "VKU in Zurich: the Verkehrskundeunterricht is mandatory before the practical driving exam. 2 half-days, topics, costs and registration – everything explained.",
     "breadcrumbHub": "How to get your Swiss licence",
     "eyebrow": "Phase 5 of driver training",
@@ -372,7 +372,7 @@
     },
     "nextTitle": "Next step",
     "nextText": "After the VKU: register for the practical driving test.",
-    "nextHref": "/en/fuehrerausweis/",
+    "nextHref": "/en/driving-licence/",
     "nextLabel": "About the driving test",
     "ctaTitle": "Book the VKU at DriveBuddies",
     "ctaText": "We run VKU courses in German and English. Sign up now.",
@@ -381,8 +381,8 @@
     "ctaWhatsappMessage": "I'd like to book the VKU (Verkehrskundeunterricht) at DriveBuddies. Please get in touch."
   },
   "zweiPhasen": {
-    "seoTitle": "2-Phasen-Ausbildung & WAB Zurich – How It Works | DriveBuddies",
-    "seoDescription": "The 2-Phasen-Ausbildung (WAB) is mandatory after the driving test. Everything about the WAB course, deadlines, costs and the path to the definitive Führerausweis.",
+    "seoTitle": "2-Phasen-Ausbildung & WAB Zurich | DriveBuddies",
+    "seoDescription": "The 2-Phasen-Ausbildung (WAB) is mandatory after the driving test. All about the WAB course, deadlines, costs and the path to the definitive Führerausweis.",
     "breadcrumbHub": "How to get your Swiss licence",
     "eyebrow": "Phase 7 – After the driving test",
     "title": "2-Phasen-Ausbildung & WAB – The Path to Your Definitive Führerausweis",
@@ -510,21 +510,21 @@
           "step": "1",
           "title": "Lernfahrausweis",
           "text": "Complete the Nothelfer course and eye test, then apply for the Lernfahrausweis at the Strassenverkehrsamt.",
-          "href": "/en/lernfahrausweis/",
+          "href": "/en/learner-licence/",
           "linkLabel": "About the Lernfahrausweis"
         },
         {
           "step": "2",
           "title": "Führerausweis",
           "text": "Attend the VKU, take driving lessons and pass the practical Prüfung.",
-          "href": "/en/fuehrerausweis/",
+          "href": "/en/driving-licence/",
           "linkLabel": "About the Führerausweis"
         },
         {
           "step": "3",
           "title": "2-Phasen-Ausbildung",
           "text": "Complete the mandatory second training phase (WAB) within your probationary period.",
-          "href": "/en/2-phasen-ausbildung/",
+          "href": "/en/two-phase-training/",
           "linkLabel": "About the 2-Phasen-Ausbildung"
         }
       ]
@@ -686,7 +686,7 @@
     }
   },
   "preise": {
-    "seoTitle": "Driving School Prices Zurich – Lessons & Courses | DriveBuddies",
+    "seoTitle": "Driving School Prices Zurich – Lessons | DriveBuddies",
     "seoDescription": "Transparent pricing at DriveBuddies driving school Zurich: car & motorcycle lessons, Grundkurs, trailer package, VKU and bundle deals. All prices in CHF.",
     "eyebrow": "Transparent pricing",
     "title": "Prices & Packages",
@@ -807,5 +807,148 @@
       "ariaLabel": "Contact us on WhatsApp",
       "message": "Hi, I'm interested in driver training at DriveBuddies. Please get in touch."
     }
+  },
+  "kurse": {
+    "seoTitle": "Courses & Training – Overview | DriveBuddies Driving School",
+    "seoDescription": "Every DriveBuddies course at a glance: Nothelfer first-aid course, theory exam, VKU, driving lessons and 2-Phasen training in Zürich and Thalwil.",
+    "eyebrow": "Courses & Training",
+    "title": "All courses at a glance",
+    "subtitle": "From the Nothelfer first-aid course to the 2-Phasen training – here is every mandatory step of Swiss driver training with the key facts.",
+    "ctaText": "Not sure where to start? We're happy to advise you personally.",
+    "ctaPrimary": "Get in touch",
+    "ctaWhatsapp": "Ask via WhatsApp",
+    "ctaWhatsappMessage": "I'd like to learn more about the courses and driver training at DriveBuddies.",
+    "items": [
+      { "title": "Nothelfer (first-aid)", "badge": "Phase 1", "text": "Mandatory first-aid course before the Lernfahrausweis. Valid indefinitely.", "href": "/en/first-aid-course/", "cta": "Learn more" },
+      { "title": "Lernfahrausweis", "badge": "Phase 2", "text": "Eye test, application and everything you need for the learner's permit.", "href": "/en/learner-licence/", "cta": "Learn more" },
+      { "title": "Theory exam", "badge": "Phase 3", "text": "70 questions on the computer – we show you how to pass with confidence.", "href": "/en/theory-exam/", "cta": "Learn more" },
+      { "title": "Driving lessons", "badge": "Phase 4", "text": "Practical lessons with qualified Fahrlehrer – car, motorcycle, trailer.", "href": "/en/services/", "cta": "Learn more" },
+      { "title": "VKU", "badge": "Phase 5", "text": "Traffic-theory course – mandatory before the practical exam.", "href": "/en/vku/", "cta": "Learn more" },
+      { "title": "Führerausweis", "badge": "Phase 6", "text": "The practical driving test and the route to your probationary licence.", "href": "/en/driving-licence/", "cta": "Learn more" },
+      { "title": "2-Phasen training", "badge": "Phase 7", "text": "Mandatory WAB further training during the probationary period.", "href": "/en/two-phase-training/", "cta": "Learn more" }
+    ]
+  },
+  "lernfahrausweis": {
+    "seoTitle": "Lernfahrausweis Switzerland – How to Apply | DriveBuddies",
+    "seoDescription": "How to apply for the Lernfahrausweis (learner's permit) in Switzerland: requirements, eye test, application at the Strassenverkehrsamt, costs and validity.",
+    "breadcrumbHub": "Way to the licence",
+    "eyebrow": "Phase 2 of driver training",
+    "title": "Lernfahrausweis – how to apply",
+    "lead": "With the Lernfahrausweis (learner's permit) you may drive accompanied and start your practical training. Here you'll learn which requirements you must meet and how the application at the Strassenverkehrsamt works.",
+    "whatTitle": "What is the Lernfahrausweis?",
+    "whatText": "The Lernfahrausweis (category B) is the provisional driving permit that lets you practise driving – either with a qualified Fahrlehrer or with a private accompanying person. It is the prerequisite for all driving lessons and the practical driving test.",
+    "contentTitle": "Requirements for the application",
+    "contentItems": [
+      "Minimum age 17 (category B)",
+      "Completed Nothelfer first-aid course (certificate)",
+      "Passed eye test at an optician or eye doctor",
+      "Application form from the cantonal Strassenverkehrsamt",
+      "Recent passport photo and valid ID / passport",
+      "Residence in the relevant canton"
+    ],
+    "factsTitle": "Key facts",
+    "facts": [
+      { "label": "Minimum age", "value": "17 (cat. B)" },
+      { "label": "Prerequisite", "value": "Nothelfer + eye test" },
+      { "label": "Validity", "value": "24 months" },
+      { "label": "Cost", "value": "approx. CHF 30–50" },
+      { "label": "Accompanying person", "value": "23+, licence ≥ 3 years" }
+    ],
+    "whereTitle": "Where do I apply for the Lernfahrausweis?",
+    "whereText": "You submit the application to the Strassenverkehrsamt (road traffic office) of your canton of residence – in the canton of Zürich, the Strassenverkehrsamt Zürich. Many cantons now also offer the application online. Once your documents are checked, the Lernfahrausweis is sent to you by post.",
+    "nextTitle": "Next step",
+    "nextText": "With the Lernfahrausweis you can sit the theory exam and start your driving lessons.",
+    "nextHref": "/en/theory-exam/",
+    "nextLabel": "To the theory exam",
+    "faq": {
+      "eyebrow": "Frequently asked",
+      "title": "Questions about the Lernfahrausweis",
+      "items": [
+        { "q": "How long is the Lernfahrausweis valid?", "a": "The category B Lernfahrausweis is valid for 24 months. You must pass the practical driving test within this period, otherwise it has to be re-applied for." },
+        { "q": "From what age can I get the Lernfahrausweis?", "a": "For category B (car) you can apply for the Lernfahrausweis from age 17. The practical test is possible from age 18." },
+        { "q": "Who may accompany me on practice drives?", "a": "The accompanying person must be at least 23 years old and have held a licence without a probationary period for at least 3 years." },
+        { "q": "Do I need the Nothelfer course before the Lernfahrausweis?", "a": "Yes. Without a valid Nothelfer certificate and eye test, the Strassenverkehrsamt will not issue a Lernfahrausweis." }
+      ]
+    },
+    "ctaTitle": "Ready for your first lessons?",
+    "ctaText": "As soon as you have your Lernfahrausweis, we'll plan your driving lessons together – flexibly and at your own pace.",
+    "ctaPrimary": "Get in touch now",
+    "ctaWhatsapp": "Ask via WhatsApp",
+    "ctaWhatsappMessage": "I have questions about the Lernfahrausweis and would like to start driving lessons. Please get in touch."
+  },
+  "fuehrerausweis": {
+    "seoTitle": "Führerausweis Switzerland – Practical Test | DriveBuddies",
+    "seoDescription": "The Führerausweis in Switzerland: how the practical driving test works, requirements, costs and the 3-year probationary period. Explained by DriveBuddies.",
+    "breadcrumbHub": "Way to the licence",
+    "eyebrow": "Phase 6 of driver training",
+    "title": "Führerausweis – the practical test",
+    "lead": "The practical driving test is the final step to your Führerausweis. Here you'll learn which requirements you need, how the test works and what the probationary period involves.",
+    "whatTitle": "What is required in the practical test?",
+    "whatText": "In the practical driving test (category B) you show the examiner that you control your vehicle safely and move through traffic in compliance with the rules. The test lasts around 45 minutes and covers town, country and – where possible – motorway driving.",
+    "contentTitle": "Requirements for the test",
+    "contentItems": [
+      "Valid Lernfahrausweis",
+      "Passed theory exam",
+      "Completed VKU (traffic-theory course)",
+      "Sufficient driving practice and test readiness",
+      "Registration at the cantonal Strassenverkehrsamt"
+    ],
+    "factsTitle": "Key facts",
+    "facts": [
+      { "label": "Duration", "value": "approx. 45–60 minutes" },
+      { "label": "Prerequisite", "value": "Theory + VKU passed" },
+      { "label": "Minimum age", "value": "18 (cat. B)" },
+      { "label": "Cost", "value": "approx. CHF 120–160" },
+      { "label": "After passing", "value": "Probationary licence (3 years)" }
+    ],
+    "whereTitle": "What happens after passing?",
+    "whereText": "After passing the test you receive a probationary Führerausweis. This probationary period lasts 3 years. Within the first 12 months you must complete the mandatory 2-Phasen training (WAB). After the probationary period ends without serious offences, the definitive Führerausweis is issued.",
+    "nextTitle": "Next step",
+    "nextText": "After the test comes the mandatory further training during the probationary period.",
+    "nextHref": "/en/two-phase-training/",
+    "nextLabel": "To the 2-Phasen training",
+    "faq": {
+      "eyebrow": "Frequently asked",
+      "title": "Questions about the driving test",
+      "items": [
+        { "q": "What do I need for the practical test?", "a": "You need a valid Lernfahrausweis, a passed theory exam and the completed VKU. Only then does the Strassenverkehrsamt register you for the practical test." },
+        { "q": "How long does the practical driving test take?", "a": "The practical test usually lasts around 45 to 60 minutes, including the vehicle pre-check." },
+        { "q": "What is the probationary licence?", "a": "After passing the test you receive a probationary Führerausweis for 3 years. During this time you must complete the 2-Phasen training." },
+        { "q": "What happens if I fail the test?", "a": "You can retake the practical test. We analyse the weak points together and prepare you specifically for the next attempt." }
+      ]
+    },
+    "ctaTitle": "Ready for your driving test?",
+    "ctaText": "Our Fahrlehrer prepare you specifically for the practical test – with mock exams and individual feedback.",
+    "ctaPrimary": "Register now",
+    "ctaWhatsapp": "Ask via WhatsApp",
+    "ctaWhatsappMessage": "I'd like to prepare for the practical driving test. Please get in touch."
+  },
+  "impressum": {
+    "seoTitle": "Imprint | DriveBuddies Driving School",
+    "seoDescription": "Imprint and legal information of Drive Buddies Fahrschule, Albisstrasse 1, 8800 Thalwil, Switzerland.",
+    "title": "Imprint",
+    "lead": "Information in accordance with Swiss law.",
+    "sections": [
+      { "heading": "Responsible for the content", "body": ["Drive Buddies Fahrschule", "Albisstrasse 1", "8800 Thalwil", "Switzerland"] },
+      { "heading": "Contact", "body": ["Phone: +41 76 586 13 17", "Email: info@drivebuddies.ch"] },
+      { "heading": "Disclaimer", "body": ["The content of this website has been compiled with the greatest possible care. No guarantee is given for the accuracy, completeness or timeliness of the content. Details on courses, prices and procedures may change – the information provided by the responsible authorities (Strassenverkehrsamt) is binding."] },
+      { "heading": "Liability for links", "body": ["This website contains links to external third-party websites over whose content we have no influence. The respective provider is always responsible for such external content."] },
+      { "heading": "Copyright", "body": ["The content and works published on this website are subject to Swiss copyright law. Any use beyond the limits of copyright requires prior written consent."] }
+    ]
+  },
+  "datenschutz": {
+    "seoTitle": "Privacy Policy | DriveBuddies Driving School",
+    "seoDescription": "Privacy policy of Drive Buddies Fahrschule: what data we collect, how we use it and what rights you have.",
+    "title": "Privacy Policy",
+    "lead": "Protecting your personal data matters to us. This policy informs you about the processing of personal data in accordance with the Swiss Data Protection Act (DSG).",
+    "sections": [
+      { "heading": "Responsible entity", "body": ["Drive Buddies Fahrschule, Albisstrasse 1, 8800 Thalwil. Contact: info@drivebuddies.ch, +41 76 586 13 17."] },
+      { "heading": "What data we collect", "body": ["When you use our contact form, we collect the data you provide (first and last name, email, phone number, selected service and message) and optionally an uploaded Lernfahrausweis. We use this data solely to process your enquiry."] },
+      { "heading": "Server log files", "body": ["When you visit our website, technical data such as IP address, browser type and access time are automatically processed by our hosting provider (Netlify). This data serves the technical provision and security of the website."] },
+      { "heading": "Cookies and tracking", "body": ["This website does not use marketing or tracking cookies. Only technically necessary data is processed."] },
+      { "heading": "Disclosure to third parties", "body": ["Your data is not sold to third parties. It is only passed on where this is necessary to process your enquiry or required by law. Form submissions are processed via Netlify Forms."] },
+      { "heading": "Your rights", "body": ["You have the right to information about, correction of and deletion of the personal data we hold about you. To exercise these rights, contact info@drivebuddies.ch."] },
+      { "heading": "Retention", "body": ["We retain your data only for as long as necessary to process your enquiry or as required by law."] }
+    ]
   }
 }

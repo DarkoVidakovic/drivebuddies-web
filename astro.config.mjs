@@ -18,6 +18,10 @@ export default defineConfig({
   },
   integrations: [
     sitemap({
+      // Exclude noindex / thin pages from the sitemap: 404 and the
+      // near-duplicate blog tag listing pages.
+      filter: (page) =>
+        !/\/404\/?$/.test(page) && !/\/blog\/tags\//.test(page),
       i18n: {
         defaultLocale: 'de',
         locales: {

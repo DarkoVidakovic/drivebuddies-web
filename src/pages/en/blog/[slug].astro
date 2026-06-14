@@ -70,8 +70,8 @@ const breadcrumbSchema = {
 ---
 
 <Layout
-  title={`${title} | DriveBuddies`}
-  description={description}
+  title={post.data.seoTitle ?? `${title} | DriveBuddies`}
+  description={post.data.seoDescription ?? description}
   canonical={canonical}
   locale="en"
   hreflangDe={`${site}/blog/${cleanSlug}/`}
