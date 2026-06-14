@@ -1,0 +1,92 @@
+---
+import Button from '../ui/Button.astro';
+import WhatsAppButton from '../ui/WhatsAppButton.astro';
+import { useTranslations, type Locale } from '../../i18n/index.ts';
+
+interface Props {
+  locale: Locale;
+}
+
+const { locale } = Astro.props;
+const t = useTranslations(locale);
+const h = t.home.hero;
+
+const coursesHref = locale === 'en' ? '/en/courses/' : '/kurse/';
+const whatsappMsg =
+  locale === 'en'
+    ? 'Hi DriveBuddies, I would like to learn more about your driving lessons.'
+    : 'Hallo DriveBuddies, ich möchte mehr über eure Fahrstunden erfahren.';
+---
+
+<section class="hero section--default">
+  <div class="hero__inner">
+    <p class="hero__eyebrow">{h.eyebrow}</p>
+    <h1 class="hero__title">{h.title}</h1>
+    <p class="hero__subtitle">{h.subtitle}</p>
+    <div class="hero__actions">
+      <Button href={coursesHref} size="lg">{h.ctaPrimary}</Button>
+      <WhatsAppButton label={h.ctaWhatsapp} size="lg" variant="secondary" message={whatsappMsg} />
+    </div>
+    <p class="hero__trust">{h.trust}</p>
+  </div>
+</section>
+
+<style>
+  .hero {
+    background: linear-gradient(
+      160deg,
+      color-mix(in srgb, var(--color-primary) 8%, var(--color-surface)) 0%,
+      var(--color-surface) 60%
+    );
+    padding: var(--space-20) var(--space-6);
+  }
+
+  .hero__inner {
+    max-width: 1200px;
+    margin-inline: auto;
+    text-align: center;
+  }
+
+  .hero__eyebrow {
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    font-size: 0.875rem;
+    font-weight: 600;
+    color: var(--color-primary);
+    margin: 0 0 var(--space-4);
+  }
+
+  .hero__title {
+    font-size: clamp(2.25rem, 6vw, 4rem);
+    font-weight: 700;
+    color: var(--color-text);
+    margin: 0 auto var(--space-6);
+    max-width: 18ch;
+  }
+
+  .hero__subtitle {
+    font-size: clamp(1.0625rem, 2vw, 1.375rem);
+    color: var(--color-text-muted);
+    max-width: 60ch;
+    margin: 0 auto var(--space-8);
+  }
+
+  .hero__actions {
+    display: flex;
+    gap: var(--space-4);
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .hero__trust {
+    margin: var(--space-8) 0 0;
+    font-size: 0.9375rem;
+    color: var(--color-text-muted);
+  }
+
+  @media (min-width: 768px) {
+    .hero {
+      padding: var(--space-24) var(--space-8);
+    }
+  }
+</style>

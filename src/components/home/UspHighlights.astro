@@ -1,0 +1,104 @@
+---
+import Section from '../ui/Section.astro';
+import Icon from '../ui/Icon.astro';
+import { useTranslations, type Locale } from '../../i18n/index.ts';
+
+interface Props {
+  locale: Locale;
+}
+
+const { locale } = Astro.props;
+const t = useTranslations(locale);
+const u = t.home.usp;
+---
+
+<Section>
+  <div class="usp__head">
+    <h2 class="usp__title">{u.title}</h2>
+    <p class="usp__subtitle">{u.subtitle}</p>
+  </div>
+  <ul class="usp__grid">
+    {
+      u.items.map((item) => (
+        <li class="usp__card">
+          <span class="usp__icon">
+            <Icon name={item.icon as 'car' | 'clock' | 'instructor'} />
+          </span>
+          <h3 class="usp__card-title">{item.title}</h3>
+          <p class="usp__card-text">{item.text}</p>
+        </li>
+      ))
+    }
+  </ul>
+</Section>
+
+<style>
+  .usp__head {
+    text-align: center;
+    max-width: 60ch;
+    margin: 0 auto var(--space-12);
+  }
+
+  .usp__title {
+    font-size: clamp(1.75rem, 3vw, 2.5rem);
+    font-weight: 700;
+    margin-bottom: var(--space-4);
+  }
+
+  .usp__subtitle {
+    color: var(--color-text-muted);
+    font-size: 1.125rem;
+    margin: 0;
+  }
+
+  .usp__grid {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: var(--space-8);
+  }
+
+  .usp__card {
+    text-align: center;
+    padding: var(--space-8);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-lg);
+    background: var(--color-surface);
+    transition: box-shadow 0.15s ease, transform 0.15s ease;
+  }
+
+  .usp__card:hover {
+    box-shadow: var(--shadow-md);
+    transform: translateY(-2px);
+  }
+
+  .usp__icon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: var(--space-16);
+    height: var(--space-16);
+    border-radius: var(--radius-full);
+    background: color-mix(in srgb, var(--color-primary) 10%, transparent);
+    color: var(--color-primary);
+    margin-bottom: var(--space-6);
+  }
+
+  .usp__icon :global(.icon) {
+    width: 32px;
+    height: 32px;
+  }
+
+  .usp__card-title {
+    font-size: 1.25rem;
+    font-weight: 700;
+    margin-bottom: var(--space-3);
+  }
+
+  .usp__card-text {
+    color: var(--color-text-muted);
+    margin: 0;
+  }
+</style>

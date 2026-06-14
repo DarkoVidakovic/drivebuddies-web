@@ -1,0 +1,124 @@
+---
+import Section from '../ui/Section.astro';
+import Button from '../ui/Button.astro';
+import { useTranslations, type Locale } from '../../i18n/index.ts';
+
+interface Props {
+  locale: Locale;
+}
+
+const { locale } = Astro.props;
+const t = useTranslations(locale);
+const f = t.home.faq;
+
+const contactHref = locale === 'en' ? '/en/contact/' : '/kontakt/';
+---
+
+<Section>
+  <div class="faq">
+    <div class="faq__head">
+      <p class="faq__eyebrow">{f.eyebrow}</p>
+      <h2 class="faq__title">{f.title}</h2>
+      <Button href={contactHref} variant="secondary" class="faq__cta-top">{f.cta}</Button>
+    </div>
+    <div class="faq__list">
+      {
+        f.items.map((item, idx) => (
+          <details class="faq__item" open={idx === 0}>
+            <summary class="faq__question">
+              <span>{item.q}</span>
+              <svg class="faq__chevron" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M6 9l6 6 6-6" />
+              </svg>
+            </summary>
+            <p class="faq__answer">{item.a}</p>
+          </details>
+        ))
+      }
+    </div>
+  </div>
+</Section>
+
+<style>
+  .faq {
+    display: grid;
+    gap: var(--space-12);
+    align-items: start;
+  }
+
+  .faq__head {
+    max-width: 40ch;
+  }
+
+  .faq__eyebrow {
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    font-size: 0.875rem;
+    font-weight: 600;
+    color: var(--color-primary);
+    margin: 0 0 var(--space-3);
+  }
+
+  .faq__title {
+    font-size: clamp(1.75rem, 3vw, 2.5rem);
+    font-weight: 700;
+    margin-bottom: var(--space-6);
+  }
+
+  .faq__list {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-3);
+  }
+
+  .faq__item {
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-md);
+    background: var(--color-surface);
+    padding: 0 var(--space-6);
+  }
+
+  .faq__question {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: var(--space-4);
+    padding: var(--space-6) 0;
+    font-weight: 600;
+    font-size: 1.0625rem;
+    cursor: pointer;
+    list-style: none;
+  }
+
+  .faq__question::-webkit-details-marker {
+    display: none;
+  }
+
+  .faq__item summary:focus-visible {
+    outline: 2px solid var(--color-primary);
+    outline-offset: 2px;
+    border-radius: var(--radius-sm);
+  }
+
+  .faq__chevron {
+    flex-shrink: 0;
+    color: var(--color-primary);
+    transition: transform 0.2s ease;
+  }
+
+  .faq__item[open] .faq__chevron {
+    transform: rotate(180deg);
+  }
+
+  .faq__answer {
+    margin: 0;
+    padding: 0 0 var(--space-6);
+    color: var(--color-text-muted);
+  }
+
+  @media (min-width: 880px) {
+    .faq {
+      grid-template-columns: 1fr 1.4fr;
+    }
+  }
+</style>

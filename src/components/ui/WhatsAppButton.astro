@@ -1,0 +1,45 @@
+---
+import Button from './Button.astro';
+import Icon from './Icon.astro';
+
+interface Props {
+  label: string;
+  size?: 'sm' | 'md' | 'lg';
+  variant?: 'primary' | 'secondary' | 'ghost';
+  message?: string;
+  class?: string;
+}
+
+const {
+  label,
+  size = 'lg',
+  variant = 'secondary',
+  message = '',
+  class: className,
+} = Astro.props;
+
+// Business number in international format, digits only (CLAUDE.md / SeoHead telephone).
+const WHATSAPP_NUMBER = '41765861317';
+const href = `https://wa.me/${WHATSAPP_NUMBER}${
+  message ? `?text=${encodeURIComponent(message)}` : ''
+}`;
+---
+
+<Button
+  href={href}
+  variant={variant}
+  size={size}
+  class:list={['whatsapp-btn', className]}
+  rel="noopener noreferrer"
+  target="_blank"
+>
+  <Icon name="whatsapp" class="whatsapp-btn__icon" />
+  {label}
+</Button>
+
+<style>
+  .whatsapp-btn :global(.whatsapp-btn__icon) {
+    width: 1.25em;
+    height: 1.25em;
+  }
+</style>

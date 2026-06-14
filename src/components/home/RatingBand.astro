@@ -1,0 +1,137 @@
+---
+import Icon from '../ui/Icon.astro';
+import { useTranslations, type Locale } from '../../i18n/index.ts';
+
+interface Props {
+  locale: Locale;
+}
+
+const { locale } = Astro.props;
+const t = useTranslations(locale);
+const r = t.home.rating;
+
+// ── Placeholder rating data ─────────────────────────────────────────────────
+// M7 wires this to the live Google Places API. Keep the shape stable so the
+// integration only has to swap the source, not the markup.
+const rating = {
+  value: 4.9,
+  count: 127,
+  // Public Google reviews link (mirrors SeoHead sameAs entry).
+  url: 'https://www.google.com/maps/place/Drive+Buddies+Fahrschule/data=!4m2!3m1!1s0x0:0xaed93d82704b5f67',
+};
+
+const fullStars = Math.round(rating.value);
+const formattedValue = rating.value.toLocaleString(locale === 'en' ? 'en' : 'de-CH', {
+  minimumFractionDigits: 1,
+  maximumFractionDigits: 1,
+});
+---
+
+<section class="rating section--dark" aria-labelledby="rating-title">
+  <div class="rating__inner">
+    <div class="rating__copy">
+      <h2 id="rating-title" class="rating__title">{r.title}</h2>
+      <p class="rating__subtitle">{r.subtitle}</p>
+    </div>
+    <div class="rating__score">
+      <span class="rating__value">{formattedValue}</span>
+      <span class="rating__stars" role="img" aria-label={`${formattedValue} ${r.ratingLabel}`}>
+        {
+          Array.from({ length: 5 }).map((_, i) => (
+            <Icon name="star" class={i < fullStars ? 'rating__star--on' : 'rating__star--off'} />
+          ))
+        }
+      </span>
+      <a
+        class="rating__reviews"
+        href={rating.url}
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        {rating.count}+ {r.reviewsLabel}
+      </a>
+    </div>
+  </div>
+</section>
+
+<style>
+  .rating {
+    background: var(--color-accent);
+    color: var(--color-surface);
+    padding: var(--space-16) var(--space-6);
+  }
+
+  .rating__inner {
+    max-width: 1200px;
+    margin-inline: auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: var(--space-8);
+  }
+
+  .rating__copy {
+    max-width: 48ch;
+  }
+
+  .rating__title {
+    font-size: clamp(1.5rem, 3vw, 2.25rem);
+    font-weight: 700;
+    margin-bottom: var(--space-3);
+  }
+
+  .rating__subtitle {
+    color: rgba(255, 255, 255, 0.72);
+    margin: 0;
+    font-size: 1.0625rem;
+  }
+
+  .rating__score {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: var(--space-2);
+  }
+
+  .rating__value {
+    font-size: clamp(2.5rem, 6vw, 3.5rem);
+    font-weight: 700;
+    line-height: 1;
+  }
+
+  .rating__stars {
+    display: inline-flex;
+    gap: var(--space-1);
+  }
+
+  .rating__stars :global(.rating__star--on) {
+    width: 24px;
+    height: 24px;
+    color: #f5b301;
+  }
+
+  .rating__stars :global(.rating__star--off) {
+    width: 24px;
+    height: 24px;
+    color: rgba(255, 255, 255, 0.28);
+  }
+
+  .rating__reviews {
+    color: rgba(255, 255, 255, 0.85);
+    font-weight: 600;
+    text-decoration: underline;
+    text-underline-offset: 3px;
+  }
+
+  .rating__reviews:hover,
+  .rating__reviews:focus-visible {
+    color: var(--color-surface);
+  }
+
+  @media (min-width: 768px) {
+    .rating {
+      padding: var(--space-20) var(--space-8);
+    }
+  }
+</style>

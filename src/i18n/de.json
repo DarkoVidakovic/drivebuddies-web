@@ -33,5 +33,130 @@
     "404Heading": "Seite nicht gefunden",
     "404Text": "Die gesuchte Seite existiert leider nicht oder wurde verschoben.",
     "404Back": "Zur Startseite"
+  },
+  "common": {
+    "whatsapp": "WhatsApp"
+  },
+  "home": {
+    "hero": {
+      "eyebrow": "Fahrschule in Zürich & Thalwil",
+      "title": "Sicher ans Ziel – mit DriveBuddies",
+      "subtitle": "Moderne Fahrzeuge, flexible Termine und erfahrene Fahrlehrer. Wir begleiten dich vom Lernfahrausweis bis zum Führerausweis.",
+      "ctaPrimary": "Kurse entdecken",
+      "ctaWhatsapp": "Per WhatsApp anfragen",
+      "trust": "Über 500 erfolgreiche Fahrschüler:innen"
+    },
+    "usp": {
+      "title": "Warum DriveBuddies?",
+      "subtitle": "Drei Gründe, warum du bei uns schneller und entspannter zum Führerausweis kommst.",
+      "items": [
+        {
+          "icon": "car",
+          "title": "Moderne Fahrzeuge",
+          "text": "Neuwertige Fahrzeuge mit aktuellen Assistenzsystemen – sicher, sauber und angenehm zu fahren."
+        },
+        {
+          "icon": "clock",
+          "title": "Flexible Termine",
+          "text": "Abends, am Wochenende oder kurzfristig: Wir richten die Fahrstunden nach deinem Alltag aus."
+        },
+        {
+          "icon": "instructor",
+          "title": "Erfahrene Fahrlehrer",
+          "text": "Geduldige, mehrsprachige Fahrlehrer mit jahrelanger Erfahrung und hoher Erfolgsquote."
+        }
+      ]
+    },
+    "services": {
+      "title": "Unsere Ausbildungen",
+      "subtitle": "Vom ersten Grundkurs bis zur Prüfung – wähle deine Kategorie.",
+      "items": [
+        {
+          "icon": "car",
+          "title": "Auto – Kat. B",
+          "text": "Komplette Ausbildung für den Personenwagen inklusive Grundkurs, VKU und Prüfungsvorbereitung.",
+          "cta": "Mehr erfahren"
+        },
+        {
+          "icon": "motorcycle",
+          "title": "Motorrad – Kat. A",
+          "text": "Grundkurse und Fahrstunden für A1, A35kW und A unbeschränkt – sicher auf zwei Rädern.",
+          "cta": "Mehr erfahren"
+        },
+        {
+          "icon": "trailer",
+          "title": "Anhänger – Kat. BE",
+          "text": "Ausbildung für das Fahren mit Anhänger und schwereren Gespannen – souverän rangieren.",
+          "cta": "Mehr erfahren"
+        }
+      ]
+    },
+    "rating": {
+      "title": "Das sagen unsere Fahrschüler:innen",
+      "subtitle": "Bewertungen von echten Google-Rezensionen.",
+      "ratingLabel": "von 5 Sternen",
+      "reviewsLabel": "Google-Rezensionen",
+      "cta": "Alle Bewertungen ansehen"
+    },
+    "journey": {
+      "eyebrow": "Dein Weg zum Führerausweis",
+      "title": "So läuft die Schweizer Führerausbildung ab",
+      "intro": "Wir begleiten dich durch jede Etappe – von den ersten Pflichtkursen bis zur zweiten Ausbildungsphase.",
+      "steps": [
+        {
+          "step": "1",
+          "title": "Lernfahrausweis",
+          "text": "Nothelfer und Sehtest absolvieren, dann den Lernfahrausweis beim Strassenverkehrsamt beantragen.",
+          "href": "/lernfahrausweis/",
+          "linkLabel": "Zum Lernfahrausweis"
+        },
+        {
+          "step": "2",
+          "title": "Führerausweis",
+          "text": "VKU besuchen, Fahrstunden nehmen und die praktische Prüfung erfolgreich bestehen.",
+          "href": "/fuehrerausweis/",
+          "linkLabel": "Zum Führerausweis"
+        },
+        {
+          "step": "3",
+          "title": "2-Phasen-Ausbildung",
+          "text": "Die obligatorische Weiterausbildungsphase (WAB) innerhalb der Probezeit abschliessen.",
+          "href": "/2-phasen-ausbildung/",
+          "linkLabel": "Zur 2-Phasen-Ausbildung"
+        }
+      ]
+    },
+    "instructor": {
+      "eyebrow": "Lerne dein Team kennen",
+      "name": "Dein DriveBuddies-Team",
+      "role": "Erfahrene Fahrlehrer in Zürich",
+      "text": "Wir glauben an eine persönliche, geduldige Ausbildung auf Augenhöhe. Mit modernem Fahrzeug, klarer Kommunikation und einem Lerntempo, das zu dir passt, bringen wir dich sicher durch die Prüfung – und darüber hinaus.",
+      "cta": "Mehr über uns"
+    },
+    "faq": {
+      "eyebrow": "Häufige Fragen",
+      "title": "Antworten auf die wichtigsten Fragen",
+      "items": [
+        {
+          "q": "Was brauche ich, um mit dem Autofahren zu beginnen?",
+          "a": "Du benötigst den Nothelfer-Kurs, einen bestandenen Sehtest und den Lernfahrausweis vom Strassenverkehrsamt. Danach kannst du mit den Fahrstunden starten."
+        },
+        {
+          "q": "Wie viele Fahrstunden brauche ich?",
+          "a": "Das ist individuell. Nach einer ersten Probelektion schätzen wir gemeinsam ein, wie viele Lektionen du bis zur Prüfung benötigst."
+        },
+        {
+          "q": "Bietet ihr Fahrstunden auf Englisch an?",
+          "a": "Ja. Unsere Fahrlehrer unterrichten auf Deutsch und Englisch – so fühlst du dich von Anfang an wohl."
+        }
+      ],
+      "cta": "Kontakt aufnehmen"
+    },
+    "finalCta": {
+      "title": "Bereit für die erste Fahrstunde?",
+      "text": "Melde dich noch heute und starte deine Fahrausbildung mit DriveBuddies – flexibel, persönlich und erfolgreich.",
+      "ctaPrimary": "Jetzt anmelden",
+      "ctaWhatsapp": "Per WhatsApp anfragen"
+    }
   }
 }

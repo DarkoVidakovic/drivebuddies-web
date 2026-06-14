@@ -1,53 +1,69 @@
 ---
 import Layout from '../../layouts/Layout.astro';
-import Button from '../../components/ui/Button.astro';
-import Section from '../../components/ui/Section.astro';
+import Hero from '../../components/home/Hero.astro';
+import UspHighlights from '../../components/home/UspHighlights.astro';
+import ServiceTeasers from '../../components/home/ServiceTeasers.astro';
+import RatingBand from '../../components/home/RatingBand.astro';
+import LicenceJourney from '../../components/home/LicenceJourney.astro';
+import InstructorIntro from '../../components/home/InstructorIntro.astro';
+import FaqTeaser from '../../components/home/FaqTeaser.astro';
+import FinalCta from '../../components/home/FinalCta.astro';
 import { useTranslations } from '../../i18n/index.ts';
 
-const t = useTranslations('en');
+const locale = 'en';
+const t = useTranslations(locale);
+const site = 'https://drivebuddies.ch';
+
+// ── JSON-LD: WebSite + Organization (IA table) + FAQPage (FAQ teaser) ──────
+const websiteSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'WebSite',
+  name: 'DriveBuddies Driving School Zurich',
+  url: `${site}/en/`,
+  inLanguage: 'en',
+  publisher: { '@id': `${site}/#organization` },
+};
+
+const organizationSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'Organization',
+  '@id': `${site}/#organization`,
+  name: 'Drive Buddies Fahrschule',
+  url: `${site}/`,
+  logo: `${site}/logo-icon.png`,
+  sameAs: [
+    'https://www.instagram.com/drive_buddies/',
+    'https://www.google.com/maps/place/Drive+Buddies+Fahrschule/data=!4m2!3m1!1s0x0:0xaed93d82704b5f67',
+  ],
+};
+
+const faqSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'FAQPage',
+  mainEntity: t.home.faq.items.map((item) => ({
+    '@type': 'Question',
+    name: item.q,
+    acceptedAnswer: { '@type': 'Answer', text: item.a },
+  })),
+};
+
+const jsonLd = [websiteSchema, organizationSchema, faqSchema];
 ---
 
 <Layout
   title={t.seo.homeTitle}
   description={t.seo.homeDescription}
-  locale="en"
-  hreflangDe="https://drivebuddies.ch/"
-  hreflangEn="https://drivebuddies.ch/en/"
+  locale={locale}
+  hreflangDe={`${site}/`}
+  hreflangEn={`${site}/en/`}
+  jsonLd={jsonLd}
 >
-  <Section>
-    <div class="hero">
-      <h1 class="hero__title">DriveBuddies</h1>
-      <p class="hero__subtitle">Your driving school in Zurich — modern, flexible, personal.</p>
-      <div class="hero__actions">
-        <Button href="/en/courses/" size="lg">{t.nav.courses}</Button>
-        <Button href="/en/contact/" variant="secondary" size="lg">{t.nav.contact}</Button>
-      </div>
-    </div>
-  </Section>
+  <Hero locale={locale} />
+  <UspHighlights locale={locale} />
+  <ServiceTeasers locale={locale} />
+  <RatingBand locale={locale} />
+  <LicenceJourney locale={locale} />
+  <InstructorIntro locale={locale} />
+  <FaqTeaser locale={locale} />
+  <FinalCta locale={locale} />
 </Layout>
-
-<style>
-  .hero {
-    text-align: center;
-    padding-block: var(--space-12);
-  }
-  .hero__title {
-    font-size: clamp(2.5rem, 6vw, 5rem);
-    font-weight: 700;
-    color: var(--color-primary);
-    margin-bottom: var(--space-4);
-  }
-  .hero__subtitle {
-    font-size: clamp(1rem, 2vw, 1.375rem);
-    color: var(--color-text-muted);
-    max-width: 60ch;
-    margin-inline: auto;
-    margin-bottom: var(--space-8);
-  }
-  .hero__actions {
-    display: flex;
-    gap: var(--space-4);
-    justify-content: center;
-    flex-wrap: wrap;
-  }
-</style>

@@ -1,0 +1,91 @@
+---
+import Button from '../ui/Button.astro';
+import WhatsAppButton from '../ui/WhatsAppButton.astro';
+import { useTranslations, type Locale } from '../../i18n/index.ts';
+
+interface Props {
+  locale: Locale;
+}
+
+const { locale } = Astro.props;
+const t = useTranslations(locale);
+const c = t.home.finalCta;
+
+const contactHref = locale === 'en' ? '/en/contact/' : '/kontakt/';
+const whatsappMsg =
+  locale === 'en'
+    ? 'Hi DriveBuddies, I would like to book my first driving lesson.'
+    : 'Hallo DriveBuddies, ich möchte meine erste Fahrstunde buchen.';
+---
+
+<section class="final-cta section--dark">
+  <div class="final-cta__inner">
+    <h2 class="final-cta__title">{c.title}</h2>
+    <p class="final-cta__text">{c.text}</p>
+    <div class="final-cta__actions">
+      <Button href={contactHref} size="lg">{c.ctaPrimary}</Button>
+      <WhatsAppButton label={c.ctaWhatsapp} size="lg" variant="ghost" message={whatsappMsg} class="final-cta__whatsapp" />
+    </div>
+  </div>
+</section>
+
+<style>
+  .final-cta {
+    background: var(--color-primary);
+    color: var(--color-surface);
+    padding: var(--space-20) var(--space-6);
+  }
+
+  .final-cta__inner {
+    max-width: 1200px;
+    margin-inline: auto;
+    text-align: center;
+  }
+
+  .final-cta__title {
+    font-size: clamp(1.75rem, 4vw, 3rem);
+    font-weight: 700;
+    margin-bottom: var(--space-4);
+  }
+
+  .final-cta__text {
+    color: rgba(255, 255, 255, 0.85);
+    font-size: 1.125rem;
+    max-width: 56ch;
+    margin: 0 auto var(--space-8);
+  }
+
+  .final-cta__actions {
+    display: flex;
+    gap: var(--space-4);
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  /* On the blue band, the primary button needs a light treatment for contrast. */
+  .final-cta__actions :global(.btn--primary) {
+    background-color: var(--color-surface);
+    color: var(--color-primary);
+    border-color: var(--color-surface);
+  }
+
+  .final-cta__actions :global(.btn--primary:hover) {
+    background-color: var(--color-surface-alt);
+    border-color: var(--color-surface-alt);
+  }
+
+  .final-cta__actions :global(.final-cta__whatsapp) {
+    color: var(--color-surface);
+    border-color: rgba(255, 255, 255, 0.6);
+  }
+
+  .final-cta__actions :global(.final-cta__whatsapp:hover) {
+    background-color: rgba(255, 255, 255, 0.12);
+  }
+
+  @media (min-width: 768px) {
+    .final-cta {
+      padding: var(--space-24) var(--space-8);
+    }
+  }
+</style>

@@ -1,0 +1,124 @@
+---
+import Section from '../ui/Section.astro';
+import { useTranslations, type Locale } from '../../i18n/index.ts';
+
+interface Props {
+  locale: Locale;
+}
+
+const { locale } = Astro.props;
+const t = useTranslations(locale);
+const j = t.home.journey;
+---
+
+<Section>
+  <div class="journey__head">
+    <p class="journey__eyebrow">{j.eyebrow}</p>
+    <h2 class="journey__title">{j.title}</h2>
+    <p class="journey__intro">{j.intro}</p>
+  </div>
+  <ol class="journey__steps">
+    {
+      j.steps.map((step) => (
+        <li class="journey__step">
+          <span class="journey__num" aria-hidden="true">{step.step}</span>
+          <h3 class="journey__step-title">{step.title}</h3>
+          <p class="journey__step-text">{step.text}</p>
+          <a class="journey__link" href={step.href}>
+            {step.linkLabel}
+            <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M5 12h14M13 6l6 6-6 6" />
+            </svg>
+          </a>
+        </li>
+      ))
+    }
+  </ol>
+</Section>
+
+<style>
+  .journey__head {
+    text-align: center;
+    max-width: 62ch;
+    margin: 0 auto var(--space-12);
+  }
+
+  .journey__eyebrow {
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    font-size: 0.875rem;
+    font-weight: 600;
+    color: var(--color-primary);
+    margin: 0 0 var(--space-3);
+  }
+
+  .journey__title {
+    font-size: clamp(1.75rem, 3vw, 2.5rem);
+    font-weight: 700;
+    margin-bottom: var(--space-4);
+  }
+
+  .journey__intro {
+    color: var(--color-text-muted);
+    font-size: 1.125rem;
+    margin: 0;
+  }
+
+  .journey__steps {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: var(--space-8);
+    counter-reset: journey;
+  }
+
+  .journey__step {
+    position: relative;
+    padding: var(--space-8);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-lg);
+    background: var(--color-surface);
+  }
+
+  .journey__num {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: var(--space-12);
+    height: var(--space-12);
+    border-radius: var(--radius-full);
+    background: var(--color-primary);
+    color: var(--color-surface);
+    font-weight: 700;
+    font-size: 1.25rem;
+    margin-bottom: var(--space-6);
+  }
+
+  .journey__step-title {
+    font-size: 1.25rem;
+    font-weight: 700;
+    margin-bottom: var(--space-3);
+  }
+
+  .journey__step-text {
+    color: var(--color-text-muted);
+    margin: 0 0 var(--space-6);
+  }
+
+  .journey__link {
+    display: inline-flex;
+    align-items: center;
+    gap: var(--space-2);
+    color: var(--color-primary);
+    font-weight: 600;
+    text-decoration: none;
+  }
+
+  .journey__link:hover,
+  .journey__link:focus-visible {
+    text-decoration: underline;
+    text-underline-offset: 3px;
+  }
+</style>

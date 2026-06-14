@@ -33,5 +33,130 @@
     "404Heading": "Page not found",
     "404Text": "The page you are looking for does not exist or has been moved.",
     "404Back": "Back to home"
+  },
+  "common": {
+    "whatsapp": "WhatsApp"
+  },
+  "home": {
+    "hero": {
+      "eyebrow": "Driving school in Zurich & Thalwil",
+      "title": "Reach your goal safely – with DriveBuddies",
+      "subtitle": "Modern vehicles, flexible times and experienced Fahrlehrer. We guide you all the way from the Lernfahrausweis to the Führerausweis.",
+      "ctaPrimary": "Explore courses",
+      "ctaWhatsapp": "Ask us on WhatsApp",
+      "trust": "Over 500 successful learner drivers"
+    },
+    "usp": {
+      "title": "Why DriveBuddies?",
+      "subtitle": "Three reasons you'll get your licence faster and more relaxed with us.",
+      "items": [
+        {
+          "icon": "car",
+          "title": "Modern vehicles",
+          "text": "Near-new cars with the latest driver-assistance systems – safe, clean and pleasant to drive."
+        },
+        {
+          "icon": "clock",
+          "title": "Flexible times",
+          "text": "Evenings, weekends or at short notice: we schedule your lessons around your daily life."
+        },
+        {
+          "icon": "instructor",
+          "title": "Experienced instructors",
+          "text": "Patient, multilingual Fahrlehrer with years of experience and a high pass rate."
+        }
+      ]
+    },
+    "services": {
+      "title": "Our training programmes",
+      "subtitle": "From your first Grundkurs to the exam – pick your category.",
+      "items": [
+        {
+          "icon": "car",
+          "title": "Car – Cat. B",
+          "text": "Complete car training including Grundkurs, VKU and exam preparation.",
+          "cta": "Learn more"
+        },
+        {
+          "icon": "motorcycle",
+          "title": "Motorcycle – Cat. A",
+          "text": "Grundkurse and lessons for A1, A35kW and unrestricted A – confident on two wheels.",
+          "cta": "Learn more"
+        },
+        {
+          "icon": "trailer",
+          "title": "Trailer – Cat. BE",
+          "text": "Training for driving with a trailer and heavier combinations – manoeuvre with ease.",
+          "cta": "Learn more"
+        }
+      ]
+    },
+    "rating": {
+      "title": "What our learners say",
+      "subtitle": "Ratings from real Google reviews.",
+      "ratingLabel": "out of 5 stars",
+      "reviewsLabel": "Google reviews",
+      "cta": "Read all reviews"
+    },
+    "journey": {
+      "eyebrow": "Your path to the licence",
+      "title": "How the Swiss driver training works",
+      "intro": "We guide you through every stage – from the first mandatory courses to the second training phase.",
+      "steps": [
+        {
+          "step": "1",
+          "title": "Lernfahrausweis",
+          "text": "Complete the Nothelfer course and eye test, then apply for the Lernfahrausweis at the Strassenverkehrsamt.",
+          "href": "/en/lernfahrausweis/",
+          "linkLabel": "About the Lernfahrausweis"
+        },
+        {
+          "step": "2",
+          "title": "Führerausweis",
+          "text": "Attend the VKU, take driving lessons and pass the practical Prüfung.",
+          "href": "/en/fuehrerausweis/",
+          "linkLabel": "About the Führerausweis"
+        },
+        {
+          "step": "3",
+          "title": "2-Phasen-Ausbildung",
+          "text": "Complete the mandatory second training phase (WAB) within your probationary period.",
+          "href": "/en/2-phasen-ausbildung/",
+          "linkLabel": "About the 2-Phasen-Ausbildung"
+        }
+      ]
+    },
+    "instructor": {
+      "eyebrow": "Meet your team",
+      "name": "Your DriveBuddies team",
+      "role": "Experienced Fahrlehrer in Zurich",
+      "text": "We believe in personal, patient training as equals. With a modern car, clear communication and a pace that suits you, we'll get you safely through the exam – and beyond.",
+      "cta": "More about us"
+    },
+    "faq": {
+      "eyebrow": "Frequently asked",
+      "title": "Answers to the most common questions",
+      "items": [
+        {
+          "q": "What do I need to start driving?",
+          "a": "You'll need the Nothelfer course, a passed eye test and the Lernfahrausweis from the Strassenverkehrsamt. After that you can start your lessons."
+        },
+        {
+          "q": "How many driving lessons do I need?",
+          "a": "It's individual. After a first trial lesson we estimate together how many lessons you'll need before the exam."
+        },
+        {
+          "q": "Do you offer lessons in English?",
+          "a": "Yes. Our Fahrlehrer teach in German and English – so you feel comfortable from the very start."
+        }
+      ],
+      "cta": "Get in touch"
+    },
+    "finalCta": {
+      "title": "Ready for your first lesson?",
+      "text": "Get in touch today and start your driver training with DriveBuddies – flexible, personal and successful.",
+      "ctaPrimary": "Sign up now",
+      "ctaWhatsapp": "Ask us on WhatsApp"
+    }
   }
 }
