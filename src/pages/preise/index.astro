@@ -1,0 +1,493 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import Section from '../../components/ui/Section.astro';
+import Button from '../../components/ui/Button.astro';
+import WhatsAppButton from '../../components/ui/WhatsAppButton.astro';
+import { useTranslations } from '../../i18n/index.ts';
+import {
+  lessonRates,
+  grundkursRates,
+  trailerPackage,
+  bundlePackages,
+  vkuRate,
+  versicherungspauschale,
+  CURRENCY,
+} from '../../data/preise.ts';
+
+const locale = 'de';
+const t = useTranslations(locale);
+const p = t.preise;
+const site = 'https://drivebuddies.ch';
+
+const formatChf = (n: number) => `CHF ${n.toLocaleString('de-CH')}`;
+
+const jsonLd = [
+  // Car lesson
+  {
+    '@context': 'https://schema.org',
+    '@type': 'Offer',
+    name: p.labelAuto,
+    url: `${site}/preise/`,
+    priceCurrency: CURRENCY,
+    price: lessonRates.auto.priceChf,
+    description: `Fahrstunde Auto Kat. B – ${lessonRates.auto.durationMin} Minuten inkl. Fahrzeug`,
+    seller: { '@id': `${site}/#organization` },
+    priceSpecification: {
+      '@type': 'UnitPriceSpecification',
+      price: lessonRates.auto.priceChf,
+      priceCurrency: CURRENCY,
+      unitText: 'Fahrstunde (50 Min.)',
+    },
+  },
+  // Motorcycle lesson
+  {
+    '@context': 'https://schema.org',
+    '@type': 'Offer',
+    name: p.labelMotorrad,
+    url: `${site}/preise/`,
+    priceCurrency: CURRENCY,
+    price: lessonRates.motorrad.priceChf,
+    description: `Fahrstunde Motorrad Kat. A – ${lessonRates.motorrad.durationMin} Minuten inkl. Fahrzeug`,
+    seller: { '@id': `${site}/#organization` },
+    priceSpecification: {
+      '@type': 'UnitPriceSpecification',
+      price: lessonRates.motorrad.priceChf,
+      priceCurrency: CURRENCY,
+      unitText: 'Fahrstunde (50 Min.)',
+    },
+  },
+  // Grundkurs A1
+  {
+    '@context': 'https://schema.org',
+    '@type': 'Offer',
+    name: p.labelA1,
+    url: `${site}/preise/`,
+    priceCurrency: CURRENCY,
+    price: grundkursRates[0].priceChf,
+    description: `Motorrad-Grundkurs A1 – ${grundkursRates[0].durationDays} Tage Theorie & Praxis`,
+    seller: { '@id': `${site}/#organization` },
+  },
+  // Trailer package
+  {
+    '@context': 'https://schema.org',
+    '@type': 'Offer',
+    name: p.labelTrailerPackage,
+    url: `${site}/preise/`,
+    priceCurrency: CURRENCY,
+    price: trailerPackage.priceChf,
+    description: `Anhänger-Paket Kat. BE – ${trailerPackage.lessons} Fahrstunden inkl. Rangierparcours`,
+    seller: { '@id': `${site}/#organization` },
+  },
+  // VKU
+  {
+    '@context': 'https://schema.org',
+    '@type': 'Offer',
+    name: p.labelVku,
+    url: `${site}/preise/`,
+    priceCurrency: CURRENCY,
+    price: vkuRate.priceChf,
+    description: `VKU bei DriveBuddies – ${vkuRate.sessions} Halbtage, obligatorisch vor der Führerprüfung`,
+    seller: { '@id': `${site}/#organization` },
+  },
+];
+---
+
+<Layout
+  title={p.seoTitle}
+  description={p.seoDescription}
+  locale={locale}
+  hreflangDe={`${site}/preise/`}
+  hreflangEn={`${site}/en/prices/`}
+  jsonLd={jsonLd}
+>
+  <!-- Hero -->
+  <Section>
+    <nav class="breadcrumb" aria-label="Breadcrumb">
+      <ol class="breadcrumb__list">
+        <li><a href="/">Startseite</a></li>
+        <li aria-current="page">{p.title}</li>
+      </ol>
+    </nav>
+
+    <div class="page-head">
+      <span class="eyebrow">{p.eyebrow}</span>
+      <h1 class="page-title">{p.title}</h1>
+      <p class="page-lead">{p.lead}</p>
+    </div>
+  </Section>
+
+  <!-- Fahrstunden rates -->
+  <Section variant="alt">
+    <div class="section-head">
+      <h2 class="section-title">{p.lessonRatesTitle}</h2>
+      <p class="section-note">{p.lessonRatesNote}</p>
+    </div>
+    <div class="card-grid">
+      <div class="price-card">
+        <div class="price-card__label">{p.labelAuto}</div>
+        <div class="price-card__price">{formatChf(lessonRates.auto.priceChf)}</div>
+        <div class="price-card__unit">{p.perLesson}</div>
+        <div class="price-card__meta">{lessonRates.auto.durationMin} Min.</div>
+      </div>
+      <div class="price-card price-card--featured">
+        <div class="price-card__label">{p.labelMotorrad}</div>
+        <div class="price-card__price">{formatChf(lessonRates.motorrad.priceChf)}</div>
+        <div class="price-card__unit">{p.perLesson}</div>
+        <div class="price-card__meta">{lessonRates.motorrad.durationMin} Min.</div>
+      </div>
+      <div class="price-card">
+        <div class="price-card__label">{p.labelAnhaenger}</div>
+        <div class="price-card__price">{formatChf(lessonRates.anhaenger.priceChf)}</div>
+        <div class="price-card__unit">{p.perLesson}</div>
+        <div class="price-card__meta">{lessonRates.anhaenger.durationMin} Min.</div>
+      </div>
+    </div>
+  </Section>
+
+  <!-- Grundkurs Motorrad -->
+  <Section>
+    <div class="section-head">
+      <h2 class="section-title">{p.grundkursTitle}</h2>
+      <p class="section-note">{p.grundkursNote}</p>
+    </div>
+    <div class="card-grid card-grid--two">
+      {grundkursRates.map((g) => (
+        <div class="price-card">
+          <div class="price-card__badge">{g.category}</div>
+          <div class="price-card__price">{formatChf(g.priceChf)}</div>
+          <div class="price-card__unit">{p.perCourse}</div>
+          <div class="price-card__meta">{g.durationDays} {p.days}</div>
+        </div>
+      ))}
+    </div>
+  </Section>
+
+  <!-- Anhänger-Paket -->
+  <Section variant="alt">
+    <div class="section-head">
+      <h2 class="section-title">{p.trailerTitle}</h2>
+      <p class="section-note">{p.trailerNote}</p>
+    </div>
+    <div class="card-grid card-grid--one">
+      <div class="price-card price-card--wide">
+        <div class="price-card__label">{p.labelTrailerPackage}</div>
+        <div class="price-card__price">{formatChf(trailerPackage.priceChf)}</div>
+        <div class="price-card__unit">{p.perPackage}</div>
+        <div class="price-card__saving">
+          {p.youSave.replace('{amount}', String(trailerPackage.regularPriceChf - trailerPackage.priceChf))}
+        </div>
+      </div>
+    </div>
+  </Section>
+
+  <!-- Auto-Sparpakete -->
+  <Section>
+    <div class="section-head">
+      <h2 class="section-title">{p.bundleTitle}</h2>
+      <p class="section-note">{p.bundleNote}</p>
+    </div>
+    <div class="card-grid">
+      {bundlePackages.map((pkg) => (
+        <div class="price-card price-card--bundle">
+          <div class="price-card__badge">{pkg.lessons} {p.lessons}</div>
+          <div class="price-card__price">{formatChf(pkg.priceChf)}</div>
+          <div class="price-card__unit">{p.perPackage}</div>
+          <div class="price-card__saving">
+            {p.youSave.replace('{amount}', String(pkg.regularPriceChf - pkg.priceChf))}
+          </div>
+        </div>
+      ))}
+    </div>
+  </Section>
+
+  <!-- VKU -->
+  <Section variant="alt">
+    <div class="section-head">
+      <h2 class="section-title">{p.vkuTitle}</h2>
+      <p class="section-note">{p.vkuNote}</p>
+    </div>
+    <div class="card-grid card-grid--one">
+      <div class="price-card price-card--wide">
+        <div class="price-card__label">{p.labelVku}</div>
+        <div class="price-card__price">{formatChf(vkuRate.priceChf)}</div>
+        <div class="price-card__unit">{p.perCourse}</div>
+        <div class="price-card__meta">{vkuRate.sessions} × Halbtag</div>
+      </div>
+    </div>
+  </Section>
+
+  <!-- Versicherungspauschale notice -->
+  <Section>
+    <div class="notice">
+      <div class="notice__icon" aria-hidden="true">
+        <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+        </svg>
+      </div>
+      <div class="notice__body">
+        <h2 class="notice__title">{p.versicherungTitle}</h2>
+        <p class="notice__text">
+          {p.versicherungText.replace('{amount}', String(versicherungspauschale.priceChf))}
+        </p>
+      </div>
+    </div>
+    <p class="disclaimer">{p.disclaimer}</p>
+  </Section>
+
+  <!-- CTA -->
+  <Section variant="dark">
+    <div class="cta-band">
+      <h2 class="cta-band__title">{p.ctaTitle}</h2>
+      <p class="cta-band__text">{p.ctaText}</p>
+      <div class="cta-band__actions">
+        <Button href="/kontakt/" variant="primary" size="lg">{p.ctaPrimary}</Button>
+        <WhatsAppButton label={p.ctaWhatsapp} message={p.ctaWhatsappMessage} />
+      </div>
+    </div>
+  </Section>
+</Layout>
+
+<style>
+  .breadcrumb {
+    margin-bottom: var(--space-10);
+  }
+
+  .breadcrumb__list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--space-2);
+    font-size: 0.875rem;
+    color: var(--color-text-muted);
+  }
+
+  .breadcrumb__list li + li::before {
+    content: '/';
+    margin-right: var(--space-2);
+  }
+
+  .breadcrumb__list a {
+    color: var(--color-primary);
+    text-decoration: none;
+  }
+
+  .breadcrumb__list a:hover {
+    text-decoration: underline;
+  }
+
+  .page-head {
+    max-width: 70ch;
+    margin-bottom: var(--space-4);
+  }
+
+  .eyebrow {
+    display: inline-block;
+    font-size: 0.875rem;
+    font-weight: 600;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--color-primary);
+    margin-bottom: var(--space-3);
+  }
+
+  .page-title {
+    font-size: clamp(2rem, 4vw, 3rem);
+    font-weight: 800;
+    line-height: 1.15;
+    margin-bottom: var(--space-6);
+  }
+
+  .page-lead {
+    font-size: 1.125rem;
+    color: var(--color-text-muted);
+    line-height: 1.7;
+    margin: 0;
+  }
+
+  /* Section header */
+  .section-head {
+    margin-bottom: var(--space-8);
+  }
+
+  .section-title {
+    font-size: clamp(1.375rem, 2.5vw, 1.75rem);
+    font-weight: 700;
+    margin-bottom: var(--space-2);
+  }
+
+  .section-note {
+    color: var(--color-text-muted);
+    line-height: 1.6;
+    margin: 0;
+  }
+
+  /* Grid layouts */
+  .card-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: var(--space-6);
+  }
+
+  .card-grid--two {
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  }
+
+  .card-grid--one {
+    grid-template-columns: 1fr;
+    max-width: 480px;
+  }
+
+  /* Price card */
+  .price-card {
+    background: var(--color-surface);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-lg);
+    padding: var(--space-8);
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-2);
+    box-shadow: var(--shadow-sm);
+    transition: box-shadow 0.2s;
+  }
+
+  .price-card:hover {
+    box-shadow: var(--shadow-md);
+  }
+
+  .price-card--featured {
+    border-color: var(--color-primary-light);
+    background: color-mix(in srgb, var(--color-primary) 4%, var(--color-surface));
+  }
+
+  .price-card--bundle {
+    border-color: var(--color-primary-light);
+  }
+
+  .price-card--wide {
+    max-width: 480px;
+  }
+
+  .price-card__badge {
+    display: inline-block;
+    font-size: 0.8125rem;
+    font-weight: 700;
+    color: var(--color-primary);
+    background: color-mix(in srgb, var(--color-primary) 12%, transparent);
+    padding: var(--space-1) var(--space-3);
+    border-radius: var(--radius-full);
+    margin-bottom: var(--space-2);
+    align-self: flex-start;
+  }
+
+  .price-card__label {
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--color-text);
+    margin-bottom: var(--space-2);
+  }
+
+  .price-card__price {
+    font-size: clamp(1.75rem, 3vw, 2.25rem);
+    font-weight: 800;
+    color: var(--color-primary);
+    line-height: 1;
+  }
+
+  .price-card__unit {
+    font-size: 0.875rem;
+    color: var(--color-text-muted);
+  }
+
+  .price-card__meta {
+    font-size: 0.875rem;
+    color: var(--color-text-muted);
+    margin-top: var(--space-1);
+  }
+
+  .price-card__saving {
+    display: inline-block;
+    margin-top: var(--space-3);
+    font-size: 0.875rem;
+    font-weight: 600;
+    color: var(--color-success);
+    background: color-mix(in srgb, var(--color-success) 10%, transparent);
+    padding: var(--space-1) var(--space-3);
+    border-radius: var(--radius-full);
+    align-self: flex-start;
+  }
+
+  /* Versicherung notice */
+  .notice {
+    display: flex;
+    gap: var(--space-6);
+    align-items: flex-start;
+    background: color-mix(in srgb, var(--color-primary) 6%, var(--color-surface));
+    border: 1px solid var(--color-primary-light);
+    border-radius: var(--radius-lg);
+    padding: var(--space-8);
+    margin-bottom: var(--space-8);
+  }
+
+  .notice__icon {
+    flex-shrink: 0;
+    color: var(--color-primary);
+    margin-top: 2px;
+  }
+
+  .notice__title {
+    font-size: 1.125rem;
+    font-weight: 700;
+    margin-bottom: var(--space-3);
+  }
+
+  .notice__text {
+    color: var(--color-text-muted);
+    line-height: 1.65;
+    margin: 0;
+  }
+
+  .disclaimer {
+    font-size: 0.8125rem;
+    color: var(--color-text-muted);
+    line-height: 1.6;
+    margin: 0;
+  }
+
+  /* CTA band */
+  .cta-band {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: var(--space-6);
+    text-align: center;
+  }
+
+  .cta-band__title {
+    font-size: clamp(1.5rem, 3vw, 2rem);
+    font-weight: 800;
+    color: var(--color-surface);
+    margin: 0;
+  }
+
+  .cta-band__text {
+    font-size: 1.0625rem;
+    color: color-mix(in srgb, var(--color-surface) 85%, transparent);
+    margin: 0;
+    max-width: 50ch;
+  }
+
+  .cta-band__actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--space-4);
+    justify-content: center;
+  }
+
+  @media (max-width: 480px) {
+    .notice {
+      flex-direction: column;
+    }
+  }
+</style>

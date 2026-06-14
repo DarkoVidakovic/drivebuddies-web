@@ -10,7 +10,8 @@
     "blog": "Blog",
     "openMenu": "Menü öffnen",
     "closeMenu": "Menü schliessen",
-    "switchLang": "English"
+    "switchLang": "English",
+    "prices": "Preise"
   },
   "footer": {
     "tagline": "Ihre Fahrschule in Zürich — modern, flexibel, persönlich.",
@@ -560,5 +561,44 @@
       "ctaPrimary": "Jetzt anmelden",
       "ctaWhatsapp": "Per WhatsApp anfragen"
     }
+  },
+  "preise": {
+    "seoTitle": "Preise Fahrschule Zürich – Fahrstunden & Kurse | DriveBuddies",
+    "seoDescription": "Transparente Preise der Fahrschule DriveBuddies Zürich: Fahrstunden Auto & Motorrad, Grundkurs, Anhänger-Paket, VKU und Sparpakete. CHF-Preise auf einen Blick.",
+    "eyebrow": "Transparente Preise",
+    "title": "Preise & Pakete",
+    "lead": "Alle Preise auf einen Blick – ohne versteckte Kosten. Fahrstunden, Grundkurse, Pakete und der Versicherungshinweis findest du hier übersichtlich aufgelistet.",
+    "lessonRatesTitle": "Fahrstunden (50 Min.)",
+    "lessonRatesNote": "Preise pro Fahrstunde (50 Minuten) inkl. Fahrzeugnutzung.",
+    "grundkursTitle": "Motorrad-Grundkurs",
+    "grundkursNote": "Obligatorischer Grundkurs – Theorie und Praxis auf dem Übungsgelände.",
+    "trailerTitle": "Anhänger-Paket (Kat. BE)",
+    "trailerNote": "Prüfungsfertig in einem Paket: Fahrstunden, Rangierparcours und Prüfungsvorbereitung.",
+    "bundleTitle": "Auto-Sparpakete",
+    "bundleNote": "Mehrere Fahrstunden im Voraus buchen und sparen.",
+    "vkuTitle": "VKU (Verkehrskundeunterricht)",
+    "vkuNote": "Obligatorischer Kurs vor der Führerprüfung – 2 Halbtage bei DriveBuddies.",
+    "versicherungTitle": "Versicherungspauschale",
+    "versicherungText": "Zu jeder Fahrstunde wird eine Versicherungspauschale von CHF {amount} erhoben. Diese deckt die Fahrzeugvollkasko sowie die Haftpflichtversicherung während der Fahrstunde.",
+    "perLesson": "pro Fahrstunde",
+    "perPackage": "pro Paket",
+    "perCourse": "pro Kurs",
+    "days": "Tage",
+    "lessons": "Lektionen",
+    "youSave": "Du sparst CHF {amount}",
+    "included": "Inbegriffen",
+    "labelAuto": "Auto – Kat. B",
+    "labelMotorrad": "Motorrad – Kat. A",
+    "labelAnhaenger": "Anhänger – Kat. BE",
+    "labelA1": "Grundkurs A1 (125cc)",
+    "labelA": "Grundkurs A (35 kW / unbeschränkt)",
+    "labelTrailerPackage": "5 Fahrstunden inkl. Rangierparcours",
+    "labelVku": "VKU – 2 Halbtage",
+    "ctaTitle": "Jetzt anmelden und loslegen",
+    "ctaText": "Hast du Fragen zu den Preisen oder möchtest du direkt einen Termin buchen? Melde dich – wir antworten prompt.",
+    "ctaPrimary": "Jetzt anmelden",
+    "ctaWhatsapp": "Per WhatsApp anfragen",
+    "ctaWhatsappMessage": "Ich interessiere mich für die Fahrausbildung bei DriveBuddies und möchte einen Termin vereinbaren.",
+    "disclaimer": "Alle Preise in CHF, inkl. MwSt. Preisänderungen vorbehalten. Gebühren des Strassenverkehrsamts (Prüfung, Lernfahrausweis etc.) sind nicht inbegriffen."
   }
 }

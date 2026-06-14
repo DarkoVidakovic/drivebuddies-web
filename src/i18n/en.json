@@ -10,7 +10,8 @@
     "blog": "Blog",
     "openMenu": "Open menu",
     "closeMenu": "Close menu",
-    "switchLang": "Deutsch"
+    "switchLang": "Deutsch",
+    "prices": "Prices"
   },
   "footer": {
     "tagline": "Your driving school in Zurich — modern, flexible, personal.",
@@ -560,5 +561,44 @@
       "ctaPrimary": "Sign up now",
       "ctaWhatsapp": "Ask us on WhatsApp"
     }
+  },
+  "preise": {
+    "seoTitle": "Driving School Prices Zurich – Lessons & Courses | DriveBuddies",
+    "seoDescription": "Transparent pricing at DriveBuddies driving school Zurich: car & motorcycle lessons, Grundkurs, trailer package, VKU and bundle deals. All prices in CHF.",
+    "eyebrow": "Transparent pricing",
+    "title": "Prices & Packages",
+    "lead": "All prices at a glance – no hidden costs. Lessons, Grundkurs, packages and the insurance note are all listed clearly below.",
+    "lessonRatesTitle": "Driving lessons (50 min)",
+    "lessonRatesNote": "Price per lesson (50 minutes) including vehicle use.",
+    "grundkursTitle": "Motorcycle Grundkurs",
+    "grundkursNote": "Mandatory Grundkurs – theory and practical exercises on the training ground.",
+    "trailerTitle": "Trailer package (Cat. BE)",
+    "trailerNote": "Exam-ready in one package: lessons, manoeuvring course and exam prep.",
+    "bundleTitle": "Car lesson bundles",
+    "bundleNote": "Book multiple lessons upfront and save.",
+    "vkuTitle": "VKU (Verkehrskundeunterricht)",
+    "vkuNote": "Mandatory course before the driving test – 2 half-days at DriveBuddies.",
+    "versicherungTitle": "Insurance surcharge (Versicherungspauschale)",
+    "versicherungText": "Each driving lesson includes an insurance surcharge of CHF {amount}. This covers comprehensive vehicle insurance and liability insurance during the lesson.",
+    "perLesson": "per lesson",
+    "perPackage": "per package",
+    "perCourse": "per course",
+    "days": "days",
+    "lessons": "lessons",
+    "youSave": "You save CHF {amount}",
+    "included": "Included",
+    "labelAuto": "Car – Cat. B",
+    "labelMotorrad": "Motorcycle – Cat. A",
+    "labelAnhaenger": "Trailer – Cat. BE",
+    "labelA1": "Grundkurs A1 (125cc)",
+    "labelA": "Grundkurs A (35 kW / unrestricted)",
+    "labelTrailerPackage": "5 lessons incl. manoeuvring course",
+    "labelVku": "VKU – 2 half-days",
+    "ctaTitle": "Sign up and get started",
+    "ctaText": "Questions about pricing or ready to book? Get in touch – we respond quickly.",
+    "ctaPrimary": "Sign up now",
+    "ctaWhatsapp": "Ask us on WhatsApp",
+    "ctaWhatsappMessage": "I'm interested in driver training at DriveBuddies and would like to make an appointment.",
+    "disclaimer": "All prices in CHF, VAT included. Prices subject to change. Fees charged by the Strassenverkehrsamt (exam, Lernfahrausweis etc.) are not included."
   }
 }
