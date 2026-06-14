@@ -1,6 +1,7 @@
 {
   "nav": {
     "courses": "Kurse",
+    "services": "Dienstleistungen",
     "learnerLicence": "Lernfahrausweis",
     "licence": "Führerausweis",
     "twoPhase": "2-Phasen-Ausbildung",
@@ -36,6 +37,77 @@
   },
   "common": {
     "whatsapp": "WhatsApp"
+  },
+  "services": {
+    "seoTitle": "Dienstleistungen – Auto, Motorrad, Anhänger | DriveBuddies",
+    "seoDescription": "Alle Fahrausbildungen bei DriveBuddies Zürich: Auto (Kat. B) mit Schalt oder Automat, Motorrad (A1/A), Anhänger (BE) – flexibel, persönlich, erfolgreich.",
+    "eyebrow": "Unsere Ausbildungen",
+    "title": "Wähle deine Kategorie",
+    "subtitle": "Ob Auto, Motorrad oder Anhänger – wir begleiten dich durch die gesamte Ausbildung bis zum Führerausweis.",
+    "ctaContact": "Jetzt anmelden",
+    "ctaWhatsapp": "Per WhatsApp anfragen",
+    "backToServices": "Alle Dienstleistungen",
+    "includesList": "Was inbegriffen ist",
+    "auto": {
+      "seoTitle": "Auto-Ausbildung Kat. B – Schalt & Automat | DriveBuddies",
+      "seoDescription": "Autoausbildung Kategorie B in Zürich: Schaltgetriebe oder Automatik, individuelle Fahrstunden, VKU, Prüfungsvorbereitung. Jetzt bei DriveBuddies anmelden.",
+      "eyebrow": "Kategorie B",
+      "title": "Auto – Schalt oder Automat",
+      "lead": "Egal ob du das Schaltgetriebe meistern oder auf Automatik ausweichen möchtest – wir passen die Ausbildung an deine Bedürfnisse an. Alle Fahrzeuge sind modern ausgestattet und regelmässig gewartet.",
+      "manualTitle": "Schaltgetriebe",
+      "manualText": "Die klassische Wahl: Mit einem Schaltgetriebe bist du auf allen Strassentypen flexibel. Wir nehmen uns die Zeit, die Technik verständlich zu erklären – auch wenn es anfangs etwas länger dauert.",
+      "automaticTitle": "Automatikgetriebe",
+      "automaticText": "Automatik macht das Fahren einfacher und ist ideal, wenn du dich voll auf den Verkehr konzentrieren möchtest. Bitte beachte: Ein Führerausweis auf Automatik gilt nur für Automatikfahrzeuge.",
+      "includedTitle": "Was inbegriffen ist",
+      "included": [
+        "Individuelle Fahrstunden nach deinem Tempo",
+        "VKU (Verkehrskundeunterricht) – obligatorisch",
+        "Grundkurs Theorie und Praxis (sofern noch nicht absolviert)",
+        "Prüfungsvorbereitung und Begleitung zur Prüfung",
+        "Fahrstunden auf Deutsch oder Englisch"
+      ],
+      "ctaWhatsappMessage": "Ich interessiere mich für die Auto-Ausbildung (Kat. B) bei DriveBuddies. Bitte nehmt Kontakt mit mir auf."
+    },
+    "motorrad": {
+      "seoTitle": "Motorrad-Ausbildung A1 & A – Grundkurs & Fahrstunden | DriveBuddies",
+      "seoDescription": "Motorradausbildung in Zürich: Grundkurs und Fahrstunden für A1 (125cc), A35kW und A unbeschränkt. Sicher auf zwei Rädern mit DriveBuddies.",
+      "eyebrow": "Kategorie A",
+      "title": "Motorrad – A1 & A",
+      "lead": "Vom Leichtkraftrad bis zum grossen Motorrad: Wir begleiten dich durch alle Stufen der Motorradausbildung – vom ersten Grundkurs bis zur Prüfung.",
+      "a1Title": "A1 – Leichtkraftrad (ab 16 Jahren)",
+      "a1Text": "Mit A1 darfst du Motorräder bis 125 cm³ und 11 kW fahren. Voraussetzung ist der Grundkurs und der Lernfahrausweis Kat. A1. Mindestalter: 16 Jahre.",
+      "aTitle": "A – Mittelstufe & unbeschränkt",
+      "aText": "Mit 20 Jahren kannst du direkt auf A (35 kW) einsteigen, mit 24 Jahren auf A unbeschränkt – oder jeweils nach 2 Jahren auf der vorherigen Stufe aufsteigen. Der Grundkurs für die jeweilige Stufe ist obligatorisch.",
+      "grundkursTitle": "Grundkurs",
+      "grundkursText": "Der obligatorische Grundkurs umfasst Theorie und praktische Übungen auf einem abgesperrten Platz. Wir bieten Grundkurse für A1 und A an – in kleinen Gruppen mit persönlicher Betreuung.",
+      "fahrstundenTitle": "Fahrstunden",
+      "fahrstundenText": "Nach dem Grundkurs folgst du auf öffentlichen Strassen mit einem erfahrenen Fahrlehrer. Anzahl der Fahrstunden abhängig von Vorkenntnissen und Lernfortschritt.",
+      "included": [
+        "Grundkurs A1 oder A (Theorie + Praxis, obligatorisch)",
+        "Individuelle Fahrstunden im Strassenverkehr",
+        "Prüfungsvorbereitung",
+        "Unterricht auf Deutsch oder Englisch"
+      ],
+      "ctaWhatsappMessage": "Ich interessiere mich für die Motorrad-Ausbildung (Kat. A/A1) bei DriveBuddies. Bitte nehmt Kontakt mit mir auf."
+    },
+    "anhaenger": {
+      "seoTitle": "Anhänger-Ausbildung Kat. BE – Rangieren & Fahren | DriveBuddies",
+      "seoDescription": "Ausbildung für das Fahren mit Anhänger (Kat. BE) in Zürich: sicheres Rangieren, Kurvenfahren und Bremsen mit Anhänger. Jetzt anmelden.",
+      "eyebrow": "Kategorie BE",
+      "title": "Anhänger – Kat. BE",
+      "lead": "Du hast den Führerausweis Kat. B und möchtest einen Anhänger ziehen? Mit der Anhänger-Ausbildung lernst du sicher zu rangieren, zu bremsen und auch in engen Situationen die Übersicht zu behalten.",
+      "requiresTitle": "Voraussetzung",
+      "requiresText": "Für die Ausbildung Kat. BE benötigst du den Führerausweis Kat. B. Die Prüfung umfasst eine praktische Fahrt mit Anhänger und eine Rangierparcours-Aufgabe.",
+      "contentTitle": "Inhalt der Ausbildung",
+      "contentText": "Wir üben das An- und Abkuppeln, Rückwärtsrangieren, das Fahren auf der Autobahn und in engen Kurven sowie das richtige Bremsen bei beladenem Anhänger.",
+      "included": [
+        "Fahrstunden mit eigenem oder gemietetem Anhänger",
+        "Rangierparcours-Übungen",
+        "Prüfungsvorbereitung",
+        "Unterricht auf Deutsch oder Englisch"
+      ],
+      "ctaWhatsappMessage": "Ich interessiere mich für die Anhänger-Ausbildung (Kat. BE) bei DriveBuddies. Bitte nehmt Kontakt mit mir auf."
+    }
   },
   "home": {
     "hero": {

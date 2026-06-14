@@ -1,0 +1,54 @@
+---
+import Section from '../ui/Section.astro';
+import Button from '../ui/Button.astro';
+import WhatsAppButton from '../ui/WhatsAppButton.astro';
+import { useTranslations, type Locale } from '../../i18n/index.ts';
+
+interface Props {
+  locale: Locale;
+  whatsappMessage?: string;
+  contactHref?: string;
+}
+
+const { locale, whatsappMessage = '', contactHref } = Astro.props;
+const t = useTranslations(locale);
+const s = t.services;
+
+const resolvedContactHref = contactHref ?? (locale === 'en' ? '/en/contact/' : '/kontakt/');
+---
+
+<Section variant="alt">
+  <div class="service-cta">
+    <p class="service-cta__text">{s.ctaContact}</p>
+    <div class="service-cta__actions">
+      <Button href={resolvedContactHref} variant="primary" size="lg">
+        {s.ctaContact}
+      </Button>
+      <WhatsAppButton label={s.ctaWhatsapp} message={whatsappMessage} />
+    </div>
+  </div>
+</Section>
+
+<style>
+  .service-cta {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: var(--space-8);
+    text-align: center;
+  }
+
+  .service-cta__text {
+    font-size: clamp(1.25rem, 2vw, 1.75rem);
+    font-weight: 700;
+    margin: 0;
+    max-width: 40ch;
+  }
+
+  .service-cta__actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--space-4);
+    justify-content: center;
+  }
+</style>

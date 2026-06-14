@@ -1,6 +1,7 @@
 {
   "nav": {
     "courses": "Courses",
+    "services": "Services",
     "learnerLicence": "Lernfahrausweis",
     "licence": "Führerausweis",
     "twoPhase": "2-Phasen-Ausbildung",
@@ -36,6 +37,77 @@
   },
   "common": {
     "whatsapp": "WhatsApp"
+  },
+  "services": {
+    "seoTitle": "Services – Car, Motorcycle, Trailer | DriveBuddies",
+    "seoDescription": "All driver training at DriveBuddies Zurich: Car (Cat. B) with manual or automatic, Motorcycle (A1/A), Trailer (BE) – flexible, personal, successful.",
+    "eyebrow": "Our training programmes",
+    "title": "Choose your category",
+    "subtitle": "Whether car, motorcycle or trailer – we guide you through the full training all the way to your licence.",
+    "ctaContact": "Sign up now",
+    "ctaWhatsapp": "Ask us on WhatsApp",
+    "backToServices": "All services",
+    "includesList": "What's included",
+    "auto": {
+      "seoTitle": "Car Training Cat. B – Manual & Automatic | DriveBuddies",
+      "seoDescription": "Car training Category B in Zurich: manual or automatic gearbox, individual lessons, VKU, exam preparation. Sign up with DriveBuddies today.",
+      "eyebrow": "Category B",
+      "title": "Car – Manual or Automatic",
+      "lead": "Whether you want to master the manual gearbox or prefer an automatic – we tailor the training to your needs. All vehicles are modern and well maintained.",
+      "manualTitle": "Manual gearbox",
+      "manualText": "The classic choice: a manual gives you full flexibility on all road types. We take the time to explain the technique clearly – even when it takes a little longer at first.",
+      "automaticTitle": "Automatic gearbox",
+      "automaticText": "An automatic makes driving easier and is ideal when you want to focus fully on traffic. Please note: a licence issued on an automatic is valid for automatic vehicles only.",
+      "includedTitle": "What's included",
+      "included": [
+        "Individual lessons at your own pace",
+        "VKU (Verkehrskundeunterricht) – mandatory",
+        "Grundkurs theory and practical (if not yet completed)",
+        "Exam preparation and accompaniment to the exam",
+        "Lessons in German or English"
+      ],
+      "ctaWhatsappMessage": "I am interested in car training (Cat. B) at DriveBuddies. Please get in touch."
+    },
+    "motorrad": {
+      "seoTitle": "Motorcycle Training A1 & A – Grundkurs & Lessons | DriveBuddies",
+      "seoDescription": "Motorcycle training in Zurich: Grundkurs and lessons for A1 (125cc), A35kW and unrestricted A. Confident on two wheels with DriveBuddies.",
+      "eyebrow": "Category A",
+      "title": "Motorcycle – A1 & A",
+      "lead": "From light motorcycle to full-power bike: we guide you through every stage of motorcycle training – from the first Grundkurs to the exam.",
+      "a1Title": "A1 – Light motorcycle (from age 16)",
+      "a1Text": "With A1 you may ride motorcycles up to 125 cc and 11 kW. You need the Grundkurs and a Lernfahrausweis Cat. A1. Minimum age: 16.",
+      "aTitle": "A – Intermediate & unrestricted",
+      "aText": "At 20 you can go directly to A (35 kW), at 24 to unrestricted A – or step up after 2 years on the previous level. The Grundkurs for the relevant level is mandatory.",
+      "grundkursTitle": "Grundkurs",
+      "grundkursText": "The mandatory Grundkurs covers theory and practical exercises on a closed course. We run Grundkurse for A1 and A in small groups with personal coaching.",
+      "fahrstundenTitle": "Fahrstunden",
+      "fahrstundenText": "After the Grundkurs you ride on public roads with an experienced Fahrlehrer. The number of Fahrstunden depends on prior experience and progress.",
+      "included": [
+        "Grundkurs A1 or A (theory + practical, mandatory)",
+        "Individual Fahrstunden on public roads",
+        "Exam preparation",
+        "Lessons in German or English"
+      ],
+      "ctaWhatsappMessage": "I am interested in motorcycle training (Cat. A/A1) at DriveBuddies. Please get in touch."
+    },
+    "anhaenger": {
+      "seoTitle": "Trailer Training Cat. BE – Manoeuvring & Driving | DriveBuddies",
+      "seoDescription": "Trailer training (Cat. BE) in Zurich: safe manoeuvring, cornering and braking with a trailer. Sign up with DriveBuddies.",
+      "eyebrow": "Category BE",
+      "title": "Trailer – Cat. BE",
+      "lead": "You have a Cat. B licence and want to tow a trailer? With trailer training you learn to manoeuvre safely, brake confidently and keep control even in tight situations.",
+      "requiresTitle": "Prerequisites",
+      "requiresText": "For Cat. BE training you need a valid Cat. B licence. The exam includes a practical drive with trailer and a manoeuvring exercise.",
+      "contentTitle": "Course content",
+      "contentText": "We practise coupling and uncoupling, reversing with a trailer, motorway driving, tight corners and correct braking with a loaded trailer.",
+      "included": [
+        "Lessons with your own or a rented trailer",
+        "Manoeuvring course exercises",
+        "Exam preparation",
+        "Lessons in German or English"
+      ],
+      "ctaWhatsappMessage": "I am interested in trailer training (Cat. BE) at DriveBuddies. Please get in touch."
+    }
   },
   "home": {
     "hero": {

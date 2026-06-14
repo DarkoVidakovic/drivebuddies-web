@@ -11,7 +11,10 @@ const { locale } = Astro.props;
 const t = useTranslations(locale);
 const s = t.home.services;
 
-const coursesHref = locale === 'en' ? '/en/courses/' : '/kurse/';
+const serviceLinks =
+  locale === 'en'
+    ? ['/en/services/car/', '/en/services/motorcycle/', '/en/services/trailer/']
+    : ['/dienstleistungen/auto/', '/dienstleistungen/motorrad/', '/dienstleistungen/anhaenger/'];
 ---
 
 <Section variant="alt">
@@ -21,9 +24,9 @@ const coursesHref = locale === 'en' ? '/en/courses/' : '/kurse/';
   </div>
   <ul class="services__grid">
     {
-      s.items.map((item) => (
+      s.items.map((item, i) => (
         <li>
-          <a class="service-card" href={coursesHref}>
+          <a class="service-card" href={serviceLinks[i]}>
             <span class="service-card__icon">
               <Icon name={item.icon as 'car' | 'motorcycle' | 'trailer'} />
             </span>
