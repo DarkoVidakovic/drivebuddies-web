@@ -4,7 +4,7 @@ description: "Die praktische Fahrprüfung muss kein Stressfaktor sein. Mit den r
 seoTitle: "5 Tipps für eine entspannte Führerprüfung | DriveBuddies"
 date: 2025-10-06
 tags: ["Fahrprüfung", "Prüfungsvorbereitung", "Tipps", "Führerausweis"]
-cover: "https://cdn.prod.website-files.com/68d558b40371205e46901425/68e3e05aecc2e6453e4d4494_Rectangle%2034624579.avif"
+cover: "/blog/5-tipps-fuehrerpruefung.avif"
 lang: de
 draft: false
 author: "Jakov Budimir"

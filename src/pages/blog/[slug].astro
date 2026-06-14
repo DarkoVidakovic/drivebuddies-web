@@ -48,7 +48,7 @@ const blogPostingSchema = {
       url: `${site}/logo-icon.png`,
     },
   },
-  image: cover ?? `${site}/og-default.png`,
+  image: cover ? (cover.startsWith('http') ? cover : `${site}${cover}`) : `${site}/og-default.png`,
   inLanguage: 'de-CH',
   timeRequired: `PT${readingMinutes}M`,
   keywords: tags.join(', '),

@@ -5,7 +5,7 @@ seoTitle: "Häufige Fehler in der Fahrprüfung vermeiden | DriveBuddies"
 seoDescription: "Die typischen Stolpersteine am Prüfungstag – plus konkrete Gegenmassnahmen, damit du sie souverän umschiffst und ruhig durch die Fahrprüfung kommst."
 date: 2025-10-06
 tags: ["Fahrprüfung", "Prüfungsvorbereitung", "Tipps"]
-cover: "https://cdn.prod.website-files.com/68d558b40371205e46901425/68e3ea91922868956b4e4a44_Group%202072751672.avif"
+cover: "/blog/haufige-fehler-fahrpruefung.avif"
 lang: de
 draft: false
 author: "Mario Budimir"

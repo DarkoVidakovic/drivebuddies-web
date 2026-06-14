@@ -6,6 +6,7 @@ import SeoHead from '../components/SeoHead.astro';
 import Icon from '../components/ui/Icon.astro';
 import { useTranslations } from '../i18n/index.ts';
 import type { Locale } from '../i18n/index.ts';
+import { ogImageForPath } from '../i18n/routes.ts';
 
 interface Props {
   title: string;
@@ -40,6 +41,8 @@ const waHref = `https://wa.me/41765861317?text=${encodeURIComponent(waMessage)}`
 const site = 'https://drivebuddies.ch';
 const resolvedCanonical = canonical ?? new URL(Astro.url.pathname, site).href;
 const htmlLang = locale === 'en' ? 'en' : 'de-CH';
+// Default to the branded section OG image when a page doesn't set one.
+const resolvedImage = image ?? ogImageForPath(Astro.url.pathname);
 ---
 
 <!doctype html>
@@ -52,7 +55,7 @@ const htmlLang = locale === 'en' ? 'en' : 'de-CH';
       locale={locale}
       hreflangDe={hreflangDe}
       hreflangEn={hreflangEn}
-      image={image}
+      image={resolvedImage}
       noindex={noindex}
       jsonLd={jsonLd}
     />

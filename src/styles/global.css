@@ -103,3 +103,27 @@ h1, h2, h3, h4, h5, h6 {
   line-height: 1.2;
   margin: 0;
 }
+
+/* ─── Secondary buttons on dark sections ───────────────────────────
+   The secondary (outline) button uses brand-blue text, which fails the
+   4.5:1 contrast ratio on the near-black dark section background. On dark
+   sections, render it with a light outline/text instead. */
+.section--dark a.btn--secondary,
+.section--dark button.btn--secondary {
+  color: var(--color-surface);
+  border-color: rgba(255, 255, 255, 0.75);
+}
+
+.section--dark a.btn--secondary:hover,
+.section--dark a.btn--secondary:focus-visible,
+.section--dark button.btn--secondary:hover,
+.section--dark button.btn--secondary:focus-visible {
+  background-color: var(--color-surface);
+  color: var(--color-accent);
+  border-color: var(--color-surface);
+}
+
+.section--dark a.btn:focus-visible,
+.section--dark button.btn:focus-visible {
+  outline-color: var(--color-surface);
+}
