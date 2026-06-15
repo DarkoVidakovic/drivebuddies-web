@@ -1,5 +1,6 @@
 ---
 import type { Locale } from '../i18n/index.ts';
+import { GOOGLE_MAPS_URL } from '../lib/googlePlaces.ts';
 
 interface Props {
   title: string;
@@ -77,7 +78,7 @@ const localBusinessSchema = {
   ],
   sameAs: [
     'https://www.instagram.com/drive_buddies/',
-    'https://www.google.com/maps/place/Drive+Buddies+Fahrschule/data=!4m2!3m1!1s0x0:0xaed93d82704b5f67',
+    GOOGLE_MAPS_URL,
   ],
 };
 

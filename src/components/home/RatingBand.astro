@@ -1,6 +1,7 @@
 ---
 import Icon from '../ui/Icon.astro';
 import { useTranslations, type Locale } from '../../i18n/index.ts';
+import { fetchPlaceRating, GOOGLE_MAPS_URL } from '../../lib/googlePlaces.ts';
 
 interface Props {
   locale: Locale;
@@ -10,15 +11,8 @@ const { locale } = Astro.props;
 const t = useTranslations(locale);
 const r = t.home.rating;
 
-// ── Placeholder rating data ─────────────────────────────────────────────────
-// M7 wires this to the live Google Places API. Keep the shape stable so the
-// integration only has to swap the source, not the markup.
-const rating = {
-  value: 4.9,
-  count: 127,
-  // Public Google reviews link (mirrors SeoHead sameAs entry).
-  url: 'https://www.google.com/maps/place/Drive+Buddies+Fahrschule/data=!4m2!3m1!1s0x0:0xaed93d82704b5f67',
-};
+const { value, count } = await fetchPlaceRating();
+const rating = { value, count, url: GOOGLE_MAPS_URL };
 
 const fullStars = Math.round(rating.value);
 const formattedValue = rating.value.toLocaleString(locale === 'en' ? 'en' : 'de-CH', {

@@ -9,10 +9,12 @@ import InstructorIntro from '../components/home/InstructorIntro.astro';
 import FaqTeaser from '../components/home/FaqTeaser.astro';
 import FinalCta from '../components/home/FinalCta.astro';
 import { useTranslations } from '../i18n/index.ts';
+import { fetchPlaceRating, GOOGLE_MAPS_URL } from '../lib/googlePlaces.ts';
 
 const locale = 'de';
 const t = useTranslations(locale);
 const site = 'https://drivebuddies.ch';
+const { value: ratingValue, count: ratingCount } = await fetchPlaceRating();
 
 // ── JSON-LD: WebSite + Organization (IA table) + FAQPage (FAQ teaser) ──────
 const websiteSchema = {
@@ -33,12 +35,12 @@ const organizationSchema = {
   logo: `${site}/logo-icon.png`,
   sameAs: [
     'https://www.instagram.com/drive_buddies/',
-    'https://www.google.com/maps/place/Drive+Buddies+Fahrschule/data=!4m2!3m1!1s0x0:0xaed93d82704b5f67',
+    GOOGLE_MAPS_URL,
   ],
   aggregateRating: {
     '@type': 'AggregateRating',
-    ratingValue: '4.9',
-    reviewCount: '127',
+    ratingValue: String(ratingValue),
+    reviewCount: String(ratingCount),
     bestRating: '5',
     worstRating: '1',
   },

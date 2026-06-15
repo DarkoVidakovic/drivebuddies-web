@@ -1,6 +1,7 @@
 ---
 import { useTranslations, type Locale } from '../i18n/index.ts';
 import { route } from '../i18n/routes.ts';
+import { GOOGLE_MAPS_URL } from '../lib/googlePlaces.ts';
 
 interface Props {
   locale: Locale;
@@ -30,7 +31,7 @@ const legalLinks = [
 const socials = [
   { href: 'https://www.instagram.com/drive_buddies/', label: 'Instagram' },
   {
-    href: 'https://www.google.com/maps/place/Drive+Buddies+Fahrschule/data=!4m2!3m1!1s0x0:0xaed93d82704b5f67',
+    href: GOOGLE_MAPS_URL,
     label: 'Google Maps',
   },
 ];

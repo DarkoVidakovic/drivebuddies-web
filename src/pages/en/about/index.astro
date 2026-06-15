@@ -4,16 +4,15 @@ import Section from '../../../components/ui/Section.astro';
 import Button from '../../../components/ui/Button.astro';
 import Icon from '../../../components/ui/Icon.astro';
 import { useTranslations } from '../../../i18n/index.ts';
+import { fetchPlaceRating, GOOGLE_MAPS_URL } from '../../../lib/googlePlaces.ts';
 
 const locale = 'en';
 const t = useTranslations(locale);
 const a = t.about;
 const site = 'https://drivebuddies.ch';
 
-const googleMapsUrl =
-  'https://www.google.com/maps/place/Drive+Buddies+Fahrschule/data=!4m2!3m1!1s0x0:0xaed93d82704b5f67';
-
-const rating = { value: 4.9, count: 127 };
+const googleMapsUrl = GOOGLE_MAPS_URL;
+const rating = await fetchPlaceRating();
 const fullStars = Math.round(rating.value);
 const formattedValue = rating.value.toLocaleString('en', {
   minimumFractionDigits: 1,
