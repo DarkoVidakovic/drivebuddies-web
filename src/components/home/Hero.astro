@@ -19,6 +19,10 @@ const whatsappMsg =
 ---
 
 <section class="hero section--default" data-wa-hide-sentinel>
+  <div class="hero__scene" aria-hidden="true">
+    <div class="hero__horizon"></div>
+    <div class="hero__floor"></div>
+  </div>
   <div class="hero__inner">
     <p class="hero__eyebrow">{h.eyebrow}</p>
     <h1 class="hero__title">{h.title}</h1>
@@ -33,15 +37,82 @@ const whatsappMsg =
 
 <style>
   .hero {
+    position: relative;
+    isolation: isolate;
+    overflow: hidden;
     background: linear-gradient(
-      160deg,
-      color-mix(in srgb, var(--color-primary) 8%, var(--color-surface)) 0%,
-      var(--color-surface) 60%
+      180deg,
+      color-mix(in srgb, var(--color-primary) 6%, var(--color-surface)) 0%,
+      var(--color-surface) 48%
     );
     padding: var(--space-20) var(--space-6);
   }
 
+  /* ── Abstract perspective grid: the road ahead, receding to a
+        vanishing point behind the headline ──────────────────────────── */
+  .hero__scene {
+    position: absolute;
+    inset: 0;
+    z-index: -1;
+    overflow: hidden;
+    perspective: 340px;
+    perspective-origin: 50% 0%;
+    pointer-events: none;
+  }
+
+  /* Soft glow blooming from the vanishing point on the horizon line. */
+  .hero__horizon {
+    position: absolute;
+    left: 50%;
+    top: 46%;
+    width: 70%;
+    height: 40%;
+    transform: translate(-50%, -50%);
+    background: radial-gradient(
+      ellipse at center,
+      color-mix(in srgb, var(--color-primary) 28%, transparent) 0%,
+      transparent 68%
+    );
+    opacity: 0.9;
+  }
+
+  .hero__floor {
+    position: absolute;
+    left: -50%;
+    right: -50%;
+    bottom: -2%;
+    height: 88%;
+    transform: rotateX(80deg);
+    transform-origin: 50% 100%;
+    background-image:
+      repeating-linear-gradient(
+        0deg,
+        color-mix(in srgb, var(--color-primary) 24%, transparent) 0 1px,
+        transparent 1px 46px
+      ),
+      repeating-linear-gradient(
+        90deg,
+        color-mix(in srgb, var(--color-primary) 20%, transparent) 0 1px,
+        transparent 1px 46px
+      );
+    background-position:
+      0 0,
+      0 0;
+    /* Fade the far lines into the horizon, and the side edges outward. */
+    -webkit-mask-image:
+      linear-gradient(to top, #000 6%, transparent 62%),
+      linear-gradient(to right, transparent, #000 18%, #000 82%, transparent);
+    mask-image:
+      linear-gradient(to top, #000 6%, transparent 62%),
+      linear-gradient(to right, transparent, #000 18%, #000 82%, transparent);
+    -webkit-mask-composite: source-in;
+    mask-composite: intersect;
+    animation: hero-road 2.4s linear infinite;
+    will-change: background-position;
+  }
+
   .hero__inner {
+    position: relative;
     max-width: 1200px;
     margin-inline: auto;
     text-align: center;
@@ -84,9 +155,22 @@ const whatsappMsg =
     color: var(--color-text-muted);
   }
 
+  /* Horizontal grid lines (first background layer) flow toward the
+     viewer; vertical lines (second layer) stay anchored. */
+  @keyframes hero-road {
+    from { background-position: 0 0, 0 0; }
+    to { background-position: 0 46px, 0 0; }
+  }
+
   @media (min-width: 768px) {
     .hero {
       padding: var(--space-24) var(--space-8);
+    }
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .hero__floor {
+      animation: none;
     }
   }
 </style>

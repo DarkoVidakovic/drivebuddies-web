@@ -30,6 +30,8 @@ export const ROUTES = {
   drivingLicence: { de: '/fuehrerausweis/', en: '/en/driving-licence/' },
   twoPhase: { de: '/2-phasen-ausbildung/', en: '/en/two-phase-training/' },
 
+  kontrollfahrt: { de: '/kontrollfahrt/', en: '/en/mock-driving-test/' },
+
   about: { de: '/ueber-uns/', en: '/en/about/' },
   prices: { de: '/preise/', en: '/en/prices/' },
   contact: { de: '/kontakt/', en: '/en/contact/' },
@@ -75,6 +77,7 @@ export function ogImageForPath(pathname: string): string {
   if (bare.startsWith('/preise') || bare.startsWith('/prices')) return '/og/prices.png';
   if (bare.startsWith('/ueber-uns') || bare.startsWith('/about')) return '/og/about.png';
   if (bare.startsWith('/kontakt') || bare.startsWith('/contact')) return '/og/contact.png';
+  if (bare.startsWith('/kontrollfahrt') || bare.startsWith('/mock-driving-test')) return '/og/services.png';
   // Whole licence journey: hub, learner/driving licence, course steps, two-phase
   if (
     /^\/(fuehrerschein|how-to-get-swiss-licence|lernfahrausweis|learner-licence|fuehrerausweis|driving-licence|vku|nothelferkurs|first-aid-course|theoriepruefung|theory-exam|2-phasen-ausbildung|two-phase-training)/.test(

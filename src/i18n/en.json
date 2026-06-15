@@ -11,7 +11,9 @@
     "openMenu": "Open menu",
     "closeMenu": "Close menu",
     "switchLang": "Deutsch",
-    "prices": "Prices"
+    "prices": "Prices",
+    "kontrollfahrt": "Mock Test",
+    "ausbildung": "Training"
   },
   "footer": {
     "tagline": "Your driving school in Zurich — modern, flexible, personal.",
@@ -745,6 +747,7 @@
         "Motorcycle Grundkurs",
         "Trailer training (Cat. BE)",
         "VKU – Verkehrskundeunterricht",
+        "Kontrollfahrt (mock driving test)",
         "Other / General enquiry"
       ],
       "message": "Message",
@@ -951,6 +954,63 @@
       { "heading": "Your rights", "body": ["You have the right to information about, correction of and deletion of the personal data we hold about you. To exercise these rights, contact info@drivebuddies.ch."] },
       { "heading": "Retention", "body": ["We retain your data only for as long as necessary to process your enquiry or as required by law."] }
     ]
+  },
+  "kontrollfahrt": {
+    "seoTitle": "Mock Driving Test Zurich – Exam Readiness | DriveBuddies",
+    "seoDescription": "Practice your practical driving exam with a Kontrollfahrt at DriveBuddies Zurich. Honest feedback from your Fahrlehrer before the real thing.",
+    "eyebrow": "Exam preparation",
+    "title": "Kontrollfahrt – Are you ready for the exam?",
+    "lead": "A Kontrollfahrt (mock driving test) is a realistic simulation of the practical Führerprüfung with your Fahrlehrer. You drive for approx. 45–60 minutes under exam conditions and receive honest feedback: are you ready? What still needs work?",
+    "whatTitle": "What is a Kontrollfahrt?",
+    "whatText": "A Kontrollfahrt simulates the real practical driving test as closely as possible. Your Fahrlehrer observes but does not intervene during the drive – just like a real examiner. At the end you receive structured feedback with a clear assessment of your strengths and areas to improve.",
+    "contentTitle": "What is assessed in the Kontrollfahrt?",
+    "contentItems": [
+      "Compliance with traffic rules (right of way, speed, lane changes)",
+      "Safe driving in town, on country roads and – where possible – on the motorway",
+      "Observation, scanning technique and mirror use",
+      "Maintaining safe distance, braking and anticipatory driving",
+      "Reaction to unexpected situations and hazards",
+      "Correct vehicle control for manoeuvres (parking, turning)"
+    ],
+    "factsTitle": "Key facts at a glance",
+    "facts": [
+      { "label": "Duration", "value": "approx. 45–60 minutes" },
+      { "label": "Price", "value": "same as a regular lesson" },
+      { "label": "Recommendation", "value": "1–2 runs before the exam" },
+      { "label": "When", "value": "when you feel exam-ready" },
+      { "label": "Language", "value": "German or English" }
+    ],
+    "atDbTitle": "Kontrollfahrt at DriveBuddies",
+    "atDbText": "Our Fahrlehrer simulate the real Führerprüfung as realistically as possible. You'll get honest feedback on whether you're ready – and if not, concrete advice on what to improve before test day. This takes the nerves away and gives you the confidence you need.",
+    "faq": {
+      "eyebrow": "Frequently asked",
+      "title": "Questions about the Kontrollfahrt",
+      "items": [
+        {
+          "q": "What's the difference between a Kontrollfahrt and a normal driving lesson?",
+          "a": "In a normal lesson your Fahrlehrer gives continuous instructions and corrections while you drive. In a Kontrollfahrt they stay silent – you drive independently just like in the real exam, without any intervention. Feedback comes only at the end."
+        },
+        {
+          "q": "When should I book a Kontrollfahrt?",
+          "a": "A Kontrollfahrt makes sense when both you and your Fahrlehrer feel you are almost ready. Ideally 1–3 weeks before your planned exam date, so there is still time to address any remaining weak points."
+        },
+        {
+          "q": "What happens if things don't go well in the Kontrollfahrt?",
+          "a": "The Kontrollfahrt is not an official exam – it has no consequences. If things don't go well, you simply know what needs more practice. That's the whole point: better to find out now than on the real exam day."
+        },
+        {
+          "q": "Can I do the Kontrollfahrt in English?",
+          "a": "Yes. At DriveBuddies we can run the Kontrollfahrt in German or English – just let us know when you book."
+        }
+      ]
+    },
+    "nextTitle": "Next step",
+    "nextText": "Feeling confident after your Kontrollfahrt? Time to book your practical exam at the Strassenverkehrsamt.",
+    "nextHref": "/en/driving-licence/",
+    "nextLabel": "About the driving test",
+    "ctaPrimary": "Book a Kontrollfahrt",
+    "ctaWhatsapp": "Ask us on WhatsApp",
+    "ctaWhatsappMessage": "I'd like to book a Kontrollfahrt at DriveBuddies to prepare for my driving exam. Please get in touch."
   },
   "agb": {
     "seoTitle": "Terms & Conditions | DriveBuddies Driving School",

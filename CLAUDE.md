@@ -69,6 +69,7 @@ All components **must** reference these tokens. Never hard-code hex values or pi
 | Führerausweis | `/fuehrerausweis/` | `BreadcrumbList` + `FAQPage` |
 | Der Weg zum Führerschein (Hub) | `/fuehrerschein/` | `BreadcrumbList` + `HowTo` + `FAQPage` |
 | 2-Phasen / WAB | `/2-phasen-ausbildung/` | `BreadcrumbList` + `FAQPage` |
+| Kontrollfahrt | `/kontrollfahrt/` | `BreadcrumbList` + `Service` + `FAQPage` |
 | Über uns | `/ueber-uns/` | `AboutPage` + `AggregateRating` |
 | Preise | `/preise/` | `Offer` list |
 | Kontakt | `/kontakt/` | `ContactPage` |
@@ -100,6 +101,7 @@ EN slugs are **translated**, not prefixed mirrors. Full map in `routes.ts`:
 | `/fuehrerausweis/` | `/en/driving-licence/` |
 | `/fuehrerschein/` | `/en/how-to-get-swiss-licence/` |
 | `/2-phasen-ausbildung/` | `/en/two-phase-training/` |
+| `/kontrollfahrt/` | `/en/mock-driving-test/` |
 | `/ueber-uns/` | `/en/about/` |
 | `/preise/` | `/en/prices/` |
 | `/kontakt/` | `/en/contact/` |

@@ -11,7 +11,9 @@
     "openMenu": "Menü öffnen",
     "closeMenu": "Menü schliessen",
     "switchLang": "English",
-    "prices": "Preise"
+    "prices": "Preise",
+    "kontrollfahrt": "Kontrollfahrt",
+    "ausbildung": "Ausbildung"
   },
   "footer": {
     "tagline": "Ihre Fahrschule in Zürich — modern, flexibel, persönlich.",
@@ -745,6 +747,7 @@
         "Motorrad-Grundkurs",
         "Anhänger-Ausbildung (Kat. BE)",
         "VKU – Verkehrskundeunterricht",
+        "Kontrollfahrt (Probeprüfung)",
         "Andere / Allgemeine Anfrage"
       ],
       "message": "Nachricht",
@@ -951,6 +954,63 @@
       { "heading": "Deine Rechte", "body": ["Du hast das Recht auf Auskunft, Berichtigung und Löschung deiner bei uns gespeicherten Personendaten. Wende dich dazu an info@drivebuddies.ch."] },
       { "heading": "Aufbewahrung", "body": ["Wir bewahren deine Daten nur so lange auf, wie es für die Bearbeitung deiner Anfrage oder aufgrund gesetzlicher Vorgaben erforderlich ist."] }
     ]
+  },
+  "kontrollfahrt": {
+    "seoTitle": "Kontrollfahrt Fahrschule Zürich – Probeprüfung | DriveBuddies",
+    "seoDescription": "Kontrollfahrt bei DriveBuddies Zürich: Teste deine Prüfungsreife mit einer realistischen Probefahrt. Gezieltes Feedback – bevor es ernst wird.",
+    "eyebrow": "Prüfungsvorbereitung",
+    "title": "Kontrollfahrt – Bist du bereit für die Prüfung?",
+    "lead": "Die Kontrollfahrt ist eine realistische Probeprüfung mit deinem Fahrlehrer. Du fährst ca. 45–60 Minuten unter Prüfungsbedingungen und erhältst danach ehrliches Feedback: Bist du prüfungsreif? Was musst du noch verbessern?",
+    "whatTitle": "Was ist eine Kontrollfahrt?",
+    "whatText": "Eine Kontrollfahrt simuliert die echte praktische Führerprüfung so realistisch wie möglich. Dein Fahrlehrer beobachtet, greift aber nicht ein – genau wie ein echter Prüfer. Am Ende gibt es strukturiertes Feedback mit klarer Einschätzung deiner Stärken und Schwächen.",
+    "contentTitle": "Was wird bei der Kontrollfahrt geprüft?",
+    "contentItems": [
+      "Einhalten der Verkehrsregeln (Vortritt, Tempo, Spurwechsel)",
+      "Sicheres Fahren in der Stadt, auf Landstrassen und – wo möglich – auf der Autobahn",
+      "Beobachtungsverhalten, Blicktechnik und Spiegel-Nutzung",
+      "Abstandshalten, Bremsverhalten und vorausschauendes Fahren",
+      "Reaktion auf unerwartete Situationen und Gefahren",
+      "Korrekte Fahrzeugbeherrschung bei Manövern (Parkieren, Wenden)"
+    ],
+    "factsTitle": "Fakten auf einen Blick",
+    "facts": [
+      { "label": "Dauer", "value": "ca. 45–60 Minuten" },
+      { "label": "Preis", "value": "wie eine reguläre Fahrstunde" },
+      { "label": "Empfehlung", "value": "1–2 Fahrten vor der Prüfung" },
+      { "label": "Zeitpunkt", "value": "wenn du prüfungsbereit bist" },
+      { "label": "Sprache", "value": "Deutsch oder Englisch" }
+    ],
+    "atDbTitle": "Kontrollfahrt bei DriveBuddies",
+    "atDbText": "Unsere Fahrlehrer simulieren die echte Führerprüfung so realitätsnah wie möglich. Du bekommst ehrliches Feedback, ob du bereit bist – und wenn nicht, konkrete Tipps, was du bis zur Prüfung verbessern solltest. Das nimmt die Nervosität und gibt dir die nötige Sicherheit.",
+    "faq": {
+      "eyebrow": "Häufige Fragen",
+      "title": "Fragen zur Kontrollfahrt",
+      "items": [
+        {
+          "q": "Was ist der Unterschied zwischen einer Kontrollfahrt und einer normalen Fahrstunde?",
+          "a": "Bei einer normalen Fahrstunde gibt dein Fahrlehrer während der Fahrt laufend Anweisungen und Korrekturen. Bei der Kontrollfahrt hält er sich zurück – du fährst wie bei der echten Prüfung selbstständig, ohne Eingriffe. Erst danach gibt es das Feedback."
+        },
+        {
+          "q": "Wann sollte ich eine Kontrollfahrt machen?",
+          "a": "Eine Kontrollfahrt macht Sinn, wenn du und dein Fahrlehrer das Gefühl haben, dass du fast bereit bist. Idealerweise 1–3 Wochen vor dem geplanten Prüfungstermin, damit noch Zeit bleibt, letzte Schwächen zu beheben."
+        },
+        {
+          "q": "Was passiert, wenn ich die Kontrollfahrt nicht bestehe?",
+          "a": "Die Kontrollfahrt ist keine offizielle Prüfung – sie hat keine Konsequenzen. Wenn die Fahrt nicht klappt, weisst du einfach, was du noch üben musst. Das ist der Sinn: Lieber jetzt lernen als bei der echten Prüfung."
+        },
+        {
+          "q": "Kann ich die Kontrollfahrt auf Englisch machen?",
+          "a": "Ja. Bei DriveBuddies können wir die Kontrollfahrt auf Deutsch oder Englisch durchführen – sprich uns einfach bei der Buchung an."
+        }
+      ]
+    },
+    "nextTitle": "Nächster Schritt",
+    "nextText": "Fühlst du dich nach der Kontrollfahrt bereit? Dann ist es Zeit, den Prüfungstermin beim Strassenverkehrsamt zu buchen.",
+    "nextHref": "/fuehrerausweis/",
+    "nextLabel": "Zur Führerprüfung",
+    "ctaPrimary": "Kontrollfahrt buchen",
+    "ctaWhatsapp": "Per WhatsApp anfragen",
+    "ctaWhatsappMessage": "Ich möchte eine Kontrollfahrt bei DriveBuddies buchen, um mich auf die Prüfung vorzubereiten. Bitte nehmt Kontakt mit mir auf."
   },
   "agb": {
     "seoTitle": "AGB | DriveBuddies Fahrschule",
