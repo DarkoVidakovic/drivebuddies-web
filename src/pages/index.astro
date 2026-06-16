@@ -2,6 +2,7 @@
 import Layout from '../layouts/Layout.astro';
 import Hero from '../components/home/Hero.astro';
 import UspHighlights from '../components/home/UspHighlights.astro';
+import IntroText from '../components/home/IntroText.astro';
 import ServiceTeasers from '../components/home/ServiceTeasers.astro';
 import RatingBand from '../components/home/RatingBand.astro';
 import LicenceJourney from '../components/home/LicenceJourney.astro';
@@ -69,6 +70,7 @@ const jsonLd = [websiteSchema, organizationSchema, faqSchema];
 >
   <Hero locale={locale} />
   <UspHighlights locale={locale} />
+  <IntroText locale={locale} />
   <ServiceTeasers locale={locale} />
   <RatingBand locale={locale} />
   <LicenceJourney locale={locale} />

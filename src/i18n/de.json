@@ -31,7 +31,7 @@
   },
   "seo": {
     "titleSuffix": " | DriveBuddies Fahrschule Zürich",
-    "homeTitle": "DriveBuddies – Ihre Fahrschule in Zürich",
+    "homeTitle": "DriveBuddies – Moderne Fahrschule in Zürich & Thalwil",
     "homeDescription": "DriveBuddies ist Ihre moderne Fahrschule in Zürich. Grundkurs, VKU, Nothelfer und mehr – persönlich, flexibel, erfolgreich.",
     "404Title": "Seite nicht gefunden",
     "404Description": "Die gesuchte Seite existiert nicht. Kehren Sie zur Startseite zurück.",
@@ -446,14 +446,21 @@
   "home": {
     "hero": {
       "eyebrow": "Fahrschule in Zürich & Thalwil",
-      "title": "Sicher ans Ziel – mit DriveBuddies",
+      "title": "Deine Fahrschule in Zürich – sicher ans Ziel mit DriveBuddies",
       "subtitle": "Moderne Fahrzeuge, flexible Termine und erfahrene Fahrlehrer. Wir begleiten dich vom Lernfahrausweis bis zum Führerausweis.",
       "ctaPrimary": "Kurse entdecken",
       "ctaWhatsapp": "Per WhatsApp anfragen",
       "trust": "Über 500 erfolgreiche Fahrschüler:innen"
     },
+    "intro": {
+      "title": "Moderne Fahrschule für Zürich, Thalwil und den Zürichsee",
+      "body": [
+        "DriveBuddies ist deine moderne Fahrschule in Zürich und Thalwil. Vom ersten Lernfahrausweis über den Verkehrskundeunterricht (VKU) und den Nothelferkurs bis zur praktischen Führerprüfung begleiten wir dich Schritt für Schritt – persönlich, geduldig und in deinem Tempo. Ob Auto (Kategorie B), Motorrad (Kategorie A) oder Anhänger (Kategorie BE): Bei uns lernst du auf neuwertigen, gut gewarteten Fahrzeugen mit erfahrenen, mehrsprachigen Fahrlehrern.",
+        "Wir wissen, dass dein Alltag voll ist. Deshalb bieten wir flexible Termine am Abend und am Wochenende, kurze Wege rund um den Zürichsee und eine klare, ehrliche Beratung zu Ablauf und Kosten. Über 500 Fahrschülerinnen und Fahrschüler haben mit DriveBuddies bereits ihren Führerausweis gemacht – wir freuen uns darauf, auch dich sicher ans Ziel zu bringen."
+      ]
+    },
     "usp": {
-      "title": "Warum DriveBuddies?",
+      "title": "Warum DriveBuddies als Fahrschule in Zürich?",
       "subtitle": "Drei Gründe, warum du bei uns schneller und entspannter zum Führerausweis kommst.",
       "items": [
         {
@@ -474,7 +481,7 @@
       ]
     },
     "services": {
-      "title": "Unsere Ausbildungen",
+      "title": "Unsere Fahrausbildungen in Zürich",
       "subtitle": "Vom ersten Grundkurs bis zur Prüfung – wähle deine Kategorie.",
       "items": [
         {
@@ -541,7 +548,7 @@
     },
     "faq": {
       "eyebrow": "Häufige Fragen",
-      "title": "Antworten auf die wichtigsten Fragen",
+      "title": "Häufige Fragen zur Fahrausbildung in Zürich",
       "items": [
         {
           "q": "Was brauche ich, um mit dem Autofahren zu beginnen?",
@@ -956,7 +963,7 @@
     ]
   },
   "kontrollfahrt": {
-    "seoTitle": "Kontrollfahrt Fahrschule Zürich – Probeprüfung | DriveBuddies",
+    "seoTitle": "Kontrollfahrt Zürich – Probeprüfung | DriveBuddies",
     "seoDescription": "Kontrollfahrt bei DriveBuddies Zürich: Teste deine Prüfungsreife mit einer realistischen Probefahrt. Gezieltes Feedback – bevor es ernst wird.",
     "eyebrow": "Prüfungsvorbereitung",
     "title": "Kontrollfahrt – Bist du bereit für die Prüfung?",

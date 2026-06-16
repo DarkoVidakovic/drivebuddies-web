@@ -7,11 +7,24 @@
 
 # Deploy previews on every PR — Netlify enables this by default when
 # the repo is connected; this section makes the context explicit.
+# Keep non-production deploys out of the search index: the page canonical
+# already points at drivebuddies.ch, but X-Robots-Tag prevents the
+# *.netlify.app hostname from being indexed as a duplicate.
 [context.deploy-preview]
   command = "npm run build"
 
+[[context.deploy-preview.headers]]
+  for = "/*"
+  [context.deploy-preview.headers.values]
+    X-Robots-Tag = "noindex"
+
 [context.branch-deploy]
   command = "npm run build"
+
+[[context.branch-deploy.headers]]
+  for = "/*"
+  [context.branch-deploy.headers.values]
+    X-Robots-Tag = "noindex"
 
 [[redirects]]
   from   = "/sitemap.xml"

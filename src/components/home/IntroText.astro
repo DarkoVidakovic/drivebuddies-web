@@ -1,0 +1,44 @@
+---
+import Section from '../ui/Section.astro';
+import { useTranslations, type Locale } from '../../i18n/index.ts';
+
+interface Props {
+  locale: Locale;
+}
+
+const { locale } = Astro.props;
+const t = useTranslations(locale);
+const intro = t.home.intro;
+---
+
+<Section>
+  <div class="intro">
+    <h2 class="intro__title">{intro.title}</h2>
+    {intro.body.map((para) => <p class="intro__text">{para}</p>)}
+  </div>
+</Section>
+
+<style>
+  .intro {
+    max-width: 70ch;
+    margin: 0 auto;
+  }
+
+  .intro__title {
+    font-size: clamp(1.75rem, 3vw, 2.5rem);
+    font-weight: 700;
+    margin-bottom: var(--space-6);
+    text-align: center;
+  }
+
+  .intro__text {
+    color: var(--color-text-muted);
+    font-size: 1.0625rem;
+    line-height: 1.7;
+    margin: 0 0 var(--space-4);
+  }
+
+  .intro__text:last-child {
+    margin-bottom: 0;
+  }
+</style>

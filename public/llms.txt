@@ -1,0 +1,50 @@
+# DriveBuddies Fahrschule
+
+> Modern driving school based in Thalwil on Lake Zurich, serving Zürich and the
+> surrounding canton. We offer car (Kat. B), motorcycle (Kat. A) and trailer
+> (Kat. BE) training, plus all mandatory Swiss courses, with lessons available
+> in German and English.
+
+## Key facts
+
+- Name: Drive Buddies Fahrschule
+- Address: Albisstrasse 1, 8800 Thalwil, Switzerland
+- Phone / WhatsApp: +41 76 586 13 17
+- Email: info@drivebuddies.ch
+- Area served: Zürich, Thalwil, Kanton Zürich
+- Hours: Mon–Fri 07:00–22:00, Sat 07:00–19:00
+- Languages: German, English
+- Instagram: https://www.instagram.com/drive_buddies/
+
+## Services & courses
+
+- [Driving lessons – Car (Kat. B), manual or automatic](https://drivebuddies.ch/dienstleistungen/auto/)
+- [Driving lessons – Motorcycle (Kat. A)](https://drivebuddies.ch/dienstleistungen/motorrad/)
+- [Driving lessons – Trailer (Kat. BE)](https://drivebuddies.ch/dienstleistungen/anhaenger/)
+- [Nothelferkurs (first-aid course)](https://drivebuddies.ch/nothelferkurs/)
+- [VKU (Verkehrskundeunterricht / traffic-theory course)](https://drivebuddies.ch/vku/)
+- [Theorieprüfung (theory exam) preparation](https://drivebuddies.ch/theoriepruefung/)
+- [Kontrollfahrt (control drive)](https://drivebuddies.ch/kontrollfahrt/)
+- [2-Phasen-Ausbildung / WAB](https://drivebuddies.ch/2-phasen-ausbildung/)
+
+## How to get a Swiss driving licence
+
+- [The path to your Führerschein (overview / HowTo)](https://drivebuddies.ch/fuehrerschein/)
+- [Lernfahrausweis (learner's permit)](https://drivebuddies.ch/lernfahrausweis/)
+- [Führerausweis (full licence)](https://drivebuddies.ch/fuehrerausweis/)
+
+## Main pages
+
+- [Home](https://drivebuddies.ch/)
+- [Courses overview](https://drivebuddies.ch/kurse/)
+- [Services overview](https://drivebuddies.ch/dienstleistungen/)
+- [Prices](https://drivebuddies.ch/preise/)
+- [About us](https://drivebuddies.ch/ueber-uns/)
+- [Contact](https://drivebuddies.ch/kontakt/)
+- [Blog](https://drivebuddies.ch/blog/)
+
+## English
+
+An English version of every page is available under the `/en/` prefix, e.g.
+[English home](https://drivebuddies.ch/en/), [Courses](https://drivebuddies.ch/en/courses/),
+[Prices](https://drivebuddies.ch/en/prices/), [Contact](https://drivebuddies.ch/en/contact/).

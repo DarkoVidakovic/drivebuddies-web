@@ -31,7 +31,7 @@
   },
   "seo": {
     "titleSuffix": " | DriveBuddies Driving School Zurich",
-    "homeTitle": "DriveBuddies – Driving School in Zurich",
+    "homeTitle": "DriveBuddies – Modern Driving School in Zurich & Thalwil",
     "homeDescription": "DriveBuddies is your modern driving school in Zurich. Grundkurs, VKU, Nothelfer and more – personal, flexible, successful.",
     "404Title": "Page not found",
     "404Description": "The page you are looking for does not exist. Return to the homepage.",
@@ -446,14 +446,21 @@
   "home": {
     "hero": {
       "eyebrow": "Driving school in Zurich & Thalwil",
-      "title": "Reach your goal safely – with DriveBuddies",
+      "title": "Your driving school in Zurich – reach your goal safely",
       "subtitle": "Modern vehicles, flexible times and experienced Fahrlehrer. We guide you all the way from the Lernfahrausweis to the Führerausweis.",
       "ctaPrimary": "Explore courses",
       "ctaWhatsapp": "Ask us on WhatsApp",
       "trust": "Over 500 successful learner drivers"
     },
+    "intro": {
+      "title": "A modern driving school for Zurich, Thalwil and Lake Zurich",
+      "body": [
+        "DriveBuddies is your modern driving school in Zurich and Thalwil. From your first Lernfahrausweis through the VKU traffic-theory course and the Nothelfer first-aid course to the practical driving exam, we guide you step by step – personally, patiently and at your own pace. Whether it's car (category B), motorcycle (category A) or trailer (category BE), you'll learn in well-maintained, modern vehicles with experienced, multilingual Fahrlehrer.",
+        "We know your schedule is busy. That's why we offer flexible evening and weekend lessons, short distances around Lake Zurich, and clear, honest advice on the process and costs. More than 500 learner drivers have earned their Führerausweis with DriveBuddies – and we'd love to get you safely to your goal too."
+      ]
+    },
     "usp": {
-      "title": "Why DriveBuddies?",
+      "title": "Why DriveBuddies as your driving school in Zurich?",
       "subtitle": "Three reasons you'll get your licence faster and more relaxed with us.",
       "items": [
         {
@@ -474,7 +481,7 @@
       ]
     },
     "services": {
-      "title": "Our training programmes",
+      "title": "Our driving courses in Zurich",
       "subtitle": "From your first Grundkurs to the exam – pick your category.",
       "items": [
         {
@@ -541,7 +548,7 @@
     },
     "faq": {
       "eyebrow": "Frequently asked",
-      "title": "Answers to the most common questions",
+      "title": "Common questions about learning to drive in Zurich",
       "items": [
         {
           "q": "What do I need to start driving?",
